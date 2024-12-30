@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+@tailwind base;
+*{@apply font-ubuntu;}
+body{@apply bg-dark;}
+.warrper{@apply w-full max-w-[1520px] px-5 mx-auto;}
+.h1,h1{@apply text-28 md:text-38 lg:text-48 xl:text-52 2xl:text-64 font-bold text-white font-play_display;}
+.h2,h2{@apply text-26 lg:text-34 xl:text-40 2xl:text-48 font-bold text-white font-play_display;}
+.h3,h3{@apply text-20 lg:text-24 xl:text-30 2xl:text-36 font-bold text-dark;}
+.text16{@apply text-12 md:text-14 2xl:text-16;}
+.text18{@apply text-14 lg:text-16 2xl:text-18;}
+.text28{@apply text-18 md:text-20 lg:text-24 2xl:text-28;}
+.btn_primary{@apply gradient hover:opacity-65 hover:scale-105 hover:shadow-xl anim text-14 xl:text-16 font-bold w-full max-w-36 lg:max-w-52 py-2.5 lg:py-3.5 xl:py-4 px-3.5 text-black cursor-pointer inline-block;}
+.btn_secondary{@apply bg-dark hover:opacity-65 hover:scale-105 hover:shadow-xl anim text-14 xl:text-16 font-bold w-full max-w-36 lg:max-w-52 py-2.5 lg:py-3.5 xl:py-4 px-3.5 text-white cursor-pointer inline-block;}
+.anim{@apply transition-all duration-300;}
+
+.gradient{ 
+    background: linear-gradient(to right, #BF7B0B, #CE9823, #EDBE54, #F7D073, #D6A139, #C07F09);
+}
+.gra_text{
+  background: linear-gradient(to right, #BF7B0B, #CE9823, #EDBE54, #F7D073, #D6A139, #C07F09); 
+  -webkit-text-fill-color: transparent; 
+  -webkit-background-clip: text; 
+}
+.gra_border {
+  width: 32px;
+  position: relative;
+  background: linear-gradient(to right, #BF7B0B, #CE9823, #EDBE54, #F7D073, #D6A139, #C07F09);
+  padding: 2px;
+  border-radius: 50px;
+  overflow: hidden;
+  height: 32px;
+}
+.gra_border_bg {
+  background: #010C11;
+  color: white;
+  padding:4px ;
+  border-radius: 50px;
+  display: flex;
+  align-items:center ;
+  justify-content: center;
+}
+:root {
+    --swiper-image-ratio: 33.3%; /* ratio 16:9 = 56.25% */
+  
+    --swiper-width: 50%;
+    --swiper-inactive-scale: .85; /* makes the other slide smaller */
+    
+    /* responsive settings */
+    --swiper-mobile-width: 90%;
+    --swiper-mobile-inactive-scale: .95;
+  }
+  
+  .swiper {
+      position: relative;
+      width: 100%;
+      height: calc(var(--swiper-width) * var(--swiper-image-ratio) / 100%);
+      overflow: hidden;
+  }
+
+  .mySwiper .swiper-slide {
+    position: relative;
+    width: var(--swiper-width);
+    /* opacity: .5; */
+    transform: scale(.84);
+    transition: all .3s ease-in-out;
+    overflow: hidden;
+    border-radius: 0.4285rem;
+  }
+  
+  .mySwiper .swiper-slide {
+    transform: scale(.84) translateZ(0);
+  }
+  .swiper-pagination-bullet{
+    border-radius: 0;
+    background-color: #3D3D3D;
+  }    
+  .swiper-pagination-bullet-active{
+    background-color: #D7B56D;
+  }  
+  .swiper-slide.swiper-slide-active {  
+    transform: scale(1) !important;
+    opacity: 1 !important;
+  }
+  
+  .mySwiper .swiper-slide.swiper-slide-active {
+    transform: scale(1) translateZ(0) !important;
+  }
+  
+  .swiper-image {
+    position: relative;
+    width: 100%;
+    padding-top: var(--swiper-image-ratio);
+  }
+      
+  .swiper-image .image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #929ec9;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .swiper {
+      height: calc(var(--swiper-mobile-width) * var(--swiper-image-ratio) / 100%);
+    }
+  
+    .swiper-slide {
+      width: var(--swiper-mobile-width);
+      transform: scale(var(--swiper-mobile-inactive-scale));
+    }
+    
+  }
+@tailwind components;
+@tailwind utilities;
