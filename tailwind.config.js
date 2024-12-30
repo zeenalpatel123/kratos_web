@@ -42,6 +42,8 @@ module.exports = {
         'primary':'#D7B56D',
         'secondary':'#B9860C',
         'dark' : '#010C11',
+        'm1' :'#1D1E10',
+        'm2' :'#282828',
       },
       fontFamily: {
         'ubuntu' : ['Ubuntu','serif'],

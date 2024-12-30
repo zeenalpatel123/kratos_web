@@ -4,8 +4,8 @@
 *{@apply font-ubuntu;}
 body{@apply bg-dark;}
 .warrper{@apply w-full max-w-[1520px] px-5 mx-auto;}
-.h1,h1{@apply text-28 md:text-38 lg:text-48 xl:text-52 2xl:text-64 font-bold text-white font-play_display;}
-.h2,h2{@apply text-26 lg:text-34 xl:text-40 2xl:text-48 font-bold text-white font-play_display;}
+.h1,h1{@apply text-32  md:text-38 lg:text-48 xl:text-52 2xl:text-64 font-bold text-white font-play_display;}
+.h2,h2{@apply text-28 lg:text-34 xl:text-40 2xl:text-48 font-bold text-white font-play_display;}
 .h3,h3{@apply text-20 lg:text-24 xl:text-30 2xl:text-36 font-bold text-dark;}
 .text16{@apply text-12 md:text-14 2xl:text-16;}
 .text18{@apply text-14 lg:text-16 2xl:text-18;}
