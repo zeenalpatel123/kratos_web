@@ -112,7 +112,25 @@ body{@apply bg-dark;}
       width: var(--swiper-mobile-width);
       transform: scale(var(--swiper-mobile-inactive-scale));
     }
-    
   }
+
+  /* tab css  */
+.tab-main.active {
+  display: block;
+  transform: scale(1);
+}
+.tab-main{
+    transition: 0.5s all;
+    transform:scale(0);
+}
+button{
+    transition: 0.3s width all;
+}
+button.active {
+    color: #2B50ED;
+    border-color: #fff;
+}
+
+
 @tailwind components;
 @tailwind utilities;
