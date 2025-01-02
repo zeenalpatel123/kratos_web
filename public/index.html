@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="assets/css/style.css"/>
 </head>
 <body>
-    <div class="fixed w-full inset-x-0 top-0 z-50">
+    <div class="fixed w-full inset-x-0 top-0 z-50 anim" id="main_header">
         <div class="py-2 px-3 gradient hidden lg:block">
             <div class="warrper">
                 <div class="flex flex-wrap items-center justify-between">
@@ -45,10 +45,12 @@
         </div>
         <header class="py-5">
             <div class="warrper flex items-center justify-between">
-                <div>
+                <div class="flex items-center justify-between w-full lg:w-auto">
                     <a href="#">
                         <img src="assets/images/logo.png" class="mx-auto max-w-36 md:max-w-44 lg:max-w-52 xl:max-w-full" alt="logo"/>
                     </a>
+                    <span class="icon-menu text-primary text-24 block lg:hidden" onclick="toggleActive('#open','-translate-x-full')">
+                    </span>
                 </div>
                 <ul class="hidden lg:flex items-center space-x-5 xl:space-x-10 2xl:space-x-14">
                     <li>
@@ -79,15 +81,53 @@
             </div>
         </header>
     </div>
-    <section class="relative h-auto sm:min-h-screen pt-32 md:pt-36 lg:pt-44 xl:pt-52 2xl:pt-56">
-        <div class="warrper relative z-50">
+    <div class="w-full h-screen bg-black/30 backdrop-blur-sm block lg:hidden anim fixed left-0 inset-y-0 -translate-x-full z-50" id="open">
+        <div class="w-full max-w-96 h-screen bg-dark pb-5 relative border-r border-primary">
+            <div class="p-6 bg-dark flex items-center justify-between border-b border-primary">
+                <a href="#">
+                    <img src="assets/images/logo.png" class="max-w-36 xs:max-w-44" alt="logo"/>
+                </a>
+                <span class="icon-close text-primary text-24" onclick="toggleActive('#open','-translate-x-full')">
+                </span>
+            </div>
+            <ul class="space-y-3.5 p-5 pt-10 text-22 inline-block text-white font-normal italic w-full h-[calc(100%-90px)] text-center overflow-y-auto">
+                <li>
+                    <a href="#" class="hover:text-primary  anim">Home</a>
+                </li>
+                <li>
+                    <a href="#" class="hover:text-primary anim">About Us</a>
+                </li>
+                <li>
+                    <a href="#" class="hover:text-primary anim">Facilities</a>
+                </li>
+                <li>
+                    <a href="#" class="hover:text-primary anim">Events</a>
+                </li>
+                <li>
+                    <a href="#" class="hover:text-primary anim">Membership</a>
+                </li>
+                <li>
+                    <a href="#" class="hover:text-primary anim">Gallery</a>
+                </li>
+                <li>
+                    <a href="#" class="hover:text-primary anim">Brochure</a>
+                </li>
+                <li>
+                    <a href="#" class="hover:text-primary anim">Contact Us</a>
+                </li>
+            </ul>
+            <img src="assets/images/big_favicon.png" class="absolute bottom-10 left-1/2 -translate-x-1/2 w-16 opacity-40" alt="big_favicon"/>
+        </div>
+    </div>
+    <section class="relative pt-32 md:pt-36 lg:pt-44 xl:pt-52 2xl:pt-56">
+        <div class="warrper relative z-10">
             <div class="text-center">
                 <span class="inline-block text18 font-medium text-primary mb-2.5 md:mb-3 lg:mb-4 xl:mb-5">Welcome to Kratos Club</span>
                 <h1>Your Haven of <br class="hidden xl:block"> Relaxation and Recreation</h1>
                 <img src="assets/images/line.png" class="mx-auto mt-3 md:mt-5 xl:mt-7" alt="line"/>
             </div>
         </div>
-        <div class="swiper mySwiper mt-8 lg:mt-10 xl:mt-12 pb-10 xl:pb-12 2xl:pb-14">
+        <div class="swiper mySwiper px-5 md:px-0 mt-8 lg:mt-10 xl:mt-12 pb-10 xl:pb-12 2xl:pb-14">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <img src="assets/images/banner1.png" alt="banner1"/>
@@ -123,21 +163,21 @@
     </section>
     <section class="py-12 lg:py-14 xl:py-16 2xl:py-20">
         <div class="warrper max-w-[1074px]">
-            <div class="flex flex-wrap items-center -mx-3.5">
-                <div class="w-full xs:w-1/2 md:w-1/3 p-3.5">
-                    <div class="text-center border-y border-primary pb-3.5 md:pb-5 xl:pb-7 pt-1.5 md:pt-2.5 xl:pt-3.5">
+            <div class="flex flex-wrap items-center justify-center -mx-3.5">
+                <div class="w-full xs:w-1/2 sm:w-1/3 p-3.5">
+                    <div class="max-w-56 mx-auto text-center border-y border-primary pb-2.5 md:pb-5 xl:pb-7 pt-1.5 md:pt-2.5 xl:pt-3.5">
                         <h2 class="text-primary mb-1.5 md:mb-2.5 xl:mb-3.5">2,543</h2>
                         <span class="inline-block text18 text-white font-normal">Active Members</span>
                     </div>
                 </div>
-                <div class="w-full xs:w-1/2 md:w-1/3 p-3.5">
-                    <div class="text-center border-y border-primary pb-3.5 md:pb-5 xl:pb-7 pt-1.5 md:pt-2.5 xl:pt-3.5">
+                <div class="w-full xs:w-1/2 sm:w-1/3 p-3.5">
+                    <div class="max-w-56 mx-auto text-center border-y border-primary pb-2.5 md:pb-5 xl:pb-7 pt-1.5 md:pt-2.5 xl:pt-3.5">
                         <h2 class="text-primary mb-1.5 md:mb-2.5 xl:mb-3.5">175+</h2>
                         <span class="inline-block text18 text-white font-normal">Event & Challenges</span>
                     </div>
                 </div>
-                <div class="w-full xs:w-1/2 md:w-1/3 p-3.5">
-                    <div class="text-center border-y border-primary pb-3.5 md:pb-5 xl:pb-7 pt-1.5 md:pt-2.5 xl:pt-3.5">
+                <div class="w-full xs:w-1/2 sm:w-1/3 p-3.5">
+                    <div class="max-w-56 mx-auto text-center border-y border-primary pb-2.5 md:pb-5 xl:pb-7 pt-1.5 md:pt-2.5 xl:pt-3.5">
                         <h2 class="text-primary mb-1.5 md:mb-2.5 xl:mb-3.5">15+</h2>
                         <span class="inline-block text18 text-white font-normal">Years Experience</span>
                     </div>
@@ -324,9 +364,11 @@
     </section>
     <footer class="pt-12 lg:pt-14 xl:pt-16 2xl:pt-20">
         <div class="warrper">
-            <a href="#">
-                <img src="assets/images/logo.png" class="max-w-36 md:max-w-full mx-auto" alt="logo"/>
-            </a>
+            <div>
+                <a href="#">
+                    <img src="assets/images/logo.png" class="max-w-36 md:max-w-full mx-auto" alt="logo"/>
+                </a>
+            </div>
             <div class="flex flex-wrap justify-center -mx-3.5 pt-10 lg:pt-14 xl:pt-16">
                 <div class="w-full xs:w-1/2 lg:w-1/3 p-3.5 relative h-auto">
                     <div class="py-5 md:py-9 xl:py-10 px-6 border border-primary text-center relative h-full">
@@ -367,20 +409,20 @@
                 <h2 class="text-white mb-2.5 md:mb-3 xl:mb-5">Request More Information</h2>
                 <button class="btn_primary">Contact Us</button>
             </div>
-            <div class="flex flex-wrap md:flex-nowrap items-center justify-center md:justify-between py-3.5">
+            <div class="flex flex-wrap sm:flex-nowrap items-center justify-center sm:justify-between py-3.5">
                 <span class="inline-block text-white text-14 font-normal">© 2024 All rights reserved</span>
-                <ul class="flex items-center space-x-6 md:space-x-8 lg:space-x-10 xl:space-x-12 pl-0 xs:pl-5">
+                <ul class="flex items-center space-x-6 md:space-x-8 lg:space-x-10 xl:space-x-12 p-3 text-white group font-normal text-14">
                     <li>
-                        <a href="#" class="text-white font-normal text-14 inline-block">Terms</a>
+                        <a href="#" class="inline-block hover:text-primary anim">Terms</a>
                     </li>
                     <li>
-                        <a href="#" class="text-white font-normal text-14 inline-block">Privacy</a>
+                        <a href="#" class="inline-block hover:text-primary anim">Privacy</a>
                     </li>
                     <li>
-                        <a href="#" class="text-white font-normal text-14 inline-block">Cookies</a>
+                        <a href="#" class="inline-block hover:text-primary anim">Cookies</a>
                     </li>
                 </ul>
-                <div class="flex items-center space-x-1.5 pt-2.5 md:pt-0">
+                <div class="flex items-center space-x-1.5">
                     <div class="gra_border">
                         <div class="gra_border_bg">
                             <span class="icon-instragram text-20 leading-none gra_text"></span>
@@ -410,67 +452,107 @@
             </div>
         </div>
     </footer>
-
-
 </body>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script>
-    var swiper = new Swiper('.mySwiper', {
-    loop: true,
-    slidesPerView: 'auto',
-    centeredSlides: true,
-    roundLengths: true,
-    grabCursor: true,
-    autoplay: {
-        delay: 4000,
-        disableOnInteraction: true
+var swiper = new Swiper('.mySwiper', {
+loop: true,
+slidesPerView: 1,
+centeredSlides: true,
+roundLengths: true,
+grabCursor: true,
+speed: 1500,
+centeredSlides: true,
+autoplay: {
+    delay: 4000,
+    disableOnInteraction: true
+},
+pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+},
+breakpoints: {
+    640: {
+        slidesPerView: 1,
+        spaceBetween: 10,
     },
-        pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-        },
-        speed: 1500,
-    centeredSlides: true,
+    768: {
+        slidesPerView: 3,
+        spaceBetween: 15,
+    },
+    1024: {
+        slidesPerView: 3,
+        spaceBetween: 25,
+    },
+    1280: {
+        slidesPerView: 3,
+        spaceBetween: 40,
+    },
+}
 
-    });
-  </script>
-  <script>
-    var swiper = new Swiper(".mySwiper2", {
-      loop: true,
-      slidesPerView: 2,
-      spaceBetween: 10,
-      grabCursor: true,
-      speed: 1500,
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-      autoplay: {
-        delay: 4000,
-        disableOnInteraction: true
-        },
-      breakpoints: {
-        450: {
-          slidesPerView: 2,
-          spaceBetween: 10,
-        },
-        640: {
-          slidesPerView: 3,
-          spaceBetween: 10,
-        },
-        768: {
-          slidesPerView: 4,
-          spaceBetween: 15,
-        },
-        1024: {
-          slidesPerView: 5,
-          spaceBetween: 25,
-        },
-        1280: {
-          slidesPerView: 7,
-          spaceBetween: 40,
-        },
-      },
-    });
-  </script>
+});
+</script>
+<script>
+var swiper = new Swiper(".mySwiper2", {
+    loop: true,
+    slidesPerView: 2,
+    spaceBetween: 10,
+    grabCursor: true,
+    speed: 1500,
+    pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+    },
+    autoplay: {
+    delay: 3000,
+    disableOnInteraction: true
+    },
+    breakpoints: {
+    450: {
+        slidesPerView: 2,
+        spaceBetween: 10,
+    },
+    640: {
+        slidesPerView: 3,
+        spaceBetween: 10,
+    },
+    768: {
+        slidesPerView: 4,
+        spaceBetween: 15,
+    },
+    1024: {
+        slidesPerView: 5,
+        spaceBetween: 25,
+    },
+    1280: {
+        slidesPerView: 7,
+        spaceBetween: 40,
+    },
+    },
+});
+
+// on scroll  
+window.onscroll = function () {
+    var currentScrollPos = window.pageYOffset;
+    var navbar = document.getElementById("main_header");          
+
+    if (prevScrollpos > currentScrollPos) {
+    navbar?.classList.remove("navbar_down");
+    navbar?.classList.add("navbar_up");
+    } else {
+    navbar?.classList.remove("navbar_up");
+    navbar?.classList.add("navbar_down");
+    }
+    prevScrollpos = currentScrollPos;
+}
+if (window.innerWidth <= 450) {
+    var prevScrollpos = window.pageYOffset;
+};
+
+// Toggle Active 
+function toggleActive(Id, db) {
+    var element = document.querySelector(Id);
+    element.classList.toggle(db);
+}
+</script>
 </html>
