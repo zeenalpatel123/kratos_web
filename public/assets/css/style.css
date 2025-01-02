@@ -1071,20 +1071,26 @@ button.active {
   background: linear-gradient(to right, #BF7B0B, #CE9823, #EDBE54, #F7D073, #D6A139, #C07F09);
 }
 
-.js-cont {
+.my_app{
   position: relative;
-  width: 100%;
-  /* height: 100%; */
+  min-width: 100vw;
+  min-height: 100%;
+  max-width: 100vw;
+  max-height: 100%;
+  overflow-x: clip;
 }
 
-.js-scroll {
-  position: fixed;
-  z-index: 10;
-  top: 0;
-  left: 0;
-  /* overflow: hidden; */
-  width: 100%;
-  will-change: transform;
+body {
+  overflow-x: clip;
+  max-width: 100vw;
+}
+
+.visible{
+  visibility: visible;
+}
+
+.static{
+  position: static;
 }
 
 .fixed{
@@ -1283,8 +1289,16 @@ button.active {
   display: inline-block;
 }
 
+.inline{
+  display: inline;
+}
+
 .flex{
   display: flex;
+}
+
+.grid{
+  display: grid;
 }
 
 .hidden{
@@ -1916,6 +1930,10 @@ button.active {
 .outline-none{
   outline: 2px solid transparent;
   outline-offset: 2px;
+}
+
+.filter{
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
 .backdrop-blur-sm{
