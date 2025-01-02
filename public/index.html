@@ -9,450 +9,455 @@
     <link rel="stylesheet" href="assets/css/style.css"/>
 </head>
 <body>
-    <div class="fixed w-full inset-x-0 top-0 z-50 anim" id="main_header">
-        <div class="py-2 px-3 gradient hidden lg:block">
-            <div class="warrper">
-                <div class="flex flex-wrap items-center justify-between">
-                    <div class="flex flex-wrap sm:flex-nowrap items-center">
-                        <div class="flex items-center space-x-1.5 sm:space-x-2.5">
-                            <span class="icon-contact text-20"></span>
-                            <span class="inline-block text-14 font-normal text-dark">+91 93270 33000</span>
+    <div class="js-cont">
+        <div class="fixed w-full inset-x-0 top-0 z-50 anim" id="main_header">
+            <div class="py-2 px-3 gradient hidden lg:block">
+                <div class="warrper">
+                    <div class="flex flex-wrap items-center justify-between">
+                        <div class="flex flex-wrap sm:flex-nowrap items-center">
+                            <div class="flex items-center space-x-1.5 sm:space-x-2.5">
+                                <span class="icon-contact text-20"></span>
+                                <span class="inline-block text-14 font-normal text-dark">+91 93270 33000</span>
+                            </div>
+                            <div class="flex items-center space-x-1.5 sm:space-x-2.5 pl-5">
+                                <span class="icon-sms text-20"></span>
+                                <span class="inline-block text-14 font-normal text-dark">INFO@KRATOSCLUB.CO.IN  |  WWW.KRATOSCLUB.CO.IN</span>
+                            </div>
                         </div>
-                        <div class="flex items-center space-x-1.5 sm:space-x-2.5 pl-5">
-                            <span class="icon-sms text-20"></span>
-                            <span class="inline-block text-14 font-normal text-dark">INFO@KRATOSCLUB.CO.IN  |  WWW.KRATOSCLUB.CO.IN</span>
-                        </div>
+                        <ul class="flex items-center space-x-1.5">
+                            <li class="w-6 h-6 rounded-full border border-black flex items-center justify-center">
+                                <a href=""><span class="icon-instragram text-14"></span></a>
+                            </li>
+                            <li class="w-6 h-6 rounded-full border border-black flex items-center justify-center">
+                                <a href=""><span class="icon-facebook text-14"></span></a>
+                            </li>
+                            <li class="w-6 h-6 rounded-full border border-black flex items-center justify-center">
+                                <a href=""><span class="icon-youtube text-14"></span></a>
+                            </li>
+                            <li class="w-6 h-6 rounded-full border border-black flex items-center justify-center">
+                                <a href=""><span class="icon-make_my_trip text-14"></span></a>
+                            </li>
+                            <li class="w-6 h-6 rounded-full border border-black flex items-center justify-center">
+                                <a href=""><span class="icon-book_my_show text-14"></span></a>
+                            </li>
+                        </ul>
                     </div>
-                    <ul class="flex items-center space-x-1.5">
-                        <li class="w-6 h-6 rounded-full border border-black flex items-center justify-center">
-                            <a href=""><span class="icon-instragram text-14"></span></a>
+                </div>
+            </div>
+            <header class="py-5">
+                <div class="warrper flex items-center justify-between">
+                    <div class="flex items-center justify-between w-full lg:w-auto">
+                        <a href="#">
+                            <img src="assets/images/logo.png" class="mx-auto max-w-36 md:max-w-44 lg:max-w-52 xl:max-w-full" alt="logo"/>
+                        </a>
+                        <span class="icon-menu text-primary text-24 block lg:hidden" onclick="toggleActive('#open','-translate-x-full')">
+                        </span>
+                    </div>
+                    <ul class="hidden lg:flex items-center space-x-5 xl:space-x-10 2xl:space-x-14">
+                        <li>
+                            <a href="#" class="inline-block text-white text-18 font-medium hover:text-primary anim">Home</a>
                         </li>
-                        <li class="w-6 h-6 rounded-full border border-black flex items-center justify-center">
-                            <a href=""><span class="icon-facebook text-14"></span></a>
+                        <li>
+                            <a href="#" class="inline-block text-white text-18 font-medium hover:text-primary anim">About Us</a>
                         </li>
-                        <li class="w-6 h-6 rounded-full border border-black flex items-center justify-center">
-                            <a href=""><span class="icon-youtube text-14"></span></a>
+                        <li>
+                            <a href="#" class="inline-block text-white text-18 font-medium hover:text-primary anim">Facilities</a>
                         </li>
-                        <li class="w-6 h-6 rounded-full border border-black flex items-center justify-center">
-                            <a href=""><span class="icon-make_my_trip text-14"></span></a>
+                        <li>
+                            <a href="#" class="inline-block text-white text-18 font-medium hover:text-primary anim">Events</a>
                         </li>
-                        <li class="w-6 h-6 rounded-full border border-black flex items-center justify-center">
-                            <a href=""><span class="icon-book_my_show text-14"></span></a>
+                        <li>
+                            <a href="#" class="inline-block text-white text-18 font-medium hover:text-primary anim">Membership</a>
+                        </li>
+                        <li>
+                            <a href="#" class="inline-block text-white text-18 font-medium hover:text-primary anim">Gallery</a>
+                        </li>
+                        <li>
+                            <a href="#" class="inline-block text-white text-18 font-medium hover:text-primary anim">Brochure</a>
+                        </li>
+                        <li>
+                            <a href="#" class="inline-block text-white text-18 font-medium hover:text-primary anim">Contact Us</a>
                         </li>
                     </ul>
                 </div>
-            </div>
+            </header>
         </div>
-        <header class="py-5">
-            <div class="warrper flex items-center justify-between">
-                <div class="flex items-center justify-between w-full lg:w-auto">
+        <div class="w-full h-screen bg-black/30 backdrop-blur-sm block lg:hidden anim fixed left-0 inset-y-0 -translate-x-full z-50" id="open">
+            <div class="w-full max-w-96 h-screen bg-dark pb-5 relative border-r border-primary">
+                <div class="p-6 bg-dark flex items-center justify-between border-b border-primary">
                     <a href="#">
-                        <img src="assets/images/logo.png" class="mx-auto max-w-36 md:max-w-44 lg:max-w-52 xl:max-w-full" alt="logo"/>
+                        <img src="assets/images/logo.png" class="max-w-36 xs:max-w-44" alt="logo"/>
                     </a>
-                    <span class="icon-menu text-primary text-24 block lg:hidden" onclick="toggleActive('#open','-translate-x-full')">
+                    <span class="icon-close text-primary text-24" onclick="toggleActive('#open','-translate-x-full')">
                     </span>
                 </div>
-                <ul class="hidden lg:flex items-center space-x-5 xl:space-x-10 2xl:space-x-14">
+                <ul class="space-y-3.5 p-5 pt-10 text-22 inline-block text-white font-normal italic w-full h-[calc(100%-90px)] text-center overflow-y-auto">
                     <li>
-                        <a href="#" class="inline-block text-white text-18 font-medium hover:text-primary anim">Home</a>
+                        <a href="#" class="hover:text-primary  anim">Home</a>
                     </li>
                     <li>
-                        <a href="#" class="inline-block text-white text-18 font-medium hover:text-primary anim">About Us</a>
+                        <a href="#" class="hover:text-primary anim">About Us</a>
                     </li>
                     <li>
-                        <a href="#" class="inline-block text-white text-18 font-medium hover:text-primary anim">Facilities</a>
+                        <a href="#" class="hover:text-primary anim">Facilities</a>
                     </li>
                     <li>
-                        <a href="#" class="inline-block text-white text-18 font-medium hover:text-primary anim">Events</a>
+                        <a href="#" class="hover:text-primary anim">Events</a>
                     </li>
                     <li>
-                        <a href="#" class="inline-block text-white text-18 font-medium hover:text-primary anim">Membership</a>
+                        <a href="#" class="hover:text-primary anim">Membership</a>
                     </li>
                     <li>
-                        <a href="#" class="inline-block text-white text-18 font-medium hover:text-primary anim">Gallery</a>
+                        <a href="#" class="hover:text-primary anim">Gallery</a>
                     </li>
                     <li>
-                        <a href="#" class="inline-block text-white text-18 font-medium hover:text-primary anim">Brochure</a>
+                        <a href="#" class="hover:text-primary anim">Brochure</a>
                     </li>
                     <li>
-                        <a href="#" class="inline-block text-white text-18 font-medium hover:text-primary anim">Contact Us</a>
-                    </li>
-                </ul>
-            </div>
-        </header>
-    </div>
-    <div class="w-full h-screen bg-black/30 backdrop-blur-sm block lg:hidden anim fixed left-0 inset-y-0 -translate-x-full z-50" id="open">
-        <div class="w-full max-w-96 h-screen bg-dark pb-5 relative border-r border-primary">
-            <div class="p-6 bg-dark flex items-center justify-between border-b border-primary">
-                <a href="#">
-                    <img src="assets/images/logo.png" class="max-w-36 xs:max-w-44" alt="logo"/>
-                </a>
-                <span class="icon-close text-primary text-24" onclick="toggleActive('#open','-translate-x-full')">
-                </span>
-            </div>
-            <ul class="space-y-3.5 p-5 pt-10 text-22 inline-block text-white font-normal italic w-full h-[calc(100%-90px)] text-center overflow-y-auto">
-                <li>
-                    <a href="#" class="hover:text-primary  anim">Home</a>
-                </li>
-                <li>
-                    <a href="#" class="hover:text-primary anim">About Us</a>
-                </li>
-                <li>
-                    <a href="#" class="hover:text-primary anim">Facilities</a>
-                </li>
-                <li>
-                    <a href="#" class="hover:text-primary anim">Events</a>
-                </li>
-                <li>
-                    <a href="#" class="hover:text-primary anim">Membership</a>
-                </li>
-                <li>
-                    <a href="#" class="hover:text-primary anim">Gallery</a>
-                </li>
-                <li>
-                    <a href="#" class="hover:text-primary anim">Brochure</a>
-                </li>
-                <li>
-                    <a href="#" class="hover:text-primary anim">Contact Us</a>
-                </li>
-            </ul>
-            <img src="assets/images/big_favicon.png" class="absolute bottom-10 left-1/2 -translate-x-1/2 w-16 opacity-40" alt="big_favicon"/>
-        </div>
-    </div>
-    <section class="relative pt-32 md:pt-36 lg:pt-44 xl:pt-52 2xl:pt-56">
-        <div class="warrper relative z-10">
-            <div class="text-center">
-                <span class="inline-block text18 font-medium text-primary mb-2.5 md:mb-3 lg:mb-4 xl:mb-5">Welcome to Kratos Club</span>
-                <h1>Your Haven of <br class="hidden xl:block"> Relaxation and Recreation</h1>
-                <img src="assets/images/line.png" class="mx-auto mt-3 md:mt-5 xl:mt-7" alt="line"/>
-            </div>
-        </div>
-        <div class="swiper mySwiper px-5 md:px-0 mt-8 lg:mt-10 xl:mt-12 pb-10 xl:pb-12 2xl:pb-14">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <img src="assets/images/banner1.png" alt="banner1"/>
-              </div>
-              <div class="swiper-slide">
-                <img src="assets/images/banner2.png" alt="banner2"/>
-              </div>
-              <div class="swiper-slide">
-                <img src="assets/images/banner3.png" alt="banner3"/>
-              </div>
-              <div class="swiper-slide">
-                <img src="assets/images/banner1.png" alt="banner1"/>
-              </div>
-              <div class="swiper-slide">
-                <img src="assets/images/banner2.png" alt="banner2"/>
-              </div>
-              <div class="swiper-slide">
-                <img src="assets/images/banner3.png" alt="banner3"/>
-              </div>
-              <div class="swiper-slide">
-                <img src="assets/images/banner1.png" alt="banner1"/>
-              </div>
-              <div class="swiper-slide">
-                <img src="assets/images/banner2.png" alt="banner2"/>
-              </div>
-              <div class="swiper-slide">
-                <img src="assets/images/banner3.png" alt="banner3"/>
-              </div>
-            </div>
-            <div class="swiper-pagination"></div>
-        </div>
-        <img src="assets/images/bg_effect.png" class="absolute w-full object-cover inset-0 top-11 -z-10" alt="bg_effect"/>
-    </section>
-    <section class="py-12 lg:py-14 xl:py-16 2xl:py-20">
-        <div class="warrper max-w-[1074px]">
-            <div class="flex flex-wrap items-center justify-center -mx-3.5">
-                <div class="w-full xs:w-1/2 sm:w-1/3 p-3.5">
-                    <div class="max-w-56 mx-auto text-center border-y border-primary pb-2.5 md:pb-5 xl:pb-7 pt-1.5 md:pt-2.5 xl:pt-3.5">
-                        <h2 class="text-primary mb-1.5 md:mb-2.5 xl:mb-3.5">2,543</h2>
-                        <span class="inline-block text18 text-white font-normal">Active Members</span>
-                    </div>
-                </div>
-                <div class="w-full xs:w-1/2 sm:w-1/3 p-3.5">
-                    <div class="max-w-56 mx-auto text-center border-y border-primary pb-2.5 md:pb-5 xl:pb-7 pt-1.5 md:pt-2.5 xl:pt-3.5">
-                        <h2 class="text-primary mb-1.5 md:mb-2.5 xl:mb-3.5">175+</h2>
-                        <span class="inline-block text18 text-white font-normal">Event & Challenges</span>
-                    </div>
-                </div>
-                <div class="w-full xs:w-1/2 sm:w-1/3 p-3.5">
-                    <div class="max-w-56 mx-auto text-center border-y border-primary pb-2.5 md:pb-5 xl:pb-7 pt-1.5 md:pt-2.5 xl:pt-3.5">
-                        <h2 class="text-primary mb-1.5 md:mb-2.5 xl:mb-3.5">15+</h2>
-                        <span class="inline-block text18 text-white font-normal">Years Experience</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="pb-12 lg:pb-14 xl:pb-16 2xl:pb-20">
-        <div class="warrper relative overflow-hidden">
-            <div class="gradient py-4 md:py-7 lg:py-9 xl:py-11 px-6 sm:px-8 md:px-10 lg:px-12 xl:px-14 relative">
-                <div class="flex flex-wrap items-center justify-between relative z-10">
-                    <div class="mb-3 lg:mb-0">
-                        <h3 class="font-play_display mb-2.5 md:mb-3 lg:mb-4 xl:mb-5">Your Kratos Club Journey Awaits!</h3>
-                        <p class="text16 text-dark font-normal max-w-[605px]">Experience a perfect blend of relaxation, recreation, and community at Kratos Club. Discover activities and amenities that elevate your lifestyle</p>
-                    </div>
-                    <button class="btn_secondary">Join Now</button>
-                </div>
-                <img src="assets/images/right_pettern.png" class="absolute hidden xs:block h-full right-0 inset-y-0 object-cover" alt="right_pettern"/>
-            </div>
-        </div>
-    </section>
-    <section class="pb-12 lg:pb-14 xl:pb-16 2xl:pb-20">
-        <div class="warrper max-w-[1302px]">
-            <div class="text-center">
-                <h2 class="text-white mb-1.5 md:mb-2.5">Exclusive Club Highlights</h2>
-                <p class="text-white text16 font-normal max-w-[730px] mx-auto capitalize">At Kratos Club, we blend relaxation and recreation to create an enriching experience for you and your loved ones. From serene poolside evenings to exciting indoor activities, we have something for everyone.</p>
-            </div>
-            <div class="pt-7 md:pt-12 lg:pt-20 xl:pt-24">
-                <div class="flex flex-wrap -mx-2.5 lg:-mx-3.5">
-                    <div class="w-full xs:w-1/2 lg:w-1/3 p-2.5 lg:p-3.5">
-                        <div class="relative overflow-hidden">
-                            <img src="assets/images/highlight1.png" class="w-full" alt="highlight1"/>
-                            <div class="bg-black/30 py-2.5 lg:py-3 xl:py-4 px-3 lg:px-4 xl:px-5 w-full absolute bottom-0 flex items-center justify-between">
-                                <h4 class="text18 font-medium text-white">Exclusive Club Highlights</h4>
-                                <div class="w-6 lg:w-8 h-6 lg:h-8 rounded-full bg-primary flex items-center justify-center">
-                                    <span class="icon-right text-16 lg:text-20 text-dark"></span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="w-full xs:w-1/2 lg:w-1/3 p-2.5 lg:p-3.5 mt-0 lg:-mt-16">
-                        <div class="relative overflow-hidden">
-                            <img src="assets/images/highlight2.png" class="w-full" alt="highlight2"/>
-                            <div class="bg-black/30 py-2.5 lg:py-3 xl:py-4 px-3 lg:px-4 xl:px-5 w-full absolute bottom-0 flex items-center justify-between">
-                                <h4 class="text18 font-medium text-white">Indoor Games</h4>
-                                <div class="w-6 lg:w-8 h-6 lg:h-8 rounded-full bg-primary flex items-center justify-center">
-                                    <span class="icon-right text-16 lg:text-20 text-dark"></span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="w-full xs:w-1/2 lg:w-1/3 p-2.5 lg:p-3.5">
-                        <div class="relative overflow-hidden">
-                            <img src="assets/images/highlight3.png" class="w-full" alt="highlight3"/>
-                            <div class="bg-black/30 py-2.5 lg:py-3 xl:py-4 px-3 lg:px-4 xl:px-5 w-full absolute bottom-0 flex items-center justify-between">
-                                <h4 class="text18 font-medium text-white">Jacuzzi Delight</h4>
-                                <div class="w-6 lg:w-8 h-6 lg:h-8 rounded-full bg-primary flex items-center justify-center">
-                                    <span class="icon-right text-16 lg:text-20 text-dark"></span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="w-full xs:w-1/2 lg:w-1/3 p-2.5 lg:p-3.5">
-                        <div class="relative overflow-hidden">
-                            <img src="assets/images/highlight4.png" class="w-full" alt="highlight4"/>
-                            <div class="bg-black/30 py-2.5 lg:py-3 xl:py-4 px-3 lg:px-4 xl:px-5 w-full absolute bottom-0 flex items-center justify-between">
-                                <h4 class="text18 font-medium text-white">Yoga for Mind</h4>
-                                <div class="w-6 lg:w-8 h-6 lg:h-8 rounded-full bg-primary flex items-center justify-center">
-                                    <span class="icon-right text-16 lg:text-20 text-dark"></span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="w-full xs:w-1/2 lg:w-1/3 p-2.5 lg:p-3.5 mt-0 lg:-mt-16">
-                        <div class="relative overflow-hidden gradient py-5 lg:py-11 h-full flex lg:h-auto px-3 lg:px-5">
-                            <div class="space-y-5 text-center relative z-10 m-auto">
-                                <img src="assets/images/card_logo.png" class="mx-auto" alt="card_logo"/>
-                                <h3 class="text-center font-play_display">Find Exactly <br class="hidden xl:block"> What You're Looking  For</h3>
-                                <button class="btn_secondary">View All</button>
-                            </div>
-                            <img src="assets/images/card_inner_effect.png" class="w-full h-full absolute inset-0" alt="card_inner_effect"/>
-                        </div>
-                    </div>
-                    <div class="w-full xs:w-1/2 lg:w-1/3 p-2.5 lg:p-3.5">
-                        <div class="relative overflow-hidden">
-                            <img src="assets/images/highlight5.png" class="w-full" alt="highlight5"/>
-                            <div class="bg-black/30 py-2.5 lg:py-3 xl:py-4 px-3 lg:px-4 xl:px-5 w-full absolute bottom-0 flex items-center justify-between">
-                                <h4 class="text18 font-medium text-white">Enjoy Zumba and Dance</h4>
-                                <div class="w-6 lg:w-8 h-6 lg:h-8 rounded-full bg-primary flex items-center justify-center">
-                                    <span class="icon-right text-16 lg:text-20 text-dark"></span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="pb-12 lg:pb-14 xl:pb-16 2xl:pb-20 relative">
-        <h2 class="text-center text-white mb-6 lg:mb-10 xl:mb-12">Upcoming Events</h2>
-        <div class="w-full relative py-10 md:py-12 lg:py-14 xl:py-20">
-            <div class="warrper max-w-[1497px] relative z-10 space-y-5 md:space-y-8 lg:space-y-10 xl:space-y-12">
-                <div class="bg-dark px-5">
-                    <div class="swiper mySwiper2 py-5 xl:py-6">
-                        <div class="swiper-wrapper">
-                          <div class="swiper-slide">
-                            <img src="assets/images/up_come_post1.png" class="w-full mx-auto" alt="up_come_post1"/>
-                          </div>
-                          <div class="swiper-slide">
-                            <img src="assets/images/up_come_post2.png" class="w-full mx-auto" alt="up_come_post2"/>
-                          </div>
-                          <div class="swiper-slide">
-                            <img src="assets/images/up_come_post3.png" class="w-full mx-auto" alt="up_come_post3"/>
-                          </div>
-                          <div class="swiper-slide">
-                            <img src="assets/images/up_come_post4.png" class="w-full mx-auto" alt="up_come_post4"/>
-                          </div>
-                          <div class="swiper-slide">
-                            <img src="assets/images/up_come_post5.png" class="w-full mx-auto" alt="up_come_post5"/>
-                          </div>
-                          <div class="swiper-slide">
-                            <img src="assets/images/up_come_post6.png" class="w-full mx-auto" alt="up_come_post6"/>
-                          </div>
-                          <div class="swiper-slide">
-                            <img src="assets/images/up_come_post5.png" class="w-full mx-auto" alt="up_come_post5"/>
-                          </div>
-                          <div class="swiper-slide">
-                            <img src="assets/images/up_come_post1.png" class="w-full mx-auto" alt="up_come_post1"/>
-                          </div>
-                          <div class="swiper-slide">
-                            <img src="assets/images/up_come_post2.png" class="w-full mx-auto" alt="up_come_post2"/>
-                          </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="text-center">
-                    <button class="btn_secondary">View All Eevent</button>
-                </div>
-            </div>
-             <img src="assets/images/bg_upcome_event.png" class="absolute w-full h-full object-cover inset-0" alt="bg_upcome_event"/>
-        </div>
-    </section>
-    <section class="pb-12 lg:pb-14 xl:pb-16 2xl:pb-20">
-        <div class="warrper bg-[#1D1E10] py-5 sm:py-8 md:py-12 lg:py-14 xl:py-20 px-4 lg:px-5 xl:px-6 relative overflow-hidden">
-            <div class="text-center relative z-10">
-                <h2 class="text-white font-play_display max-w-2xl mx-auto mb-2.5 lg:mb-4 xl:mb-5">Become a Proud Member of <span class="text-primary font-play_display">Kratos Club</span> </h2>
-                <p class="text16 text-white font-normal max-w-[730px] mx-auto mb-3 lg:mb-5 xl:mb-7">At Kratos Club, we blend relaxation and recreation to create an enriching experience for you and your loved ones. From serene poolside evenings to exciting indoor activities, we have something for everyone.</p>
-                <button class="btn_primary">Explore Plans</button>
-            </div>
-            <img src="assets/images/left_waves.png" class="absolute left-0 top-0 max-w-52 md:max-w-64 xl:max-w-full" alt="left_waves"/>
-            <img src="assets/images/right_waves.png" class="absolute right-0 top-0 hidden xs:block max-w-52 h-full md:max-w-64 xl:max-w-full" alt="right_waves"/>
-        </div>
-    </section>
-    <section class="pb-12 lg:pb-14 xl:pb-16 2xl:pb-20">
-        <div class="warrper space-y-5 md:space-y-6 lg:space-y-8 xl:space-y-10">
-            <div class="text-center">
-                <h2 class="text-white">Moments to Cherish at Kratos Club</h2>
-            </div>
-            <div class="flex flex-wrap items-center -mx-2">
-                <div class="w-full xs:w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/5 xl:w-1/6 p-2">
-                    <img src="assets/images/moment1.png" class="mx-auto" alt="moment1"/>
-                </div>
-                <div class="w-full xs:w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/5 xl:w-1/6 p-2">
-                    <img src="assets/images/moment2.png" class="mx-auto" alt="moment2"/>
-                </div>
-                <div class="w-full xs:w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/5 xl:w-1/6 p-2">
-                    <img src="assets/images/moment3.png" class="mx-auto" alt="moment3"/>
-                </div>
-                <div class="w-full xs:w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/5 xl:w-1/6 p-2">
-                    <img src="assets/images/moment4.png" class="mx-auto" alt="moment4"/>
-                </div>
-                <div class="w-full xs:w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/5 xl:w-1/6 p-2">
-                    <img src="assets/images/moment5.png" class="mx-auto" alt="moment5"/>
-                </div>
-                <div class="w-full xs:w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/5 xl:w-1/6 p-2">
-                    <img src="assets/images/moment6.png" class="mx-auto" alt="moment6"/>
-                </div>
-            </div>
-            <div class="flex items-center justify-center space-x-3 md:space-x-5 xl:space-x-7">
-                <button class="btn_primary">View Gallery</button>
-                <button class="btn_primary">Visit Instagram</button>
-            </div>
-        </div>
-    </section>
-    <footer class="pt-12 lg:pt-14 xl:pt-16 2xl:pt-20">
-        <div class="warrper">
-            <div>
-                <a href="#">
-                    <img src="assets/images/logo.png" class="max-w-36 md:max-w-full mx-auto" alt="logo"/>
-                </a>
-            </div>
-            <div class="flex flex-wrap justify-center -mx-3.5 pt-10 lg:pt-14 xl:pt-16">
-                <div class="w-full xs:w-1/2 lg:w-1/3 p-3.5 relative h-auto">
-                    <div class="py-5 md:py-9 xl:py-10 px-6 border border-primary text-center relative h-full">
-                        <div class="absolute left-1/2 -translate-x-1/2 -top-8 lg:-top-10">
-                            <img src="assets/images/polygon.png" class="mx-auto w-12 md:w-14 lg:w-auto" alt="polygon"/>
-                            <span class="icon-call text-dark text-18 sm:text-20 md:text-24 lg:text-32 absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2"></span>
-                        </div>
-                        <div class="w-full mt-3">
-                            <span class="block text-white text18 font-medium">+91 93270 33000</span>
-                            <span class="block text-white text18 font-medium">+91 93280 33000</span>
-                        </div>                        
-                    </div>
-                </div>
-                <div class="w-full xs:w-1/2 lg:w-1/3 p-3.5 relative mt-5 xs:mt-0 h-auto">
-                    <div class="py-5 md:py-9 xl:py-10 px-6 border border-primary text-center relative h-full">
-                        <div class="absolute left-1/2 -translate-x-1/2 -top-8 lg:-top-10">
-                            <img src="assets/images/polygon.png" class="mx-auto w-12 md:w-14 lg:w-auto" alt="polygon"/>
-                            <span class="icon-sms_fill text-dark text-18 sm:text-20 md:text-24 lg:text-32 absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2"></span>
-                        </div>
-                        <div class="w-full mt-3">
-                            <span class="block text-white text18 font-medium">info@kratosclub.co.in</span>
-                        </div>                        
-                    </div>
-                </div>
-                <div class="w-full sm:w-1/2 lg:w-1/3 p-3.5 relative mt-5 lg:mt-0 h-auto">
-                    <div class="py-5 md:py-9 xl:py-10 px-6 border border-primary text-center relative h-full">
-                        <div class="absolute left-1/2 -translate-x-1/2 -top-8 lg:-top-10">
-                            <img src="assets/images/polygon.png" class="mx-auto w-12 md:w-14 lg:w-auto" alt="polygon"/>
-                            <span class="icon-location text-dark text-18 sm:text-20 md:text-24 lg:text-32 absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2"></span>
-                        </div>
-                        <div class="w-full mt-3">
-                            <span class="block text-white text18 font-medium capitalize">Nr. baghban circle, gaurav path road, pal, surat, gujarat - 394510</span>
-                        </div>                        
-                    </div>
-                </div>
-            </div>
-            <div class="text-center mt-2 md:mt-4 xl:mt-6 border-b border-[#606060] pb-3 md:pb-5 xl:pb-7">
-                <h2 class="text-white mb-2.5 md:mb-3 xl:mb-5">Request More Information</h2>
-                <button class="btn_primary">Contact Us</button>
-            </div>
-            <div class="flex flex-wrap sm:flex-nowrap items-center justify-center sm:justify-between py-3.5">
-                <span class="inline-block text-white text-14 font-normal">© 2024 All rights reserved</span>
-                <ul class="flex items-center space-x-6 md:space-x-8 lg:space-x-10 xl:space-x-12 p-3 text-white group font-normal text-14">
-                    <li>
-                        <a href="#" class="inline-block hover:text-primary anim">Terms</a>
-                    </li>
-                    <li>
-                        <a href="#" class="inline-block hover:text-primary anim">Privacy</a>
-                    </li>
-                    <li>
-                        <a href="#" class="inline-block hover:text-primary anim">Cookies</a>
+                        <a href="#" class="hover:text-primary anim">Contact Us</a>
                     </li>
                 </ul>
-                <div class="flex items-center space-x-1.5">
-                    <div class="gra_border">
-                        <div class="gra_border_bg">
-                            <span class="icon-instragram text-20 leading-none gra_text"></span>
-                        </div>
+                <img src="assets/images/big_favicon.png" class="absolute bottom-10 left-1/2 -translate-x-1/2 w-16 opacity-40" alt="big_favicon"/>
+            </div>
+        </div>
+        <div class="js-scroll">
+            <section class="relative pt-32 md:pt-36 lg:pt-44 xl:pt-52 2xl:pt-56">
+                <div class="warrper relative z-10">
+                    <div class="text-center">
+                        <span class="inline-block text18 font-medium text-primary mb-2.5 md:mb-3 lg:mb-4 xl:mb-5">Welcome to Kratos Club</span>
+                        <h1>Your Haven of <br class="hidden xl:block"> Relaxation and Recreation</h1>
+                        <img src="assets/images/line.png" class="mx-auto mt-3 md:mt-5 xl:mt-7" alt="line"/>
                     </div>
-                    <div class="gra_border">
-                        <div class="gra_border_bg">
-                            <span class="icon-facebook text-20 leading-none gra_text"></span>
-                        </div>
+                </div>
+                <div class="swiper mySwiper px-5 md:px-0 mt-8 lg:mt-10 xl:mt-12 pb-10 xl:pb-12 2xl:pb-14">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <img src="assets/images/banner1.png" alt="banner1"/>
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="assets/images/banner2.png" alt="banner2"/>
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="assets/images/banner3.png" alt="banner3"/>
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="assets/images/banner1.png" alt="banner1"/>
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="assets/images/banner2.png" alt="banner2"/>
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="assets/images/banner3.png" alt="banner3"/>
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="assets/images/banner1.png" alt="banner1"/>
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="assets/images/banner2.png" alt="banner2"/>
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="assets/images/banner3.png" alt="banner3"/>
+                      </div>
                     </div>
-                    <div class="gra_border">
-                        <div class="gra_border_bg">
-                            <span class="icon-youtube text-20 leading-none gra_text"></span>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <img src="assets/images/bg_effect.png" class="absolute w-full object-cover inset-0 top-11 -z-10" alt="bg_effect"/>
+            </section>
+            <section class="py-12 lg:py-14 xl:py-16 2xl:py-20">
+                <div class="warrper max-w-[1074px]">
+                    <div class="flex flex-wrap items-center justify-center -mx-3.5">
+                        <div class="w-full xs:w-1/2 sm:w-1/3 p-3.5">
+                            <div class="max-w-56 mx-auto text-center border-y border-primary pb-2.5 md:pb-5 xl:pb-7 pt-1.5 md:pt-2.5 xl:pt-3.5">
+                                <h2 class="text-primary mb-1.5 md:mb-2.5 xl:mb-3.5">2,543</h2>
+                                <span class="inline-block text18 text-white font-normal">Active Members</span>
+                            </div>
                         </div>
-                    </div>
-                    <div class="gra_border">
-                        <div class="gra_border_bg">
-                            <span class="icon-make_my_trip text-20 leading-none gra_text"></span>
+                        <div class="w-full xs:w-1/2 sm:w-1/3 p-3.5">
+                            <div class="max-w-56 mx-auto text-center border-y border-primary pb-2.5 md:pb-5 xl:pb-7 pt-1.5 md:pt-2.5 xl:pt-3.5">
+                                <h2 class="text-primary mb-1.5 md:mb-2.5 xl:mb-3.5">175+</h2>
+                                <span class="inline-block text18 text-white font-normal">Event & Challenges</span>
+                            </div>
                         </div>
-                    </div>
-                    <div class="gra_border">
-                        <div class="gra_border_bg">
-                            <span class="icon-book_my_show text-20 leading-none gra_text"></span>
+                        <div class="w-full xs:w-1/2 sm:w-1/3 p-3.5">
+                            <div class="max-w-56 mx-auto text-center border-y border-primary pb-2.5 md:pb-5 xl:pb-7 pt-1.5 md:pt-2.5 xl:pt-3.5">
+                                <h2 class="text-primary mb-1.5 md:mb-2.5 xl:mb-3.5">15+</h2>
+                                <span class="inline-block text18 text-white font-normal">Years Experience</span>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
+            <section class="pb-12 lg:pb-14 xl:pb-16 2xl:pb-20">
+                <div class="warrper relative overflow-hidden">
+                    <div class="gradient py-4 md:py-7 lg:py-9 xl:py-11 px-6 sm:px-8 md:px-10 lg:px-12 xl:px-14 relative">
+                        <div class="flex flex-wrap items-center justify-between relative z-10">
+                            <div class="mb-3 lg:mb-0">
+                                <h3 class="font-play_display mb-2.5 md:mb-3 lg:mb-4 xl:mb-5">Your Kratos Club Journey Awaits!</h3>
+                                <p class="text16 text-dark font-normal max-w-[605px]">Experience a perfect blend of relaxation, recreation, and community at Kratos Club. Discover activities and amenities that elevate your lifestyle</p>
+                            </div>
+                            <button class="btn_secondary">Join Now</button>
+                        </div>
+                        <img src="assets/images/right_pettern.png" class="absolute hidden xs:block h-full right-0 inset-y-0 object-cover" alt="right_pettern"/>
+                    </div>
+                </div>
+            </section>
+            <section class="pb-12 lg:pb-14 xl:pb-16 2xl:pb-20">
+                <div class="warrper max-w-[1302px]">
+                    <div class="text-center">
+                        <h2 class="text-white mb-1.5 md:mb-2.5">Exclusive Club Highlights</h2>
+                        <p class="text-white text16 font-normal max-w-[730px] mx-auto capitalize">At Kratos Club, we blend relaxation and recreation to create an enriching experience for you and your loved ones. From serene poolside evenings to exciting indoor activities, we have something for everyone.</p>
+                    </div>
+                    <div class="pt-7 md:pt-12 lg:pt-20 xl:pt-24">
+                        <div class="flex flex-wrap -mx-2.5 lg:-mx-3.5">
+                            <div class="w-full xs:w-1/2 lg:w-1/3 p-2.5 lg:p-3.5">
+                                <div class="relative overflow-hidden">
+                                    <img src="assets/images/highlight1.png" class="w-full" alt="highlight1"/>
+                                    <div class="bg-black/30 py-2.5 lg:py-3 xl:py-4 px-3 lg:px-4 xl:px-5 w-full absolute bottom-0 flex items-center justify-between">
+                                        <h4 class="text18 font-medium text-white">Exclusive Club Highlights</h4>
+                                        <div class="w-6 lg:w-8 h-6 lg:h-8 rounded-full bg-primary flex items-center justify-center">
+                                            <span class="icon-right text-16 lg:text-20 text-dark"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-full xs:w-1/2 lg:w-1/3 p-2.5 lg:p-3.5 mt-0 lg:-mt-16">
+                                <div class="relative overflow-hidden">
+                                    <img src="assets/images/highlight2.png" class="w-full" alt="highlight2"/>
+                                    <div class="bg-black/30 py-2.5 lg:py-3 xl:py-4 px-3 lg:px-4 xl:px-5 w-full absolute bottom-0 flex items-center justify-between">
+                                        <h4 class="text18 font-medium text-white">Indoor Games</h4>
+                                        <div class="w-6 lg:w-8 h-6 lg:h-8 rounded-full bg-primary flex items-center justify-center">
+                                            <span class="icon-right text-16 lg:text-20 text-dark"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-full xs:w-1/2 lg:w-1/3 p-2.5 lg:p-3.5">
+                                <div class="relative overflow-hidden">
+                                    <img src="assets/images/highlight3.png" class="w-full" alt="highlight3"/>
+                                    <div class="bg-black/30 py-2.5 lg:py-3 xl:py-4 px-3 lg:px-4 xl:px-5 w-full absolute bottom-0 flex items-center justify-between">
+                                        <h4 class="text18 font-medium text-white">Jacuzzi Delight</h4>
+                                        <div class="w-6 lg:w-8 h-6 lg:h-8 rounded-full bg-primary flex items-center justify-center">
+                                            <span class="icon-right text-16 lg:text-20 text-dark"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-full xs:w-1/2 lg:w-1/3 p-2.5 lg:p-3.5">
+                                <div class="relative overflow-hidden">
+                                    <img src="assets/images/highlight4.png" class="w-full" alt="highlight4"/>
+                                    <div class="bg-black/30 py-2.5 lg:py-3 xl:py-4 px-3 lg:px-4 xl:px-5 w-full absolute bottom-0 flex items-center justify-between">
+                                        <h4 class="text18 font-medium text-white">Yoga for Mind</h4>
+                                        <div class="w-6 lg:w-8 h-6 lg:h-8 rounded-full bg-primary flex items-center justify-center">
+                                            <span class="icon-right text-16 lg:text-20 text-dark"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-full xs:w-1/2 lg:w-1/3 p-2.5 lg:p-3.5 mt-0 lg:-mt-16">
+                                <div class="relative overflow-hidden gradient py-5 lg:py-11 h-full flex lg:h-auto px-3 lg:px-5">
+                                    <div class="space-y-5 text-center relative z-10 m-auto">
+                                        <img src="assets/images/card_logo.png" class="mx-auto" alt="card_logo"/>
+                                        <h3 class="text-center font-play_display">Find Exactly <br class="hidden xl:block"> What You're Looking  For</h3>
+                                        <button class="btn_secondary">View All</button>
+                                    </div>
+                                    <img src="assets/images/card_inner_effect.png" class="w-full h-full absolute inset-0" alt="card_inner_effect"/>
+                                </div>
+                            </div>
+                            <div class="w-full xs:w-1/2 lg:w-1/3 p-2.5 lg:p-3.5">
+                                <div class="relative overflow-hidden">
+                                    <img src="assets/images/highlight5.png" class="w-full" alt="highlight5"/>
+                                    <div class="bg-black/30 py-2.5 lg:py-3 xl:py-4 px-3 lg:px-4 xl:px-5 w-full absolute bottom-0 flex items-center justify-between">
+                                        <h4 class="text18 font-medium text-white">Enjoy Zumba and Dance</h4>
+                                        <div class="w-6 lg:w-8 h-6 lg:h-8 rounded-full bg-primary flex items-center justify-center">
+                                            <span class="icon-right text-16 lg:text-20 text-dark"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="pb-12 lg:pb-14 xl:pb-16 2xl:pb-20 relative">
+                <h2 class="text-center text-white mb-6 lg:mb-10 xl:mb-12">Upcoming Events</h2>
+                <div class="w-full relative py-10 md:py-12 lg:py-14 xl:py-20">
+                    <div class="warrper max-w-[1497px] relative z-10 space-y-5 md:space-y-8 lg:space-y-10 xl:space-y-12">
+                        <div class="bg-dark px-5">
+                            <div class="swiper mySwiper2 py-5 xl:py-6">
+                                <div class="swiper-wrapper">
+                                  <div class="swiper-slide">
+                                    <img src="assets/images/up_come_post1.png" class="w-full mx-auto" alt="up_come_post1"/>
+                                  </div>
+                                  <div class="swiper-slide">
+                                    <img src="assets/images/up_come_post2.png" class="w-full mx-auto" alt="up_come_post2"/>
+                                  </div>
+                                  <div class="swiper-slide">
+                                    <img src="assets/images/up_come_post3.png" class="w-full mx-auto" alt="up_come_post3"/>
+                                  </div>
+                                  <div class="swiper-slide">
+                                    <img src="assets/images/up_come_post4.png" class="w-full mx-auto" alt="up_come_post4"/>
+                                  </div>
+                                  <div class="swiper-slide">
+                                    <img src="assets/images/up_come_post5.png" class="w-full mx-auto" alt="up_come_post5"/>
+                                  </div>
+                                  <div class="swiper-slide">
+                                    <img src="assets/images/up_come_post6.png" class="w-full mx-auto" alt="up_come_post6"/>
+                                  </div>
+                                  <div class="swiper-slide">
+                                    <img src="assets/images/up_come_post5.png" class="w-full mx-auto" alt="up_come_post5"/>
+                                  </div>
+                                  <div class="swiper-slide">
+                                    <img src="assets/images/up_come_post1.png" class="w-full mx-auto" alt="up_come_post1"/>
+                                  </div>
+                                  <div class="swiper-slide">
+                                    <img src="assets/images/up_come_post2.png" class="w-full mx-auto" alt="up_come_post2"/>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <button class="btn_secondary">View All Eevent</button>
+                        </div>
+                    </div>
+                     <img src="assets/images/bg_upcome_event.png" class="absolute w-full h-full object-cover inset-0" alt="bg_upcome_event"/>
+                </div>
+            </section>
+            <section class="pb-12 lg:pb-14 xl:pb-16 2xl:pb-20">
+                <div class="warrper bg-[#1D1E10] py-5 sm:py-8 md:py-12 lg:py-14 xl:py-20 px-4 lg:px-5 xl:px-6 relative overflow-hidden">
+                    <div class="text-center relative z-10">
+                        <h2 class="text-white font-play_display max-w-2xl mx-auto mb-2.5 lg:mb-4 xl:mb-5">Become a Proud Member of <span class="text-primary font-play_display">Kratos Club</span> </h2>
+                        <p class="text16 text-white font-normal max-w-[730px] mx-auto mb-3 lg:mb-5 xl:mb-7">At Kratos Club, we blend relaxation and recreation to create an enriching experience for you and your loved ones. From serene poolside evenings to exciting indoor activities, we have something for everyone.</p>
+                        <button class="btn_primary">Explore Plans</button>
+                    </div>
+                    <img src="assets/images/left_waves.png" class="absolute left-0 top-0 max-w-52 md:max-w-64 xl:max-w-full" alt="left_waves"/>
+                    <img src="assets/images/right_waves.png" class="absolute right-0 top-0 hidden xs:block max-w-52 h-full md:max-w-64 xl:max-w-full" alt="right_waves"/>
+                </div>
+            </section>
+            <section class="pb-12 lg:pb-14 xl:pb-16 2xl:pb-20">
+                <div class="warrper space-y-5 md:space-y-6 lg:space-y-8 xl:space-y-10">
+                    <div class="text-center">
+                        <h2 class="text-white">Moments to Cherish at Kratos Club</h2>
+                    </div>
+                    <div class="flex flex-wrap items-center -mx-2">
+                        <div class="w-full xs:w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/5 xl:w-1/6 p-2">
+                            <img src="assets/images/moment1.png" class="mx-auto" alt="moment1"/>
+                        </div>
+                        <div class="w-full xs:w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/5 xl:w-1/6 p-2">
+                            <img src="assets/images/moment2.png" class="mx-auto" alt="moment2"/>
+                        </div>
+                        <div class="w-full xs:w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/5 xl:w-1/6 p-2">
+                            <img src="assets/images/moment3.png" class="mx-auto" alt="moment3"/>
+                        </div>
+                        <div class="w-full xs:w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/5 xl:w-1/6 p-2">
+                            <img src="assets/images/moment4.png" class="mx-auto" alt="moment4"/>
+                        </div>
+                        <div class="w-full xs:w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/5 xl:w-1/6 p-2">
+                            <img src="assets/images/moment5.png" class="mx-auto" alt="moment5"/>
+                        </div>
+                        <div class="w-full xs:w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/5 xl:w-1/6 p-2">
+                            <img src="assets/images/moment6.png" class="mx-auto" alt="moment6"/>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-center space-x-3 md:space-x-5 xl:space-x-7">
+                        <button class="btn_primary">View Gallery</button>
+                        <button class="btn_primary">Visit Instagram</button>
+                    </div>
+                </div>
+            </section>
+            <footer class="pt-12 lg:pt-14 xl:pt-16 2xl:pt-20">
+                <div class="warrper">
+                    <div>
+                        <a href="#">
+                            <img src="assets/images/logo.png" class="max-w-36 md:max-w-full mx-auto" alt="logo"/>
+                        </a>
+                    </div>
+                    <div class="flex flex-wrap justify-center -mx-3.5 pt-10 lg:pt-14 xl:pt-16">
+                        <div class="w-full xs:w-1/2 lg:w-1/3 p-3.5 relative h-auto">
+                            <div class="py-5 md:py-9 xl:py-10 px-6 border border-primary text-center relative h-full">
+                                <div class="absolute left-1/2 -translate-x-1/2 -top-8 lg:-top-10">
+                                    <img src="assets/images/polygon.png" class="mx-auto w-12 md:w-14 lg:w-auto" alt="polygon"/>
+                                    <span class="icon-call text-dark text-18 sm:text-20 md:text-24 lg:text-32 absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2"></span>
+                                </div>
+                                <div class="w-full mt-3">
+                                    <span class="block text-white text18 font-medium">+91 93270 33000</span>
+                                    <span class="block text-white text18 font-medium">+91 93280 33000</span>
+                                </div>                        
+                            </div>
+                        </div>
+                        <div class="w-full xs:w-1/2 lg:w-1/3 p-3.5 relative mt-5 xs:mt-0 h-auto">
+                            <div class="py-5 md:py-9 xl:py-10 px-6 border border-primary text-center relative h-full">
+                                <div class="absolute left-1/2 -translate-x-1/2 -top-8 lg:-top-10">
+                                    <img src="assets/images/polygon.png" class="mx-auto w-12 md:w-14 lg:w-auto" alt="polygon"/>
+                                    <span class="icon-sms_fill text-dark text-18 sm:text-20 md:text-24 lg:text-32 absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2"></span>
+                                </div>
+                                <div class="w-full mt-3">
+                                    <span class="block text-white text18 font-medium">info@kratosclub.co.in</span>
+                                </div>                        
+                            </div>
+                        </div>
+                        <div class="w-full sm:w-1/2 lg:w-1/3 p-3.5 relative mt-5 lg:mt-0 h-auto">
+                            <div class="py-5 md:py-9 xl:py-10 px-6 border border-primary text-center relative h-full">
+                                <div class="absolute left-1/2 -translate-x-1/2 -top-8 lg:-top-10">
+                                    <img src="assets/images/polygon.png" class="mx-auto w-12 md:w-14 lg:w-auto" alt="polygon"/>
+                                    <span class="icon-location text-dark text-18 sm:text-20 md:text-24 lg:text-32 absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2"></span>
+                                </div>
+                                <div class="w-full mt-3">
+                                    <span class="block text-white text18 font-medium capitalize">Nr. baghban circle, gaurav path road, pal, surat, gujarat - 394510</span>
+                                </div>                        
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center mt-2 md:mt-4 xl:mt-6 border-b border-[#606060] pb-3 md:pb-5 xl:pb-7">
+                        <h2 class="text-white mb-2.5 md:mb-3 xl:mb-5">Request More Information</h2>
+                        <button class="btn_primary">Contact Us</button>
+                    </div>
+                    <div class="flex flex-wrap sm:flex-nowrap items-center justify-center sm:justify-between py-3.5">
+                        <span class="inline-block text-white text-14 font-normal">© 2024 All rights reserved</span>
+                        <ul class="flex items-center space-x-6 md:space-x-8 lg:space-x-10 xl:space-x-12 p-3 text-white group font-normal text-14">
+                            <li>
+                                <a href="#" class="inline-block hover:text-primary anim">Terms</a>
+                            </li>
+                            <li>
+                                <a href="#" class="inline-block hover:text-primary anim">Privacy</a>
+                            </li>
+                            <li>
+                                <a href="#" class="inline-block hover:text-primary anim">Cookies</a>
+                            </li>
+                        </ul>
+                        <div class="flex items-center space-x-1.5">
+                            <div class="gra_border">
+                                <div class="gra_border_bg">
+                                    <span class="icon-instragram text-20 leading-none gra_text"></span>
+                                </div>
+                            </div>
+                            <div class="gra_border">
+                                <div class="gra_border_bg">
+                                    <span class="icon-facebook text-20 leading-none gra_text"></span>
+                                </div>
+                            </div>
+                            <div class="gra_border">
+                                <div class="gra_border_bg">
+                                    <span class="icon-youtube text-20 leading-none gra_text"></span>
+                                </div>
+                            </div>
+                            <div class="gra_border">
+                                <div class="gra_border_bg">
+                                    <span class="icon-make_my_trip text-20 leading-none gra_text"></span>
+                                </div>
+                            </div>
+                            <div class="gra_border">
+                                <div class="gra_border_bg">
+                                    <span class="icon-book_my_show text-20 leading-none gra_text"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
         </div>
-    </footer>
+    </div>
 </body>
+<script src="assets/js/script.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script>
 var swiper = new Swiper('.mySwiper', {
