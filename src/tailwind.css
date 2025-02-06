@@ -3,14 +3,14 @@
 @tailwind base;
 @tailwind components;
 *{@apply font-ubuntu;}
-body{@apply bg-dark;}
+body{@apply bg-dark capitalize;}
 .warrper{@apply w-full max-w-[1520px] px-5 mx-auto;}
 .h1,h1{@apply text-32  md:text-38 lg:text-48 xl:text-52 2xl:text-64 font-bold text-white font-play_display;}
-.h2,h2{@apply text-28 lg:text-34 xl:text-40 2xl:text-48 font-bold text-white font-play_display;}
+.h2,h2{@apply text-24 lg:text-28 xl:text-36 2xl:text-42 font-bold text-white font-play_display;}
 .h3,h3{@apply text-20 lg:text-24 xl:text-30 2xl:text-36 font-bold text-dark;}
+.h4,h4{@apply text-18 md:text-20 lg:text-24 2xl:text-28 font-medium font-play_display text-white;}
 .text16{@apply text-12 md:text-14 2xl:text-16;}
 .text18{@apply text-14 lg:text-16 2xl:text-18;}
-.text28{@apply text-18 md:text-20 lg:text-24 2xl:text-28;}
 .btn_primary{@apply gradient hover:opacity-65 hover:scale-105 hover:shadow-xl anim text-14 xl:text-16 font-bold w-full max-w-36 lg:max-w-52 py-2.5 lg:py-3.5 xl:py-4 px-3.5 text-black cursor-pointer inline-block;}
 .btn_secondary{@apply bg-dark hover:opacity-65 hover:scale-105 hover:shadow-xl anim text-14 xl:text-16 font-bold w-full max-w-36 lg:max-w-52 py-2.5 lg:py-3.5 xl:py-4 px-3.5 text-white cursor-pointer inline-block;}
 .anim{@apply transition-all duration-300;}
@@ -67,23 +67,14 @@ body{@apply bg-dark;}
   .mySwiper .swiper-slide {
     position: relative;
     width: var(--swiper-width);
-    /* opacity: .5; */
     transform: scale(.84);
     transition: all .3s ease-in-out;
     overflow: hidden;
-    border-radius: 0.4285rem;
   }
   
   .mySwiper .swiper-slide {
     transform: scale(.84) translateZ(0);
   }
-  .swiper-pagination-bullet{
-    border-radius: 0;
-    background-color: #3D3D3D;
-  }    
-  .swiper-pagination-bullet-active{
-    background-color: #D7B56D;
-  }  
   .swiper-slide.swiper-slide-active {  
     transform: scale(1) !important;
     opacity: 1 !important;
@@ -123,11 +114,11 @@ body{@apply bg-dark;}
   }
 
   /* tab css  */
-.tab-main.active {
+.tab_main.active {
   display: block;
   transform: scale(1);
 }
-.tab-main{
+.tab_main{
     transition: 0.5s all;
     transform:scale(0);
 }
@@ -146,6 +137,7 @@ button.active {
   grid-auto-rows: 290px;
   grid-auto-flow: dense;
   grid-gap: 14px;
+  overflow: hidden;
 }
 .container_grid div {
   display: flex;
@@ -227,5 +219,9 @@ button.active {
 } */
 .box_hover .hover_gradient:hover{
   background: linear-gradient(to right, #BF7B0B, #CE9823, #EDBE54, #F7D073, #D6A139, #C07F09);
+}
+
+.mySwiper3 .swiper-slide{
+  height: auto !important;
 }
 @tailwind utilities;
