@@ -1418,10 +1418,6 @@ button.active {
   height: 13rem;
 }
 
-.h-56{
-  height: 14rem;
-}
-
 .h-6{
   height: 1.5rem;
 }
@@ -1452,10 +1448,6 @@ button.active {
 
 .h-screen{
   height: 100vh;
-}
-
-.h-48{
-  height: 12rem;
 }
 
 .w-1\/2{
