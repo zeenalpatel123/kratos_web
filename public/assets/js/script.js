@@ -89,6 +89,91 @@ var swiper = new Swiper(".mySwiper2", {
     },
 });
 // swiper silder js 2 end 
+// swiper silder js 3 start 
+var swiper = new Swiper(".mySwiper3", {
+    grabCursor: false,
+    direction: "vertical",
+    slidesPerView: 1,
+    spaceBetween: 0,
+    // autoplay: {
+    //     delay: 3000,
+    //     disableOnInteraction: true
+    // },
+    // loop:true,
+    autoHeight: true,
+    mousewheel: true,
+   navigation: {
+     nextEl: ".swiper-button-next",
+     prevEl: ".swiper-button-prev",
+   },
+   pagination: {
+     el: ".swiper-pagination",
+     clickable: true,
+   },
+});
+// swiper silder js 3 end 
+// swiper silder js 4 start
+var swiper = new Swiper(".swiper-container", {
+    slidesPerView: "auto",
+	loop: true,
+	centeredSlides: true,
+	spaceBetween: 20,
+	pagination: {
+		el: ".swiper-pagination",
+		clickable: true
+	},
+	speed: 4000,
+        autoplay: {
+            delay: 0,
+            enabled: true,
+	    }
+});
+// swiper silder js 4 end 
+// swiper silder js 5 start
+var swiper = new Swiper(".swiper5", {
+    effect: "coverflow",
+    loop: true,
+    grabCursor: true,
+    centeredSlides: true,
+    coverflowEffect: {
+      rotate: 0,
+      stretch: 0,
+      depth: 100,
+      modifier: 3,
+      slideShadows: true
+    },
+    keyboard: {
+      enabled: true
+    },
+    loop: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true
+    },
+    breakpoints: {
+      640: {
+        slidesPerView: 2,
+        spaceBetween: 10,
+  
+      },
+      768: {
+        slidesPerView: 1,
+        spaceBetween: 10,
+  
+      },
+      1024: {
+        slidesPerView: 2,
+        spaceBetween: 10,
+  
+      },
+      1560: {
+        slidesPerView: 3,
+        spaceBetween: 10,
+  
+      }
+    }
+  });
+// swiper silder js 5 end
 // onscroll js start 
 window.onscroll = function () {
     var currentScrollPos = window.pageYOffset;

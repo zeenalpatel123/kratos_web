@@ -224,4 +224,6 @@ button.active {
 .mySwiper3 .swiper-slide{
   height: auto !important;
 }
+.mySwiper3 .swiper-slide .v_slider{@apply scale-90 opacity-50 origin-top;}
+.mySwiper3 .swiper-slide.swiper-slide-active .v_slider{@apply scale-100 opacity-100 origin-top;}
 @tailwind utilities;

@@ -1110,6 +1110,22 @@ button.active {
   height: auto !important;
 }
 
+.mySwiper3 .swiper-slide .v_slider{
+  transform-origin: top;
+  --tw-scale-x: .9;
+  --tw-scale-y: .9;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  opacity: 0.5;
+}
+
+.mySwiper3 .swiper-slide.swiper-slide-active .v_slider{
+  transform-origin: top;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  opacity: 1;
+}
+
 .visible{
   visibility: visible;
 }
@@ -1525,6 +1541,10 @@ button.active {
 
 .max-w-56{
   max-width: 14rem;
+}
+
+.max-w-64{
+  max-width: 16rem;
 }
 
 .max-w-80{
@@ -1954,6 +1974,10 @@ button.active {
 
 .pb-12{
   padding-bottom: 3rem;
+}
+
+.pb-16{
+  padding-bottom: 4rem;
 }
 
 .pb-2\.5{
