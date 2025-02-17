@@ -8,11 +8,10 @@
     <link rel="stylesheet" href="assets/css/icomoon.css"/>
     <link rel="stylesheet" href="assets/css/style.css"/>
 </head>
-
 <body>
     <div class="my_app">
         <div class="fixed w-full inset-x-0 top-0 z-50 anim" id="main_header">
-            <div class="py-2 px-3 gradient hidden lg:block">
+            <div class="py-1.5 px-3 gradient hidden lg:block">
                 <div class="warrper">
                     <div class="flex flex-wrap items-center justify-between">
                         <div class="flex flex-wrap sm:flex-nowrap items-center">
@@ -45,33 +44,65 @@
                     </div>
                 </div>
             </div>
-            <header class="py-5">
+            <header>
                 <div class="warrper flex items-center justify-between">
-                    <div class="flex items-center justify-between w-full lg:w-auto">
+                    <div class="flex items-center justify-between w-full lg:w-auto py-3.5">
                         <a href="#">
-                            <img src="assets/images/logo.png" class="mx-auto max-w-36 md:max-w-44 lg:max-w-52 xl:max-w-full" alt="logo"/>
+                            <img src="assets/images/logo.png" class="mx-auto max-w-32 md:max-w-36 lg:max-w-40 xl:max-w-[180px]" alt="logo"/>
                         </a>
-                        <span class="icon-menu text-primary text-24 block lg:hidden" onclick="toggleActive('#open','-translate-x-full')">
+                        <span class="icon-menu text-primary text-24 block lg:hidden" onclick="toggleActive('#open','-translate-x-full');">
                         </span>
                     </div>
-                    <ul class="hidden lg:flex items-center space-x-5 xl:space-x-10 2xl:space-x-14">
+                    <ul class="hidden lg:flex items-center space-x-10 xl:space-x-12 2xl:space-x-14">
                         <li>
-                            <a href="#" class="inline-block text-white text-18 font-medium hover:text-primary anim">Home</a>
+                            <a href="#" class="inline-block text-white text-16 2xl:text-18 font-medium hover:text-primary anim py-4">Home</a>
+                        </li>
+                        <li class="relative group anim">
+                            <div class="flex items-center space-x-1.5 py-4">
+                                <a href="#" class="inline-block text-white text-16 2xl:text-18 font-medium group-hover:text-primary anim">experience</a>
+                                <span class="icon-down text-[12px] text-white group-hover:text-primary anim"></span>
+                            </div>
+                            <div class="absolute min-w-[200px] top-full left-0 anim invisible group-hover:visible pt-2">
+                                <ul class="w-full border-t-2 border-primary bg-m5">
+                                    <li>
+                                        <a href="" class="block text-white font-medium hover:bg-dark text-12 xl:text-14 p-3">Activities</a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="block text-white font-medium hover:bg-dark text-12 xl:text-14 p-3">amenities</a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="block text-white font-medium hover:bg-dark text-12 xl:text-14 p-3">other facilities</a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="block text-white font-medium hover:bg-dark text-12 xl:text-14 p-3">Premium Services</a>
+                                    </li>
+                                </ul> 
+                            </div>
                         </li>
                         <li>
-                            <a href="#" class="inline-block text-white text-18 font-medium hover:text-primary anim">experience</a>
+                            <a href="#" class="inline-block text-white text-16 2xl:text-18 font-medium hover:text-primary anim py-4">membership</a>
+                        </li>
+                        <li class="relative group anim">
+                            <div class="flex items-center space-x-1.5 py-4">
+                                <a href="#" class="inline-block text-white text-16 2xl:text-18 font-medium group-hover:text-primary anim">Gallery</a>
+                                <span class="icon-down text-[12px] text-white group-hover:text-primary anim"></span>
+                            </div>
+                            <div class="absolute min-w-[200px] top-full left-1/2 -translate-x-1/2 anim invisible group-hover:visible pt-2">
+                                <ul class="w-full border-t-2 border-primary bg-m5">
+                                    <li>
+                                        <a href="" class="block text-white font-medium hover:bg-dark text-12 xl:text-14 p-3">Photos</a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="block text-white font-medium hover:bg-dark text-12 xl:text-14 p-3">Videos</a>
+                                    </li>
+                                </ul> 
+                            </div>
                         </li>
                         <li>
-                            <a href="#" class="inline-block text-white text-18 font-medium hover:text-primary anim">membership</a>
+                            <a href="#" class="inline-block text-white text-16 2xl:text-18 font-medium hover:text-primary anim py-4">announcement</a>
                         </li>
                         <li>
-                            <a href="#" class="inline-block text-white text-18 font-medium hover:text-primary anim">Gallery</a>
-                        </li>
-                        <li>
-                            <a href="#" class="inline-block text-white text-18 font-medium hover:text-primary anim">announcement</a>
-                        </li>
-                        <li>
-                            <a href="#" class="inline-block text-white text-18 font-medium hover:text-primary anim">Contact Us</a>
+                            <a href="#" class="inline-block text-white text-16 2xl:text-18 font-medium hover:text-primary anim py-4">Contact Us</a>
                         </li>
                     </ul>
                 </div>
@@ -83,21 +114,53 @@
                     <a href="#">
                         <img src="assets/images/logo.png" class="max-w-36 xs:max-w-44" alt="logo"/>
                     </a>
-                    <span class="icon-close text-primary text-24" onclick="toggleActive('#open','-translate-x-full')">
+                    <span class="icon-close text-primary text-24" onclick="toggleActive('#open','-translate-x-full');">
                     </span>
                 </div>
-                <ul class="space-y-3.5 p-5 pt-10 text-22 inline-block text-white font-normal italic w-full h-[calc(100%-90px)] text-center overflow-y-auto">
+                <ul class="space-y-3.5 p-5 pt-10 text-22 inline-block text-white font-normal italic w-full h-[calc(100%-90px)] overflow-y-auto">
                     <li>
-                        <a href="#" class="hover:text-primary  anim">Home</a>
+                        <a href="#" class="hover:text-primary anim">Home</a>
                     </li>
                     <li>
-                        <a href="#" class="hover:text-primary anim">experience</a>
+                        <div class="flex items-center justify-between space-x-4 menu_title">
+                            <a href="#" class="inline-block text-white font-medium group-hover:text-primary anim">experience</a>
+                            <div class="w-4 h-4 bg-primary rounded-full flex items-center justify-center">
+                                <span class="icon-add text-[12px] text-dark group-hover:text-primary anim block"></span>
+                            </div>
+                        </div>
+                        <ul class="w-full border-t-2 border-primary bg-primary rounded mt-2.5 p-2 sm:p-3 space-y-1.5 sm:space-y-2.5 menu_content">
+                            <li>
+                                <a href="" class="block text-dark font-medium text-16">Activities</a>
+                            </li>
+                            <li>
+                                <a href="" class="block text-dark font-medium text-16">amenities</a>
+                            </li>
+                            <li>
+                                <a href="" class="block text-dark font-medium text-16">other facilities</a>
+                            </li>
+                            <li>
+                                <a href="" class="block text-dark font-medium text-16">Premium Services</a>
+                            </li>
+                        </ul> 
                     </li>
                     <li>
                         <a href="#" class="hover:text-primary anim">membership</a>
                     </li>
                     <li>
-                        <a href="#" class="hover:text-primary anim">Gallery</a>
+                        <div class="flex items-center justify-between space-x-4 menu_title">
+                            <a href="#" class="inline-block text-white font-medium group-hover:text-primary anim">Gallery</a>
+                            <div class="w-4 h-4 bg-primary rounded-full flex items-center justify-center">
+                                <span class="icon-add text-[12px] text-dark group-hover:text-primary anim block"></span>
+                            </div>
+                        </div>
+                        <ul class="w-full border-t-2 border-primary bg-primary rounded mt-2.5 p-2 sm:p-3 space-y-1.5 sm:space-y-2.5 menu_content">
+                            <li>
+                                <a href="" class="block text-dark font-medium text-16">Photos</a>
+                            </li>
+                            <li>
+                                <a href="" class="block text-dark font-medium text-16">Videos</a>
+                            </li>
+                        </ul> 
                     </li>
                     <li>
                         <a href="#" class="hover:text-primary anim">announcement</a>
@@ -109,6 +172,7 @@
                 <img src="assets/images/big_favicon.png" class="absolute bottom-10 left-1/2 -translate-x-1/2 w-16 opacity-40" alt="big_favicon"/>
             </div>
         </div>
+        
         <div id="smooth-wrapper">
             <div id="smooth-content">
                 <section class="relative pt-32 md:pt-36 lg:pt-44 xl:pt-52 2xl:pt-56">
@@ -122,26 +186,28 @@
                     <div class="swiper mySwiper px-5 md:px-0 mt-8 lg:mt-10 xl:mt-12 pb-10 xl:pb-12 2xl:pb-14">
                         <div class="swiper-wrapper">
                           <div class="swiper-slide">
-                            <img src="assets/images/banner1.png" alt="banner1"/>
+                            <img src="assets/images/banner1.png" class="w-full h-full object-cover" alt="banner1"/>
                           </div>
                           <div class="swiper-slide">
-                            <img src="assets/images/banner2.png" alt="banner2"/>
+                            <img src="assets/images/banner3.png" class="w-full h-full object-cover" alt="banner2"/>
                           </div>
                           <div class="swiper-slide">
-                            <img src="assets/images/banner3.png" alt="banner3"/>
+                            <img src="assets/images/banner2.png" class="w-full h-full object-cover" alt="banner3"/>
                           </div>
                           <div class="swiper-slide">
-                            <img src="assets/images/banner2.png" alt="banner2"/>
+                            <img src="assets/images/banner3.png" class="w-full h-full object-cover" alt="banner2"/>
                           </div>
                           <div class="swiper-slide">
-                            <img src="assets/images/banner3.png" alt="banner2"/>
+                            <img src="assets/images/banner2.png" class="w-full h-full object-cover" alt="banner2"/>
                           </div>
                         </div>
                     </div>
-                    <div class="text-center">
-                        <button class="btn_primary">Book Now</button>
+                    <div class="relative max-w-36 md:max-w-52 lg:max-w-60 xl:max-w-64 group anim mx-auto z-10">
+                        <button class="relative block w-full py-2 sm:py-2.5 md:py-3.5 text-dark group-hover:text-primary capitalize text16 font-bold text-center mx-auto z-10">Book Now</button>
+                        <img src="assets/images/btn_defult.png" class="absolute inset-0 w-full h-full opacity-100 group-hover:opacity-0 anim -z-10" alt="btn_defult"/>
+                        <img src="assets/images/btn_hover.png" class="absolute inset-0 w-full h-full opacity-0 group-hover:opacity-100 anim -z-10" alt="btn_hover"/>
                     </div>
-                    <img src="assets/images/bg_effect.png" class="absolute w-full object-cover inset-0 top-11 -z-10" alt="bg_effect"/>
+                    <img src="assets/images/bg_effect.png" class="absolute w-full object-cover inset-0 top-11 -z-10 hidden md:block" alt="bg_effect"/>
                 </section>
                 <section class="py-10 md:py-12 lg:py-14 xl:py-16 2xl:py-20">
                     <div class="warrper max-w-[1074px]">
@@ -172,18 +238,15 @@
                 </section>
                 <section class="pb-10 md:pb-12 lg:pb-14 xl:pb-16 2xl:pb-20">
                     <div class="warrper max-w-[1302px] space-y-6 md:space-y-8 lg:space-y-10 2xl:space-y-12">
-                        <div class="flex items-center justify-between">
-                            <h2 class="text-white mb-1.5 md:mb-2.5">Why Choose Kratos?</h2>
-                            <button class="btn_primary">Explore Plans</button>
-                        </div>
-                        <div class="swiper mySwiper3 pb-16">
+                        <h2 class="text-white mb-1.5 md:mb-2.5">Why Choose Kratos?</h2>
+                        <div class="swiper mySwiper3 pb-8 lg:pb-10 xl:pb-14 2xl:pb-16">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
                                 <div class="v_slider flex flex-wrap -mx-3.5">
-                                    <div class="w-1/2 p-3.5">
+                                    <div class="w-full md:w-1/2 p-3.5">
                                         <img src="assets/images/why_kratos1.png" alt="why_kratos1"/>
                                     </div>
-                                    <div class="w-1/2 p-3.5">
+                                    <div class="w-full md:w-1/2 p-3.5">
                                         <div class="space-y-1.5 md:space-y-2.5 2xl:space-y-4">
                                             <h4 class="text28 text-white font-medium font-play_display">Elite Networking Opportunities</h4>
                                             <p class="text16 text-white font-normal">Connect with like-minded professionals and individuals from various industries. Whether you're looking to build business relationships, find inspiration, or just enjoy meaningful conversations, Kratos is the place to be.</p>
@@ -193,10 +256,10 @@
                                 </div>
                                 <div class="swiper-slide">
                                 <div class="v_slider flex flex-wrap -mx-3.5">
-                                    <div class="w-1/2 p-3.5">
+                                    <div class="w-full md:w-1/2 p-3.5">
                                         <img src="assets/images/why_kratos1.png" alt="why_kratos1"/>
                                     </div>
-                                    <div class="w-1/2 p-3.5">
+                                    <div class="w-full md:w-1/2 p-3.5">
                                         <div class="space-y-1.5 md:space-y-2.5 2xl:space-y-4">
                                             <h4 class="text28 text-white font-medium font-play_display">Elite Networking Opportunities</h4>
                                             <p class="text16 text-white font-normal">Connect with like-minded professionals and individuals from various industries. Whether you're looking to build business relationships, find inspiration, or just enjoy meaningful conversations, Kratos is the place to be.</p>
@@ -206,10 +269,10 @@
                                 </div>
                                 <div class="swiper-slide">
                                 <div class="v_slider flex flex-wrap -mx-3.5">
-                                    <div class="w-1/2 p-3.5">
+                                    <div class="w-full md:w-1/2 p-3.5">
                                         <img src="assets/images/why_kratos1.png" alt="why_kratos1"/>
                                     </div>
-                                    <div class="w-1/2 p-3.5">
+                                    <div class="w-full md:w-1/2 p-3.5">
                                         <div class="space-y-1.5 md:space-y-2.5 2xl:space-y-4">
                                             <h4 class="text28 text-white font-medium font-play_display">Elite Networking Opportunities</h4>
                                             <p class="text16 text-white font-normal">Connect with like-minded professionals and individuals from various industries. Whether you're looking to build business relationships, find inspiration, or just enjoy meaningful conversations, Kratos is the place to be.</p>
@@ -219,10 +282,10 @@
                                 </div>
                                 <div class="swiper-slide">
                                 <div class="v_slider flex flex-wrap -mx-3.5">
-                                    <div class="w-1/2 p-3.5">
+                                    <div class="w-full md:w-1/2 p-3.5">
                                         <img src="assets/images/why_kratos1.png" alt="why_kratos1"/>
                                     </div>
-                                    <div class="w-1/2 p-3.5">
+                                    <div class="w-full md:w-1/2 p-3.5">
                                         <div class="space-y-1.5 md:space-y-2.5 2xl:space-y-4">
                                             <h4 class="text28 text-white font-medium font-play_display">Elite Networking Opportunities</h4>
                                             <p class="text16 text-white font-normal">Connect with like-minded professionals and individuals from various industries. Whether you're looking to build business relationships, find inspiration, or just enjoy meaningful conversations, Kratos is the place to be.</p>
@@ -245,627 +308,507 @@
                         <div class="swiper-container">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide w-max">
-                                      <div class="flex items-center space-x-5">
-                                <div class="flex items-center flex-col space-y-5">
-                                    <div class="w-[70px] h-[70px] p-0.5 gradient">
-                                        <div class="bg-dark w-full h-full flex items-center justify-center">
-                                            <span class="icon-vision text-24 gra_text"></span>
+                                    <div class="flex items-center space-x-5">
+                                        <div class="flex items-center flex-col space-y-5">
+                                            <div class="w-[70px] h-[70px] p-0.5 gradient">
+                                                <div class="bg-dark w-full h-full flex items-center justify-center">
+                                                    <span class="icon-table_tennis text-24 gra_text"></span>
+                                                </div>
+                                            </div>
+                                            <div class="w-[70px] h-[70px] p-0.5 gradient">
+                                                <div class="bg-dark w-full h-full flex items-center justify-center">
+                                                    <span class="icon-oxygen_bar text-24 gra_text"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="flex items-center flex-col space-y-5 -mt-20">
+                                            <div class="w-[70px] h-[70px] p-0.5 gradient">
+                                                <div class="bg-dark w-full h-full flex items-center justify-center">
+                                                    <span class="icon-volleyball text-24 gra_text"></span>
+                                                </div>
+                                            </div>
+                                            <div class="w-[70px] h-[70px] p-0.5 gradient">
+                                                <div class="bg-dark w-full h-full flex items-center justify-center">
+                                                    <span class="icon-carrom text-24 gra_text"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="flex items-center flex-col space-y-5">
+                                            <div class="w-[70px] h-[70px] p-0.5 gradient">
+                                                <div class="bg-dark w-full h-full flex items-center justify-center">
+                                                    <span class="icon-lawn_tennis text-24 gra_text"></span>
+                                                </div>
+                                            </div>
+                                            <div class="w-[70px] h-[70px] p-0.5 gradient">
+                                                <div class="bg-dark w-full h-full flex items-center justify-center">
+                                                    <span class="icon-swimming_pool text-24 gra_text"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="flex items-center flex-col space-y-5 -mt-20">
+                                            <div class="w-[70px] h-[70px] p-0.5 gradient">
+                                                <div class="bg-dark w-full h-full flex items-center justify-center">
+                                                    <span class="icon-gym text-24 gra_text"></span>
+                                                </div>
+                                            </div>
+                                            <div class="w-[70px] h-[70px] p-0.5 gradient">
+                                                <div class="bg-dark w-full h-full flex items-center justify-center">
+                                                    <span class="icon-skating text-24 gra_text"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="flex items-center flex-col space-y-5">
+                                            <div class="w-[70px] h-[70px] p-0.5 gradient">
+                                                <div class="bg-dark w-full h-full flex items-center justify-center">
+                                                    <span class="icon-badminton text-24 gra_text"></span>
+                                                </div>
+                                            </div>
+                                            <div class="w-[70px] h-[70px] p-0.5 gradient">
+                                                <div class="bg-dark w-full h-full flex items-center justify-center">
+                                                    <span class="icon-aerobics text-24 gra_text"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="flex items-center flex-col space-y-5 -mt-20">
+                                            <div class="w-[70px] h-[70px] p-0.5 gradient">
+                                                <div class="bg-dark w-full h-full flex items-center justify-center">
+                                                    <span class="icon-baby_pool text-24 gra_text"></span>
+                                                </div>
+                                            </div>
+                                            <div class="w-[70px] h-[70px] p-0.5 gradient">
+                                                <div class="bg-dark w-full h-full flex items-center justify-center">
+                                                    <span class="icon-cycling text-24 gra_text"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="flex items-center flex-col space-y-5">
+                                            <div class="w-[70px] h-[70px] p-0.5 gradient">
+                                                <div class="bg-dark w-full h-full flex items-center justify-center">
+                                                    <span class="icon-restaurent text-24 gra_text"></span>
+                                                </div>
+                                            </div>
+                                            <div class="w-[70px] h-[70px] p-0.5 gradient">
+                                                <div class="bg-dark w-full h-full flex items-center justify-center">
+                                                    <span class="icon-chess_hourse text-24 gra_text"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="flex items-center flex-col space-y-5 -mt-20">
+                                            <div class="w-[70px] h-[70px] p-0.5 gradient">
+                                                <div class="bg-dark w-full h-full flex items-center justify-center">
+                                                    <span class="icon-dart text-24 gra_text"></span>
+                                                </div>
+                                            </div>
+                                            <div class="w-[70px] h-[70px] p-0.5 gradient">
+                                                <div class="bg-dark w-full h-full flex items-center justify-center">
+                                                    <span class="icon-golf text-24 gra_text"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="flex items-center flex-col space-y-5">
+                                            <div class="w-[70px] h-[70px] p-0.5 gradient">
+                                                <div class="bg-dark w-full h-full flex items-center justify-center">
+                                                    <span class="icon-sauna text-24 gra_text"></span>
+                                                </div>
+                                            </div>
+                                            <div class="w-[70px] h-[70px] p-0.5 gradient">
+                                                <div class="bg-dark w-full h-full flex items-center justify-center">
+                                                    <span class="icon-presidential_suite text-24 gra_text"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="flex items-center flex-col space-y-5 -mt-20">
+                                            <div class="w-[70px] h-[70px] p-0.5 gradient">
+                                                <div class="bg-dark w-full h-full flex items-center justify-center">
+                                                    <span class="icon-jacuzzi text-24 gra_text"></span>
+                                                </div>
+                                            </div>
+                                            <div class="w-[70px] h-[70px] p-0.5 gradient">
+                                                <div class="bg-dark w-full h-full flex items-center justify-center">
+                                                    <span class="icon-yoga text-24 gra_text"></span>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="w-[70px] h-[70px] p-0.5 gradient">
-                                        <div class="bg-dark w-full h-full flex items-center justify-center">
-                                            <span class="icon-vision text-24 gra_text"></span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="flex items-center flex-col space-y-5 -mt-20">
-                                    <div class="w-[70px] h-[70px] p-0.5 gradient">
-                                        <div class="bg-dark w-full h-full flex items-center justify-center">
-                                            <span class="icon-vision text-24 gra_text"></span>
-                                        </div>
-                                    </div>
-                                    <div class="w-[70px] h-[70px] p-0.5 gradient">
-                                        <div class="bg-dark w-full h-full flex items-center justify-center">
-                                            <span class="icon-vision text-24 gra_text"></span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="flex items-center flex-col space-y-5">
-                                    <div class="w-[70px] h-[70px] p-0.5 gradient">
-                                        <div class="bg-dark w-full h-full flex items-center justify-center">
-                                            <span class="icon-vision text-24 gra_text"></span>
-                                        </div>
-                                    </div>
-                                    <div class="w-[70px] h-[70px] p-0.5 gradient">
-                                        <div class="bg-dark w-full h-full flex items-center justify-center">
-                                            <span class="icon-vision text-24 gra_text"></span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="flex items-center flex-col space-y-5 -mt-20">
-                                    <div class="w-[70px] h-[70px] p-0.5 gradient">
-                                        <div class="bg-dark w-full h-full flex items-center justify-center">
-                                            <span class="icon-vision text-24 gra_text"></span>
-                                        </div>
-                                    </div>
-                                    <div class="w-[70px] h-[70px] p-0.5 gradient">
-                                        <div class="bg-dark w-full h-full flex items-center justify-center">
-                                            <span class="icon-vision text-24 gra_text"></span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="flex items-center flex-col space-y-5">
-                                    <div class="w-[70px] h-[70px] p-0.5 gradient">
-                                        <div class="bg-dark w-full h-full flex items-center justify-center">
-                                            <span class="icon-vision text-24 gra_text"></span>
-                                        </div>
-                                    </div>
-                                    <div class="w-[70px] h-[70px] p-0.5 gradient">
-                                        <div class="bg-dark w-full h-full flex items-center justify-center">
-                                            <span class="icon-vision text-24 gra_text"></span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="flex items-center flex-col space-y-5 -mt-20">
-                                    <div class="w-[70px] h-[70px] p-0.5 gradient">
-                                        <div class="bg-dark w-full h-full flex items-center justify-center">
-                                            <span class="icon-vision text-24 gra_text"></span>
-                                        </div>
-                                    </div>
-                                    <div class="w-[70px] h-[70px] p-0.5 gradient">
-                                        <div class="bg-dark w-full h-full flex items-center justify-center">
-                                            <span class="icon-vision text-24 gra_text"></span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="flex items-center flex-col space-y-5">
-                                    <div class="w-[70px] h-[70px] p-0.5 gradient">
-                                        <div class="bg-dark w-full h-full flex items-center justify-center">
-                                            <span class="icon-vision text-24 gra_text"></span>
-                                        </div>
-                                    </div>
-                                    <div class="w-[70px] h-[70px] p-0.5 gradient">
-                                        <div class="bg-dark w-full h-full flex items-center justify-center">
-                                            <span class="icon-vision text-24 gra_text"></span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="flex items-center flex-col space-y-5 -mt-20">
-                                    <div class="w-[70px] h-[70px] p-0.5 gradient">
-                                        <div class="bg-dark w-full h-full flex items-center justify-center">
-                                            <span class="icon-vision text-24 gra_text"></span>
-                                        </div>
-                                    </div>
-                                    <div class="w-[70px] h-[70px] p-0.5 gradient">
-                                        <div class="bg-dark w-full h-full flex items-center justify-center">
-                                            <span class="icon-vision text-24 gra_text"></span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="flex items-center flex-col space-y-5">
-                                    <div class="w-[70px] h-[70px] p-0.5 gradient">
-                                        <div class="bg-dark w-full h-full flex items-center justify-center">
-                                            <span class="icon-vision text-24 gra_text"></span>
-                                        </div>
-                                    </div>
-                                    <div class="w-[70px] h-[70px] p-0.5 gradient">
-                                        <div class="bg-dark w-full h-full flex items-center justify-center">
-                                            <span class="icon-vision text-24 gra_text"></span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="flex items-center flex-col space-y-5 -mt-20">
-                                    <div class="w-[70px] h-[70px] p-0.5 gradient">
-                                        <div class="bg-dark w-full h-full flex items-center justify-center">
-                                            <span class="icon-vision text-24 gra_text"></span>
-                                        </div>
-                                    </div>
-                                    <div class="w-[70px] h-[70px] p-0.5 gradient">
-                                        <div class="bg-dark w-full h-full flex items-center justify-center">
-                                            <span class="icon-vision text-24 gra_text"></span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
                                 </div>
                                 <div class="swiper-slide w-max">
-                                      <div class="flex items-center space-x-5">
-                                <div class="flex items-center flex-col space-y-5">
-                                    <div class="w-[70px] h-[70px] p-0.5 gradient">
-                                        <div class="bg-dark w-full h-full flex items-center justify-center">
-                                            <span class="icon-vision text-24 gra_text"></span>
+                                    <div class="flex items-center space-x-5">
+                                        <div class="flex items-center flex-col space-y-5">
+                                            <div class="w-[70px] h-[70px] p-0.5 gradient">
+                                                <div class="bg-dark w-full h-full flex items-center justify-center">
+                                                    <span class="icon-ball text-24 gra_text"></span>
+                                                </div>
+                                            </div>
+                                            <div class="w-[70px] h-[70px] p-0.5 gradient">
+                                                <div class="bg-dark w-full h-full flex items-center justify-center">
+                                                    <span class="icon-dance text-24 gra_text"></span>
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="w-[70px] h-[70px] p-0.5 gradient">
-                                        <div class="bg-dark w-full h-full flex items-center justify-center">
-                                            <span class="icon-vision text-24 gra_text"></span>
+                                        <div class="flex items-center flex-col space-y-5 -mt-20">
+                                            <div class="w-[70px] h-[70px] p-0.5 gradient">
+                                                <div class="bg-dark w-full h-full flex items-center justify-center">
+                                                    <span class="icon-cinema text-24 gra_text"></span>
+                                                </div>
+                                            </div>
+                                            <div class="w-[70px] h-[70px] p-0.5 gradient">
+                                                <div class="bg-dark w-full h-full flex items-center justify-center">
+                                                    <span class="icon-library text-24 gra_text"></span>
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
-                                </div>
-                                <div class="flex items-center flex-col space-y-5 -mt-20">
-                                    <div class="w-[70px] h-[70px] p-0.5 gradient">
-                                        <div class="bg-dark w-full h-full flex items-center justify-center">
-                                            <span class="icon-vision text-24 gra_text"></span>
+                                        <div class="flex items-center flex-col space-y-5">
+                                            <div class="w-[70px] h-[70px] p-0.5 gradient">
+                                                <div class="bg-dark w-full h-full flex items-center justify-center">
+                                                    <span class="icon-outdoor_area text-24 gra_text"></span>
+                                                </div>
+                                            </div>
+                                            <div class="w-[70px] h-[70px] p-0.5 gradient">
+                                                <div class="bg-dark w-full h-full flex items-center justify-center">
+                                                    <span class="icon-salon text-24 gra_text"></span>
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="w-[70px] h-[70px] p-0.5 gradient">
-                                        <div class="bg-dark w-full h-full flex items-center justify-center">
-                                            <span class="icon-vision text-24 gra_text"></span>
+                                        <div class="flex items-center flex-col space-y-5 -mt-20">
+                                            <div class="w-[70px] h-[70px] p-0.5 gradient">
+                                                <div class="bg-dark w-full h-full flex items-center justify-center">
+                                                    <span class="icon-jogging_track text-24 gra_text"></span>
+                                                </div>
+                                            </div>
+                                            <div class="w-[70px] h-[70px] p-0.5 gradient">
+                                                <div class="bg-dark w-full h-full flex items-center justify-center">
+                                                    <span class="icon-cricket_helmet text-24 gra_text"></span>
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
-                                </div>
-                                <div class="flex items-center flex-col space-y-5">
-                                    <div class="w-[70px] h-[70px] p-0.5 gradient">
-                                        <div class="bg-dark w-full h-full flex items-center justify-center">
-                                            <span class="icon-vision text-24 gra_text"></span>
+                                        <div class="flex items-center flex-col space-y-5">
+                                            <div class="w-[70px] h-[70px] p-0.5 gradient">
+                                                <div class="bg-dark w-full h-full flex items-center justify-center">
+                                                    <span class="icon-zumba text-24 gra_text"></span>
+                                                </div>
+                                            </div>
+                                            <div class="w-[70px] h-[70px] p-0.5 gradient">
+                                                <div class="bg-dark w-full h-full flex items-center justify-center">
+                                                    <span class="icon-banquet_hall text-24 gra_text"></span>
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="w-[70px] h-[70px] p-0.5 gradient">
-                                        <div class="bg-dark w-full h-full flex items-center justify-center">
-                                            <span class="icon-vision text-24 gra_text"></span>
+                                        <div class="flex items-center flex-col space-y-5 -mt-20">
+                                            <div class="w-[70px] h-[70px] p-0.5 gradient">
+                                                <div class="bg-dark w-full h-full flex items-center justify-center">
+                                                    <span class="icon-deluxe_room text-24 gra_text"></span>
+                                                </div>
+                                            </div>
+                                            <div class="w-[70px] h-[70px] p-0.5 gradient">
+                                                <div class="bg-dark w-full h-full flex items-center justify-center">
+                                                    <span class="icon-mini_golf text-24 gra_text"></span>
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
-                                </div>
-                                <div class="flex items-center flex-col space-y-5 -mt-20">
-                                    <div class="w-[70px] h-[70px] p-0.5 gradient">
-                                        <div class="bg-dark w-full h-full flex items-center justify-center">
-                                            <span class="icon-vision text-24 gra_text"></span>
+                                        <div class="flex items-center flex-col space-y-5">
+                                            <div class="w-[70px] h-[70px] p-0.5 gradient">
+                                                <div class="bg-dark w-full h-full flex items-center justify-center">
+                                                    <span class="icon-golf text-24 gra_text"></span>
+                                                </div>
+                                            </div>
+                                            <div class="w-[70px] h-[70px] p-0.5 gradient">
+                                                <div class="bg-dark w-full h-full flex items-center justify-center">
+                                                    <span class="icon-air_gun text-24 gra_text"></span>
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="w-[70px] h-[70px] p-0.5 gradient">
-                                        <div class="bg-dark w-full h-full flex items-center justify-center">
-                                            <span class="icon-vision text-24 gra_text"></span>
+                                        <div class="flex items-center flex-col space-y-5 -mt-20">
+                                            <div class="w-[70px] h-[70px] p-0.5 gradient">
+                                                <div class="bg-dark w-full h-full flex items-center justify-center">
+                                                    <span class="icon-poker_game text-24 gra_text"></span>
+                                                </div>
+                                            </div>
+                                            <div class="w-[70px] h-[70px] p-0.5 gradient">
+                                                <div class="bg-dark w-full h-full flex items-center justify-center">
+                                                    <span class="icon-ludo_dice text-24 gra_text"></span>
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
-                                </div>
-                                <div class="flex items-center flex-col space-y-5">
-                                    <div class="w-[70px] h-[70px] p-0.5 gradient">
-                                        <div class="bg-dark w-full h-full flex items-center justify-center">
-                                            <span class="icon-vision text-24 gra_text"></span>
+                                        <div class="flex items-center flex-col space-y-5">
+                                            <div class="w-[70px] h-[70px] p-0.5 gradient">
+                                                <div class="bg-dark w-full h-full flex items-center justify-center">
+                                                    <span class="icon-ground text-24 gra_text"></span>
+                                                </div>
+                                            </div>
+                                            <div class="w-[70px] h-[70px] p-0.5 gradient">
+                                                <div class="bg-dark w-full h-full flex items-center justify-center">
+                                                    <span class="icon-basketball text-24 gra_text"></span>
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="w-[70px] h-[70px] p-0.5 gradient">
-                                        <div class="bg-dark w-full h-full flex items-center justify-center">
-                                            <span class="icon-vision text-24 gra_text"></span>
+                                        <div class="flex items-center flex-col space-y-5 -mt-20">
+                                            <div class="w-[70px] h-[70px] p-0.5 gradient">
+                                                <div class="bg-dark w-full h-full flex items-center justify-center">
+                                                    <span class="icon-workout text-24 gra_text"></span>
+                                                </div>
+                                            </div>
+                                            <div class="w-[70px] h-[70px] p-0.5 gradient">
+                                                <div class="bg-dark w-full h-full flex items-center justify-center">
+                                                    <span class="icon-golf_ball text-24 gra_text"></span>
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
-                                </div>
-                                <div class="flex items-center flex-col space-y-5 -mt-20">
-                                    <div class="w-[70px] h-[70px] p-0.5 gradient">
-                                        <div class="bg-dark w-full h-full flex items-center justify-center">
-                                            <span class="icon-vision text-24 gra_text"></span>
-                                        </div>
-                                    </div>
-                                    <div class="w-[70px] h-[70px] p-0.5 gradient">
-                                        <div class="bg-dark w-full h-full flex items-center justify-center">
-                                            <span class="icon-vision text-24 gra_text"></span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="flex items-center flex-col space-y-5">
-                                    <div class="w-[70px] h-[70px] p-0.5 gradient">
-                                        <div class="bg-dark w-full h-full flex items-center justify-center">
-                                            <span class="icon-vision text-24 gra_text"></span>
-                                        </div>
-                                    </div>
-                                    <div class="w-[70px] h-[70px] p-0.5 gradient">
-                                        <div class="bg-dark w-full h-full flex items-center justify-center">
-                                            <span class="icon-vision text-24 gra_text"></span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="flex items-center flex-col space-y-5 -mt-20">
-                                    <div class="w-[70px] h-[70px] p-0.5 gradient">
-                                        <div class="bg-dark w-full h-full flex items-center justify-center">
-                                            <span class="icon-vision text-24 gra_text"></span>
-                                        </div>
-                                    </div>
-                                    <div class="w-[70px] h-[70px] p-0.5 gradient">
-                                        <div class="bg-dark w-full h-full flex items-center justify-center">
-                                            <span class="icon-vision text-24 gra_text"></span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="flex items-center flex-col space-y-5">
-                                    <div class="w-[70px] h-[70px] p-0.5 gradient">
-                                        <div class="bg-dark w-full h-full flex items-center justify-center">
-                                            <span class="icon-vision text-24 gra_text"></span>
-                                        </div>
-                                    </div>
-                                    <div class="w-[70px] h-[70px] p-0.5 gradient">
-                                        <div class="bg-dark w-full h-full flex items-center justify-center">
-                                            <span class="icon-vision text-24 gra_text"></span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="flex items-center flex-col space-y-5 -mt-20">
-                                    <div class="w-[70px] h-[70px] p-0.5 gradient">
-                                        <div class="bg-dark w-full h-full flex items-center justify-center">
-                                            <span class="icon-vision text-24 gra_text"></span>
-                                        </div>
-                                    </div>
-                                    <div class="w-[70px] h-[70px] p-0.5 gradient">
-                                        <div class="bg-dark w-full h-full flex items-center justify-center">
-                                            <span class="icon-vision text-24 gra_text"></span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                                </div>
-                                <div class="swiper-slide w-max">
-                                      <div class="flex items-center space-x-5">
-                                <div class="flex items-center flex-col space-y-5">
-                                    <div class="w-[70px] h-[70px] p-0.5 gradient">
-                                        <div class="bg-dark w-full h-full flex items-center justify-center">
-                                            <span class="icon-vision text-24 gra_text"></span>
-                                        </div>
-                                    </div>
-                                    <div class="w-[70px] h-[70px] p-0.5 gradient">
-                                        <div class="bg-dark w-full h-full flex items-center justify-center">
-                                            <span class="icon-vision text-24 gra_text"></span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="flex items-center flex-col space-y-5 -mt-20">
-                                    <div class="w-[70px] h-[70px] p-0.5 gradient">
-                                        <div class="bg-dark w-full h-full flex items-center justify-center">
-                                            <span class="icon-vision text-24 gra_text"></span>
-                                        </div>
-                                    </div>
-                                    <div class="w-[70px] h-[70px] p-0.5 gradient">
-                                        <div class="bg-dark w-full h-full flex items-center justify-center">
-                                            <span class="icon-vision text-24 gra_text"></span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="flex items-center flex-col space-y-5">
-                                    <div class="w-[70px] h-[70px] p-0.5 gradient">
-                                        <div class="bg-dark w-full h-full flex items-center justify-center">
-                                            <span class="icon-vision text-24 gra_text"></span>
-                                        </div>
-                                    </div>
-                                    <div class="w-[70px] h-[70px] p-0.5 gradient">
-                                        <div class="bg-dark w-full h-full flex items-center justify-center">
-                                            <span class="icon-vision text-24 gra_text"></span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="flex items-center flex-col space-y-5 -mt-20">
-                                    <div class="w-[70px] h-[70px] p-0.5 gradient">
-                                        <div class="bg-dark w-full h-full flex items-center justify-center">
-                                            <span class="icon-vision text-24 gra_text"></span>
-                                        </div>
-                                    </div>
-                                    <div class="w-[70px] h-[70px] p-0.5 gradient">
-                                        <div class="bg-dark w-full h-full flex items-center justify-center">
-                                            <span class="icon-vision text-24 gra_text"></span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="flex items-center flex-col space-y-5">
-                                    <div class="w-[70px] h-[70px] p-0.5 gradient">
-                                        <div class="bg-dark w-full h-full flex items-center justify-center">
-                                            <span class="icon-vision text-24 gra_text"></span>
-                                        </div>
-                                    </div>
-                                    <div class="w-[70px] h-[70px] p-0.5 gradient">
-                                        <div class="bg-dark w-full h-full flex items-center justify-center">
-                                            <span class="icon-vision text-24 gra_text"></span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="flex items-center flex-col space-y-5 -mt-20">
-                                    <div class="w-[70px] h-[70px] p-0.5 gradient">
-                                        <div class="bg-dark w-full h-full flex items-center justify-center">
-                                            <span class="icon-vision text-24 gra_text"></span>
-                                        </div>
-                                    </div>
-                                    <div class="w-[70px] h-[70px] p-0.5 gradient">
-                                        <div class="bg-dark w-full h-full flex items-center justify-center">
-                                            <span class="icon-vision text-24 gra_text"></span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="flex items-center flex-col space-y-5">
-                                    <div class="w-[70px] h-[70px] p-0.5 gradient">
-                                        <div class="bg-dark w-full h-full flex items-center justify-center">
-                                            <span class="icon-vision text-24 gra_text"></span>
-                                        </div>
-                                    </div>
-                                    <div class="w-[70px] h-[70px] p-0.5 gradient">
-                                        <div class="bg-dark w-full h-full flex items-center justify-center">
-                                            <span class="icon-vision text-24 gra_text"></span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="flex items-center flex-col space-y-5 -mt-20">
-                                    <div class="w-[70px] h-[70px] p-0.5 gradient">
-                                        <div class="bg-dark w-full h-full flex items-center justify-center">
-                                            <span class="icon-vision text-24 gra_text"></span>
-                                        </div>
-                                    </div>
-                                    <div class="w-[70px] h-[70px] p-0.5 gradient">
-                                        <div class="bg-dark w-full h-full flex items-center justify-center">
-                                            <span class="icon-vision text-24 gra_text"></span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="flex items-center flex-col space-y-5">
-                                    <div class="w-[70px] h-[70px] p-0.5 gradient">
-                                        <div class="bg-dark w-full h-full flex items-center justify-center">
-                                            <span class="icon-vision text-24 gra_text"></span>
-                                        </div>
-                                    </div>
-                                    <div class="w-[70px] h-[70px] p-0.5 gradient">
-                                        <div class="bg-dark w-full h-full flex items-center justify-center">
-                                            <span class="icon-vision text-24 gra_text"></span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="flex items-center flex-col space-y-5 -mt-20">
-                                    <div class="w-[70px] h-[70px] p-0.5 gradient">
-                                        <div class="bg-dark w-full h-full flex items-center justify-center">
-                                            <span class="icon-vision text-24 gra_text"></span>
-                                        </div>
-                                    </div>
-                                    <div class="w-[70px] h-[70px] p-0.5 gradient">
-                                        <div class="bg-dark w-full h-full flex items-center justify-center">
-                                            <span class="icon-vision text-24 gra_text"></span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                                   </div>
                                 </div>
                                 <div class="swiper-slide w-max">
-                                      <div class="flex items-center space-x-5">
-                                <div class="flex items-center flex-col space-y-5">
-                                    <div class="w-[70px] h-[70px] p-0.5 gradient">
-                                        <div class="bg-dark w-full h-full flex items-center justify-center">
-                                            <span class="icon-vision text-24 gra_text"></span>
+                                    <div class="flex items-center space-x-5">
+                                        <div class="flex items-center flex-col space-y-5">
+                                            <div class="w-[70px] h-[70px] p-0.5 gradient">
+                                                <div class="bg-dark w-full h-full flex items-center justify-center">
+                                                    <span class="icon-table_tennis text-24 gra_text"></span>
+                                                </div>
+                                            </div>
+                                            <div class="w-[70px] h-[70px] p-0.5 gradient">
+                                                <div class="bg-dark w-full h-full flex items-center justify-center">
+                                                    <span class="icon-oxygen_bar text-24 gra_text"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="flex items-center flex-col space-y-5 -mt-20">
+                                            <div class="w-[70px] h-[70px] p-0.5 gradient">
+                                                <div class="bg-dark w-full h-full flex items-center justify-center">
+                                                    <span class="icon-volleyball text-24 gra_text"></span>
+                                                </div>
+                                            </div>
+                                            <div class="w-[70px] h-[70px] p-0.5 gradient">
+                                                <div class="bg-dark w-full h-full flex items-center justify-center">
+                                                    <span class="icon-carrom text-24 gra_text"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="flex items-center flex-col space-y-5">
+                                            <div class="w-[70px] h-[70px] p-0.5 gradient">
+                                                <div class="bg-dark w-full h-full flex items-center justify-center">
+                                                    <span class="icon-lawn_tennis text-24 gra_text"></span>
+                                                </div>
+                                            </div>
+                                            <div class="w-[70px] h-[70px] p-0.5 gradient">
+                                                <div class="bg-dark w-full h-full flex items-center justify-center">
+                                                    <span class="icon-swimming_pool text-24 gra_text"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="flex items-center flex-col space-y-5 -mt-20">
+                                            <div class="w-[70px] h-[70px] p-0.5 gradient">
+                                                <div class="bg-dark w-full h-full flex items-center justify-center">
+                                                    <span class="icon-gym text-24 gra_text"></span>
+                                                </div>
+                                            </div>
+                                            <div class="w-[70px] h-[70px] p-0.5 gradient">
+                                                <div class="bg-dark w-full h-full flex items-center justify-center">
+                                                    <span class="icon-skating text-24 gra_text"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="flex items-center flex-col space-y-5">
+                                            <div class="w-[70px] h-[70px] p-0.5 gradient">
+                                                <div class="bg-dark w-full h-full flex items-center justify-center">
+                                                    <span class="icon-badminton text-24 gra_text"></span>
+                                                </div>
+                                            </div>
+                                            <div class="w-[70px] h-[70px] p-0.5 gradient">
+                                                <div class="bg-dark w-full h-full flex items-center justify-center">
+                                                    <span class="icon-aerobics text-24 gra_text"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="flex items-center flex-col space-y-5 -mt-20">
+                                            <div class="w-[70px] h-[70px] p-0.5 gradient">
+                                                <div class="bg-dark w-full h-full flex items-center justify-center">
+                                                    <span class="icon-baby_pool text-24 gra_text"></span>
+                                                </div>
+                                            </div>
+                                            <div class="w-[70px] h-[70px] p-0.5 gradient">
+                                                <div class="bg-dark w-full h-full flex items-center justify-center">
+                                                    <span class="icon-cycling text-24 gra_text"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="flex items-center flex-col space-y-5">
+                                            <div class="w-[70px] h-[70px] p-0.5 gradient">
+                                                <div class="bg-dark w-full h-full flex items-center justify-center">
+                                                    <span class="icon-restaurent text-24 gra_text"></span>
+                                                </div>
+                                            </div>
+                                            <div class="w-[70px] h-[70px] p-0.5 gradient">
+                                                <div class="bg-dark w-full h-full flex items-center justify-center">
+                                                    <span class="icon-chess_hourse text-24 gra_text"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="flex items-center flex-col space-y-5 -mt-20">
+                                            <div class="w-[70px] h-[70px] p-0.5 gradient">
+                                                <div class="bg-dark w-full h-full flex items-center justify-center">
+                                                    <span class="icon-dart text-24 gra_text"></span>
+                                                </div>
+                                            </div>
+                                            <div class="w-[70px] h-[70px] p-0.5 gradient">
+                                                <div class="bg-dark w-full h-full flex items-center justify-center">
+                                                    <span class="icon-golf text-24 gra_text"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="flex items-center flex-col space-y-5">
+                                            <div class="w-[70px] h-[70px] p-0.5 gradient">
+                                                <div class="bg-dark w-full h-full flex items-center justify-center">
+                                                    <span class="icon-sauna text-24 gra_text"></span>
+                                                </div>
+                                            </div>
+                                            <div class="w-[70px] h-[70px] p-0.5 gradient">
+                                                <div class="bg-dark w-full h-full flex items-center justify-center">
+                                                    <span class="icon-presidential_suite text-24 gra_text"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="flex items-center flex-col space-y-5 -mt-20">
+                                            <div class="w-[70px] h-[70px] p-0.5 gradient">
+                                                <div class="bg-dark w-full h-full flex items-center justify-center">
+                                                    <span class="icon-jacuzzi text-24 gra_text"></span>
+                                                </div>
+                                            </div>
+                                            <div class="w-[70px] h-[70px] p-0.5 gradient">
+                                                <div class="bg-dark w-full h-full flex items-center justify-center">
+                                                    <span class="icon-yoga text-24 gra_text"></span>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="w-[70px] h-[70px] p-0.5 gradient">
-                                        <div class="bg-dark w-full h-full flex items-center justify-center">
-                                            <span class="icon-vision text-24 gra_text"></span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="flex items-center flex-col space-y-5 -mt-20">
-                                    <div class="w-[70px] h-[70px] p-0.5 gradient">
-                                        <div class="bg-dark w-full h-full flex items-center justify-center">
-                                            <span class="icon-vision text-24 gra_text"></span>
-                                        </div>
-                                    </div>
-                                    <div class="w-[70px] h-[70px] p-0.5 gradient">
-                                        <div class="bg-dark w-full h-full flex items-center justify-center">
-                                            <span class="icon-vision text-24 gra_text"></span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="flex items-center flex-col space-y-5">
-                                    <div class="w-[70px] h-[70px] p-0.5 gradient">
-                                        <div class="bg-dark w-full h-full flex items-center justify-center">
-                                            <span class="icon-vision text-24 gra_text"></span>
-                                        </div>
-                                    </div>
-                                    <div class="w-[70px] h-[70px] p-0.5 gradient">
-                                        <div class="bg-dark w-full h-full flex items-center justify-center">
-                                            <span class="icon-vision text-24 gra_text"></span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="flex items-center flex-col space-y-5 -mt-20">
-                                    <div class="w-[70px] h-[70px] p-0.5 gradient">
-                                        <div class="bg-dark w-full h-full flex items-center justify-center">
-                                            <span class="icon-vision text-24 gra_text"></span>
-                                        </div>
-                                    </div>
-                                    <div class="w-[70px] h-[70px] p-0.5 gradient">
-                                        <div class="bg-dark w-full h-full flex items-center justify-center">
-                                            <span class="icon-vision text-24 gra_text"></span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="flex items-center flex-col space-y-5">
-                                    <div class="w-[70px] h-[70px] p-0.5 gradient">
-                                        <div class="bg-dark w-full h-full flex items-center justify-center">
-                                            <span class="icon-vision text-24 gra_text"></span>
-                                        </div>
-                                    </div>
-                                    <div class="w-[70px] h-[70px] p-0.5 gradient">
-                                        <div class="bg-dark w-full h-full flex items-center justify-center">
-                                            <span class="icon-vision text-24 gra_text"></span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="flex items-center flex-col space-y-5 -mt-20">
-                                    <div class="w-[70px] h-[70px] p-0.5 gradient">
-                                        <div class="bg-dark w-full h-full flex items-center justify-center">
-                                            <span class="icon-vision text-24 gra_text"></span>
-                                        </div>
-                                    </div>
-                                    <div class="w-[70px] h-[70px] p-0.5 gradient">
-                                        <div class="bg-dark w-full h-full flex items-center justify-center">
-                                            <span class="icon-vision text-24 gra_text"></span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="flex items-center flex-col space-y-5">
-                                    <div class="w-[70px] h-[70px] p-0.5 gradient">
-                                        <div class="bg-dark w-full h-full flex items-center justify-center">
-                                            <span class="icon-vision text-24 gra_text"></span>
-                                        </div>
-                                    </div>
-                                    <div class="w-[70px] h-[70px] p-0.5 gradient">
-                                        <div class="bg-dark w-full h-full flex items-center justify-center">
-                                            <span class="icon-vision text-24 gra_text"></span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="flex items-center flex-col space-y-5 -mt-20">
-                                    <div class="w-[70px] h-[70px] p-0.5 gradient">
-                                        <div class="bg-dark w-full h-full flex items-center justify-center">
-                                            <span class="icon-vision text-24 gra_text"></span>
-                                        </div>
-                                    </div>
-                                    <div class="w-[70px] h-[70px] p-0.5 gradient">
-                                        <div class="bg-dark w-full h-full flex items-center justify-center">
-                                            <span class="icon-vision text-24 gra_text"></span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="flex items-center flex-col space-y-5">
-                                    <div class="w-[70px] h-[70px] p-0.5 gradient">
-                                        <div class="bg-dark w-full h-full flex items-center justify-center">
-                                            <span class="icon-vision text-24 gra_text"></span>
-                                        </div>
-                                    </div>
-                                    <div class="w-[70px] h-[70px] p-0.5 gradient">
-                                        <div class="bg-dark w-full h-full flex items-center justify-center">
-                                            <span class="icon-vision text-24 gra_text"></span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="flex items-center flex-col space-y-5 -mt-20">
-                                    <div class="w-[70px] h-[70px] p-0.5 gradient">
-                                        <div class="bg-dark w-full h-full flex items-center justify-center">
-                                            <span class="icon-vision text-24 gra_text"></span>
-                                        </div>
-                                    </div>
-                                    <div class="w-[70px] h-[70px] p-0.5 gradient">
-                                        <div class="bg-dark w-full h-full flex items-center justify-center">
-                                            <span class="icon-vision text-24 gra_text"></span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
                                 </div>
                                 <div class="swiper-slide w-max">
-                                      <div class="flex items-center space-x-5">
-                                <div class="flex items-center flex-col space-y-5">
-                                    <div class="w-[70px] h-[70px] p-0.5 gradient">
-                                        <div class="bg-dark w-full h-full flex items-center justify-center">
-                                            <span class="icon-vision text-24 gra_text"></span>
+                                    <div class="flex items-center space-x-5">
+                                        <div class="flex items-center flex-col space-y-5">
+                                            <div class="w-[70px] h-[70px] p-0.5 gradient">
+                                                <div class="bg-dark w-full h-full flex items-center justify-center">
+                                                    <span class="icon-ball text-24 gra_text"></span>
+                                                </div>
+                                            </div>
+                                            <div class="w-[70px] h-[70px] p-0.5 gradient">
+                                                <div class="bg-dark w-full h-full flex items-center justify-center">
+                                                    <span class="icon-dance text-24 gra_text"></span>
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="w-[70px] h-[70px] p-0.5 gradient">
-                                        <div class="bg-dark w-full h-full flex items-center justify-center">
-                                            <span class="icon-vision text-24 gra_text"></span>
+                                        <div class="flex items-center flex-col space-y-5 -mt-20">
+                                            <div class="w-[70px] h-[70px] p-0.5 gradient">
+                                                <div class="bg-dark w-full h-full flex items-center justify-center">
+                                                    <span class="icon-cinema text-24 gra_text"></span>
+                                                </div>
+                                            </div>
+                                            <div class="w-[70px] h-[70px] p-0.5 gradient">
+                                                <div class="bg-dark w-full h-full flex items-center justify-center">
+                                                    <span class="icon-library text-24 gra_text"></span>
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
-                                </div>
-                                <div class="flex items-center flex-col space-y-5 -mt-20">
-                                    <div class="w-[70px] h-[70px] p-0.5 gradient">
-                                        <div class="bg-dark w-full h-full flex items-center justify-center">
-                                            <span class="icon-vision text-24 gra_text"></span>
+                                        <div class="flex items-center flex-col space-y-5">
+                                            <div class="w-[70px] h-[70px] p-0.5 gradient">
+                                                <div class="bg-dark w-full h-full flex items-center justify-center">
+                                                    <span class="icon-outdoor_area text-24 gra_text"></span>
+                                                </div>
+                                            </div>
+                                            <div class="w-[70px] h-[70px] p-0.5 gradient">
+                                                <div class="bg-dark w-full h-full flex items-center justify-center">
+                                                    <span class="icon-salon text-24 gra_text"></span>
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="w-[70px] h-[70px] p-0.5 gradient">
-                                        <div class="bg-dark w-full h-full flex items-center justify-center">
-                                            <span class="icon-vision text-24 gra_text"></span>
+                                        <div class="flex items-center flex-col space-y-5 -mt-20">
+                                            <div class="w-[70px] h-[70px] p-0.5 gradient">
+                                                <div class="bg-dark w-full h-full flex items-center justify-center">
+                                                    <span class="icon-jogging_track text-24 gra_text"></span>
+                                                </div>
+                                            </div>
+                                            <div class="w-[70px] h-[70px] p-0.5 gradient">
+                                                <div class="bg-dark w-full h-full flex items-center justify-center">
+                                                    <span class="icon-cricket_helmet text-24 gra_text"></span>
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
-                                </div>
-                                <div class="flex items-center flex-col space-y-5">
-                                    <div class="w-[70px] h-[70px] p-0.5 gradient">
-                                        <div class="bg-dark w-full h-full flex items-center justify-center">
-                                            <span class="icon-vision text-24 gra_text"></span>
+                                        <div class="flex items-center flex-col space-y-5">
+                                            <div class="w-[70px] h-[70px] p-0.5 gradient">
+                                                <div class="bg-dark w-full h-full flex items-center justify-center">
+                                                    <span class="icon-zumba text-24 gra_text"></span>
+                                                </div>
+                                            </div>
+                                            <div class="w-[70px] h-[70px] p-0.5 gradient">
+                                                <div class="bg-dark w-full h-full flex items-center justify-center">
+                                                    <span class="icon-banquet_hall text-24 gra_text"></span>
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="w-[70px] h-[70px] p-0.5 gradient">
-                                        <div class="bg-dark w-full h-full flex items-center justify-center">
-                                            <span class="icon-vision text-24 gra_text"></span>
+                                        <div class="flex items-center flex-col space-y-5 -mt-20">
+                                            <div class="w-[70px] h-[70px] p-0.5 gradient">
+                                                <div class="bg-dark w-full h-full flex items-center justify-center">
+                                                    <span class="icon-deluxe_room text-24 gra_text"></span>
+                                                </div>
+                                            </div>
+                                            <div class="w-[70px] h-[70px] p-0.5 gradient">
+                                                <div class="bg-dark w-full h-full flex items-center justify-center">
+                                                    <span class="icon-mini_golf text-24 gra_text"></span>
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
-                                </div>
-                                <div class="flex items-center flex-col space-y-5 -mt-20">
-                                    <div class="w-[70px] h-[70px] p-0.5 gradient">
-                                        <div class="bg-dark w-full h-full flex items-center justify-center">
-                                            <span class="icon-vision text-24 gra_text"></span>
+                                        <div class="flex items-center flex-col space-y-5">
+                                            <div class="w-[70px] h-[70px] p-0.5 gradient">
+                                                <div class="bg-dark w-full h-full flex items-center justify-center">
+                                                    <span class="icon-golf text-24 gra_text"></span>
+                                                </div>
+                                            </div>
+                                            <div class="w-[70px] h-[70px] p-0.5 gradient">
+                                                <div class="bg-dark w-full h-full flex items-center justify-center">
+                                                    <span class="icon-air_gun text-24 gra_text"></span>
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="w-[70px] h-[70px] p-0.5 gradient">
-                                        <div class="bg-dark w-full h-full flex items-center justify-center">
-                                            <span class="icon-vision text-24 gra_text"></span>
+                                        <div class="flex items-center flex-col space-y-5 -mt-20">
+                                            <div class="w-[70px] h-[70px] p-0.5 gradient">
+                                                <div class="bg-dark w-full h-full flex items-center justify-center">
+                                                    <span class="icon-poker_game text-24 gra_text"></span>
+                                                </div>
+                                            </div>
+                                            <div class="w-[70px] h-[70px] p-0.5 gradient">
+                                                <div class="bg-dark w-full h-full flex items-center justify-center">
+                                                    <span class="icon-ludo_dice text-24 gra_text"></span>
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
-                                </div>
-                                <div class="flex items-center flex-col space-y-5">
-                                    <div class="w-[70px] h-[70px] p-0.5 gradient">
-                                        <div class="bg-dark w-full h-full flex items-center justify-center">
-                                            <span class="icon-vision text-24 gra_text"></span>
+                                        <div class="flex items-center flex-col space-y-5">
+                                            <div class="w-[70px] h-[70px] p-0.5 gradient">
+                                                <div class="bg-dark w-full h-full flex items-center justify-center">
+                                                    <span class="icon-ground text-24 gra_text"></span>
+                                                </div>
+                                            </div>
+                                            <div class="w-[70px] h-[70px] p-0.5 gradient">
+                                                <div class="bg-dark w-full h-full flex items-center justify-center">
+                                                    <span class="icon-basketball text-24 gra_text"></span>
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="w-[70px] h-[70px] p-0.5 gradient">
-                                        <div class="bg-dark w-full h-full flex items-center justify-center">
-                                            <span class="icon-vision text-24 gra_text"></span>
+                                        <div class="flex items-center flex-col space-y-5 -mt-20">
+                                            <div class="w-[70px] h-[70px] p-0.5 gradient">
+                                                <div class="bg-dark w-full h-full flex items-center justify-center">
+                                                    <span class="icon-workout text-24 gra_text"></span>
+                                                </div>
+                                            </div>
+                                            <div class="w-[70px] h-[70px] p-0.5 gradient">
+                                                <div class="bg-dark w-full h-full flex items-center justify-center">
+                                                    <span class="icon-golf_ball text-24 gra_text"></span>
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
-                                </div>
-                                <div class="flex items-center flex-col space-y-5 -mt-20">
-                                    <div class="w-[70px] h-[70px] p-0.5 gradient">
-                                        <div class="bg-dark w-full h-full flex items-center justify-center">
-                                            <span class="icon-vision text-24 gra_text"></span>
-                                        </div>
-                                    </div>
-                                    <div class="w-[70px] h-[70px] p-0.5 gradient">
-                                        <div class="bg-dark w-full h-full flex items-center justify-center">
-                                            <span class="icon-vision text-24 gra_text"></span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="flex items-center flex-col space-y-5">
-                                    <div class="w-[70px] h-[70px] p-0.5 gradient">
-                                        <div class="bg-dark w-full h-full flex items-center justify-center">
-                                            <span class="icon-vision text-24 gra_text"></span>
-                                        </div>
-                                    </div>
-                                    <div class="w-[70px] h-[70px] p-0.5 gradient">
-                                        <div class="bg-dark w-full h-full flex items-center justify-center">
-                                            <span class="icon-vision text-24 gra_text"></span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="flex items-center flex-col space-y-5 -mt-20">
-                                    <div class="w-[70px] h-[70px] p-0.5 gradient">
-                                        <div class="bg-dark w-full h-full flex items-center justify-center">
-                                            <span class="icon-vision text-24 gra_text"></span>
-                                        </div>
-                                    </div>
-                                    <div class="w-[70px] h-[70px] p-0.5 gradient">
-                                        <div class="bg-dark w-full h-full flex items-center justify-center">
-                                            <span class="icon-vision text-24 gra_text"></span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="flex items-center flex-col space-y-5">
-                                    <div class="w-[70px] h-[70px] p-0.5 gradient">
-                                        <div class="bg-dark w-full h-full flex items-center justify-center">
-                                            <span class="icon-vision text-24 gra_text"></span>
-                                        </div>
-                                    </div>
-                                    <div class="w-[70px] h-[70px] p-0.5 gradient">
-                                        <div class="bg-dark w-full h-full flex items-center justify-center">
-                                            <span class="icon-vision text-24 gra_text"></span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="flex items-center flex-col space-y-5 -mt-20">
-                                    <div class="w-[70px] h-[70px] p-0.5 gradient">
-                                        <div class="bg-dark w-full h-full flex items-center justify-center">
-                                            <span class="icon-vision text-24 gra_text"></span>
-                                        </div>
-                                    </div>
-                                    <div class="w-[70px] h-[70px] p-0.5 gradient">
-                                        <div class="bg-dark w-full h-full flex items-center justify-center">
-                                            <span class="icon-vision text-24 gra_text"></span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                                   </div>
                                 </div>
                             </div>
                         </div>
+                    <div class="relative max-w-36 md:max-w-52 lg:max-w-60 xl:max-w-64 group anim mx-auto z-10 mt-6 md:mt-8 lg:mt-10 xl:mt-12">
+                        <button class="relative block w-full py-2 sm:py-2.5 md:py-3.5 text-dark group-hover:text-primary capitalize text16 font-bold text-center mx-auto z-10">Explore Now</button>
+                        <img src="assets/images/btn_defult.png" class="absolute inset-0 w-full h-full opacity-100 group-hover:opacity-0 anim -z-10" alt="btn_defult"/>
+                        <img src="assets/images/btn_hover.png" class="absolute inset-0 w-full h-full opacity-0 group-hover:opacity-100 anim -z-10" alt="btn_hover"/>
                     </div>
                 </section>
                 <section class="pb-8 md:pb-10 lg:pb-12 xl:pb-16 2xl:pb-20">
@@ -880,16 +823,16 @@
                            <img src="assets/images/video_img.png" alt="video_img"/>
                           </div>
                           <div class="swiper-slide swiper-slide--two">
-                            <img src="assets/images/video_img.png" alt="video_img"/>
+                            <img src="assets/images/kinjal_dave_video.png" alt="video_img"/>
                           </div>
                           <div class="swiper-slide swiper-slide--three">
-                            <img src="assets/images/video_img.png" alt="video_img"/>
-                          </div>
-                          <div class="swiper-slide swiper-slide--four">
-                            <img src="assets/images/video_img.png" alt="video_img"/>
+                            <img src="assets/images/thee_fela_video.png" alt="video_img"/>
                           </div>
                           <div class="swiper-slide swiper-slide--five">
-                            <img src="assets/images/video_img.png" alt="video_img"/>
+                            <img src="assets/images/consert_viedo.png" alt="video_img"/>
+                          </div>
+                          <div class="swiper-slide swiper-slide--four">
+                            <img src="assets/images/new_year.png" alt="video_img"/>
                           </div>
                         </div>
                     </div>
@@ -920,8 +863,10 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="text-center">
-                            <button class="btn_primary">Book Now</button>
+                        <div class="relative max-w-36 md:max-w-52 lg:max-w-60 xl:max-w-64 group anim mx-auto z-10">
+                            <button class="relative block w-full py-2 sm:py-2.5 md:py-3.5 text-dark group-hover:text-primary capitalize text16 font-bold text-center mx-auto z-10">Start Inquiry</button>
+                            <img src="assets/images/btn_defult.png" class="absolute inset-0 w-full h-full opacity-100 group-hover:opacity-0 anim -z-10" alt="btn_defult"/>
+                            <img src="assets/images/btn_hover.png" class="absolute inset-0 w-full h-full opacity-0 group-hover:opacity-100 anim -z-10" alt="btn_hover"/>
                         </div>
                         <img src="assets/images/inquiry_bg.png" class="absolute inset-0 w-full h-full object-cover -z-10" alt="inquiry_bg"/>
                     </div>
@@ -955,7 +900,7 @@
                                         </div>
                                     </div>
                                       <span class="w-2.5 h-2.5 md:w-3.5 md:h-3.5 xl:w-5 xl:h-5 rounded-full bg-primary absolute left-3.5 md:left-7 lg:left-6 xl:left-0 top-[1%] md:top-[0%] lg:top-[4%] xl:top-[17%] 2xl:top-[25%]"></span>
-                                      <span class="w-2.5 h-2.5 md:w-3.5 md:h-3.5 xl:w-5 xl:h-5 rounded-full bg-primary absolute right-3.5 md:right-7 lg:right-6 xl:right-0 top-[1%] md:top-[0%] lg:top-[4%] xl:top-[17%] 2xl:top-[25%]"></span>
+                                      <span class="w-2.5 h-2.5 md:w-3.5 md:h-3.5 xl:w-5 xl:h-5 rounded-full bg-primary absolute right-3.5 md:right-7 lg:right-6 xl:right-1.5 top-[1%] md:top-[0%] lg:top-[4%] xl:top-[17%] 2xl:top-[18%]"></span>
                                 </div>
                                 <div class="mt-3 sm:mt-6 md:mt-8 lg:mt-10 2xl:mt-12">
                                     <span class="icon-location text-18 lg:text-20 xl:text-24 text-primary text-center block"></span>
@@ -1004,8 +949,10 @@
                                 <img src="assets/images/moment6.png" class="mx-auto" alt="moment6"/>
                             </div>
                         </div>
-                        <div class="text-center">
-                            <button class="btn_primary">View Gallery</button>
+                        <div class="relative max-w-36 md:max-w-52 lg:max-w-60 xl:max-w-64 group anim mx-auto z-10">
+                            <button class="relative block w-full py-2 sm:py-2.5 md:py-3.5 text-dark group-hover:text-primary capitalize text16 font-bold text-center mx-auto z-10">View Gallery</button>
+                            <img src="assets/images/btn_defult.png" class="absolute inset-0 w-full h-full opacity-100 group-hover:opacity-0 anim -z-10" alt="btn_defult"/>
+                            <img src="assets/images/btn_hover.png" class="absolute inset-0 w-full h-full opacity-0 group-hover:opacity-100 anim -z-10" alt="btn_hover"/>
                         </div>
                     </div>
                 </section>
@@ -1047,8 +994,10 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="text-center">
-                                        <a href="" class="btn_primary">Submit</a>
+                                    <div class="relative max-w-36 md:max-w-52 lg:max-w-60 xl:max-w-64 group anim mx-auto z-10">
+                                        <button class="relative block w-full py-2 sm:py-2.5 md:py-3.5 text-dark group-hover:text-primary capitalize text16 font-bold text-center mx-auto z-10">submit</button>
+                                        <img src="assets/images/btn_defult.png" class="absolute inset-0 w-full h-full opacity-100 group-hover:opacity-0 anim -z-10" alt="btn_defult"/>
+                                        <img src="assets/images/btn_hover.png" class="absolute inset-0 w-full h-full opacity-0 group-hover:opacity-100 anim -z-10" alt="btn_hover"/>
                                     </div>
                                 </div>
                             </div>
@@ -1077,7 +1026,7 @@
                                 </div>
                             </div>
                             <div class="w-full xs:w-1/2 lg:w-1/3 p-3.5 relative mt-5 xs:mt-0 h-auto">
-                                <div class="py-5 md:py-9 xl:py-10 px-6 border border-primary text-center relative h-full">
+                                <div class="py-5 md:py-9 xl:py-10 px-6 border border-primary text-center flex items-center relative h-full">
                                     <div class="absolute left-1/2 -translate-x-1/2 -top-8 lg:-top-10">
                                         <img src="assets/images/polygon.png" class="mx-auto w-12 md:w-14 lg:w-auto" alt="polygon"/>
                                         <span class="icon-sms_fill text-dark text-18 sm:text-20 md:text-24 lg:text-32 absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2"></span>
@@ -1101,11 +1050,15 @@
                         </div>
                         <div class="text-center mt-2 md:mt-4 xl:mt-6 border-b border-[#606060] pb-3 md:pb-5 2xl:pb-7">
                             <h2 class="text-white mb-2.5 md:mb-3 2xl:mb-5">Request More Information</h2>
-                            <button class="btn_primary">Contact Us</button>
+                            <div class="relative max-w-36 md:max-w-52 lg:max-w-60 xl:max-w-64 group anim mx-auto z-10">
+                                <button class="relative block w-full py-2 sm:py-2.5 md:py-3.5 text-dark group-hover:text-primary capitalize text16 font-bold text-center mx-auto z-10">Contact Us</button>
+                                <img src="assets/images/btn_defult.png" class="absolute inset-0 w-full h-full opacity-100 group-hover:opacity-0 anim -z-10" alt="btn_defult"/>
+                                <img src="assets/images/btn_hover.png" class="absolute inset-0 w-full h-full opacity-0 group-hover:opacity-100 anim -z-10" alt="btn_hover"/>
+                            </div>
                         </div>
                         <div class="flex flex-wrap sm:flex-nowrap items-center justify-center sm:justify-between py-2 2xl:py-3">
                             <span class="inline-block text-white text-14 font-normal">© 2024 All rights reserved</span>
-                            <ul class="flex items-center space-x-6 md:space-x-8 lg:space-x-10 xl:space-x-12 p-2 sm:p-3 text-white group font-normal text-14">
+                            <ul class="flex items-center space-x-6 md:space-x-8 lg:space-x-10 xl:space-x-12 p-2 sm:p-0 text-white group font-normal text-14">
                                 <li>
                                     <a href="#" class="inline-block hover:text-primary anim">Terms</a>
                                 </li>
@@ -1116,7 +1069,7 @@
                                     <a href="#" class="inline-block hover:text-primary anim">Cookies</a>
                                 </li>
                             </ul>
-                            <div class="flex items-center space-x-1.5 p-2 sm:p-3">
+                            <div class="flex items-center space-x-1.5 p-2 sm:p-0">
                                 <a href="" class="gra_border inline-block">
                                     <div class="gra_border_bg">
                                         <span class="icon-instragram text-20 leading-none gra_text"></span>
@@ -1149,6 +1102,477 @@
             </div>
         </div>
     </div>
+
+    <!-- Amenities popup start  -->
+    <div class="fixed w-full h-screen inset-0 bg-black/30 backdrop-blur-sm overflow-hidden overflow-y-auto py-10 px-6 z-50 flex hidden">
+        <div class="w-full max-w-[950px] m-auto py-3.5 lg:py-4 xl:py-6 px-4 lg:px-5 xl:px-7 overflow-y-auto rounded-lg lg:rounded-xl xl:rounded-2xl bg-m5 border border-m4">
+            <div class="flex items-center justify-between mb-2.5 md:mb-3 xl:mb-5">
+                <h4>Amenities</h4>
+                <span class="icon-close text-white text-18 lg:text-20 xl:text-24"></span>
+            </div>
+            <div class="space-y-2.5 md:space-y-3">
+                <div class="space-y-1.5">
+                    <h5 class="text18 text-white font-medium">Highlighted Amenities</h5>
+                    <ul class="flex flex-wrap items-center -mx-1 space-x-0 md:space-x-4 xl:space-x-6">
+                        <li class="flex items-center p-1 space-x-1.5">
+                            <span class="icon-check_circle text18 text-primary"></span>
+                            <span class="inline-block text-white/80 text16 font-normal">Spa</span>
+                        </li>
+                        <li class="flex items-center p-1 space-x-1.5">
+                            <span class="icon-check_circle text18 text-primary"></span>
+                            <span class="inline-block text-white/80 text16 font-normal">Swimming Pool</span>
+                        </li>
+                        <li class="flex items-center p-1 space-x-1.5">
+                            <span class="icon-check_circle text18 text-primary"></span>
+                            <span class="inline-block text-white/80 text16 font-normal">Restaurant</span>
+                        </li>
+                        <li class="flex items-center p-1 space-x-1.5">
+                            <span class="icon-check_circle text18 text-primary"></span>
+                            <span class="inline-block text-white/80 text16 font-normal">Lounge</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="space-y-1.5">
+                    <h5 class="text18 text-white font-medium">Basic Facilities</h5>
+                    <div class="flex flex-wrap items-start -mx-1.5 lg:-mx-2.5">
+                        <div class="w-full xs:w-1/2 sm:w-1/3 md:w-1/4 p-1.5 lg:p-2.5 space-y-2.5 lg:space-y-3.5">
+                            <div class="flex items-center space-x-1.5">
+                                <span class="icon-check_circle text18 text-primary"></span>
+                                <span class="inline-block text-white/80 text16 font-normal">Free Parking</span>
+                            </div>
+                            <div class="flex items-center space-x-1.5">
+                                <span class="icon-check_circle text18 text-primary"></span>
+                                <span class="inline-block text-white/80 text16 font-normal">Newspaper</span>
+                            </div>
+                            <div class="flex items-center space-x-1.5">
+                                <span class="icon-check_circle text18 text-primary"></span>
+                                <span class="inline-block text-white/80 text16 font-normal">Room Service</span>
+                            </div>
+                            <div class="flex items-center space-x-1.5">
+                                <span class="icon-check_circle text18 text-primary"></span>
+                                <span class="inline-block text-white/80 text16 font-normal">Refrigerator</span>
+                            </div>
+                            <div class="flex items-center space-x-1.5">
+                                <span class="icon-check_circle text18 text-primary"></span>
+                                <span class="inline-block text-white/80 text16 font-normal">Attached Bathroom</span>
+                            </div>
+                        </div>
+                        <div class="w-full xs:w-1/2 sm:w-1/3 md:w-1/4 p-1.5 lg:p-2.5 space-y-2.5 lg:space-y-3.5">
+                            <div class="flex items-center space-x-1.5">
+                                <span class="icon-check_circle text18 text-primary"></span>
+                                <span class="inline-block text-white/80 text16 font-normal">Free LAN</span>
+                            </div>
+                            <div class="flex items-center space-x-1.5">
+                                <span class="icon-check_circle text18 text-primary"></span>
+                                <span class="inline-block text-white/80 text16 font-normal">Free Wi-Fi</span>
+                            </div>
+                            <div class="flex items-center space-x-1.5">
+                                <span class="icon-check_circle text18 text-primary"></span>
+                                <span class="inline-block text-white/80 text16 font-normal">Housekeeping</span>
+                            </div>
+                            <div class="flex items-center space-x-1.5">
+                                <span class="icon-check_circle text18 text-primary"></span>
+                                <span class="inline-block text-white/80 text16 font-normal">Public Restrooms</span>
+                            </div>
+                            <div class="flex items-center space-x-1.5">
+                                <span class="icon-check_circle text18 text-primary"></span>
+                                <span class="inline-block text-white/80 text16 font-normal">Air Conditioning</span>
+                            </div>
+                        </div>
+                        <div class="w-full xs:w-1/2 sm:w-1/3 md:w-1/4 p-1.5 lg:p-2.5 space-y-2.5 lg:space-y-3.5">
+                            <div class="flex items-center space-x-1.5">
+                                <span class="icon-check_circle text18 text-primary"></span>
+                                <span class="inline-block text-white/80 text16 font-normal">Power Backup</span>
+                            </div>
+                            <div class="flex items-center space-x-1.5">
+                                <span class="icon-check_circle text18 text-primary"></span>
+                                <span class="inline-block text-white/80 text16 font-normal">Intercom</span>
+                            </div>
+                            <div class="flex items-center space-x-1.5">
+                                <span class="icon-check_circle text18 text-primary"></span>
+                                <span class="inline-block text-white/80 text16 font-normal">Swimming Pool</span>
+                            </div>
+                            <div class="flex items-center space-x-1.5">
+                                <span class="icon-check_circle text18 text-primary"></span>
+                                <span class="inline-block text-white/80 text16 font-normal">Smoke Detector</span>
+                            </div>
+                            <div class="flex items-center space-x-1.5">
+                                <span class="icon-check_circle text18 text-primary"></span>
+                                <span class="inline-block text-white/80 text16 font-normal">Telephone</span>
+                            </div>
+                        </div>
+                        <div class="w-full xs:w-1/2 sm:w-1/3 md:w-1/4 p-1.5 lg:p-2.5 space-y-2.5 lg:space-y-3.5">
+                            <div class="flex items-center space-x-1.5">
+                                <span class="icon-check_circle text18 text-primary"></span>
+                                <span class="inline-block text-white/80 text16 font-normal">Dry Cleaning Service</span>
+                            </div>
+                            <div class="flex items-center space-x-1.5">
+                                <span class="icon-check_circle text18 text-primary"></span>
+                                <span class="inline-block text-white/80 text16 font-normal">Private Entrance</span>
+                            </div>
+                            <div class="flex items-center space-x-1.5">
+                                <span class="icon-check_circle text18 text-primary"></span>
+                                <span class="inline-block text-white/80 text16 font-normal">Elevator/Lift</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="space-y-1.5">
+                    <h5 class="text18 text-white font-medium">Food and Drinks</h5>
+                    <div class="flex flex-wrap items-start -mx-1.5 lg:-mx-2.5">
+                        <div class="w-full xs:w-1/2 sm:w-1/3 md:w-1/4 p-1.5 lg:p-2.5 space-y-2.5 lg:space-y-3.5">
+                            <div class="flex items-center space-x-1.5">
+                                <span class="icon-check_circle text18 text-primary"></span>
+                                <span class="inline-block text-white/80 text16 font-normal">Restaurant</span>
+                            </div>
+                        </div>
+                        <div class="w-full xs:w-1/2 sm:w-1/3 md:w-1/4 p-1.5 lg:p-2.5 space-y-2.5 lg:space-y-3.5">
+                            <div class="flex items-center space-x-1.5">
+                                <span class="icon-check_circle text18 text-primary"></span>
+                                <span class="inline-block text-white/80 text16 font-normal">Dining Area</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="space-y-1.5">
+                    <h5 class="text18 text-white font-medium">Safety and Security</h5>
+                    <div class="flex flex-wrap items-start -mx-1.5 lg:-mx-2.5">
+                        <div class="w-full xs:w-1/2 sm:w-1/3 md:w-1/4 p-1.5 lg:p-2.5 space-y-2.5 lg:space-y-3.5">
+                            <div class="flex items-center space-x-1.5">
+                                <span class="icon-check_circle text18 text-primary"></span>
+                                <span class="inline-block text-white/80 text16 font-normal">Safety and Security</span>
+                            </div>
+                            <div class="flex items-center space-x-1.5">
+                                <span class="icon-check_circle text18 text-primary"></span>
+                                <span class="inline-block text-white/80 text16 font-normal">Fire Extinguishers</span>
+                            </div>
+                        </div>
+                        <div class="w-full xs:w-1/2 sm:w-1/3 md:w-1/4 p-1.5 lg:p-2.5 space-y-2.5 lg:space-y-3.5">
+                            <div class="flex items-center space-x-1.5">
+                                <span class="icon-check_circle text18 text-primary"></span>
+                                <span class="inline-block text-white/80 text16 font-normal">24-hour Security</span>
+                            </div>
+                            <div class="flex items-center space-x-1.5">
+                                <span class="icon-check_circle text18 text-primary"></span>
+                                <span class="inline-block text-white/80 text16 font-normal">Smoke alarms</span>
+                            </div>
+                        </div>
+                        <div class="w-full xs:w-1/2 sm:w-1/3 md:w-1/4 p-1.5 lg:p-2.5 space-y-2.5 lg:space-y-3.5">
+                            <div class="flex items-center space-x-1.5">
+                                <span class="icon-check_circle text18 text-primary"></span>
+                                <span class="inline-block text-white/80 text16 font-normal">Safe</span>
+                            </div>
+                            <div class="flex items-center space-x-1.5">
+                                <span class="icon-check_circle text18 text-primary"></span>
+                                <span class="inline-block text-white/80 text16 font-normal">CCTV</span>
+                            </div>
+                        </div>
+                        <div class="w-full xs:w-1/2 sm:w-1/3 md:w-1/4 p-1.5 lg:p-2.5 space-y-2.5 lg:space-y-3.5">
+                            <div class="flex items-center space-x-1.5">
+                                <span class="icon-check_circle text18 text-primary"></span>
+                                <span class="inline-block text-white/80 text16 font-normal">Security alarms</span>
+                            </div>
+                            <div class="flex items-center space-x-1.5">
+                                <span class="icon-check_circle text18 text-primary"></span>
+                                <span class="inline-block text-white/80 text16 font-normal">Electronic Keycard</span>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="space-y-1.5">
+                    <h5 class="text18 text-white font-medium">Media and technology</h5>
+                    <div class="flex flex-wrap items-start -mx-1.5 lg:-mx-2.5">
+                        <div class="w-full xs:w-1/2 sm:w-1/3 md:w-1/4 p-1.5 lg:p-2.5 space-y-2.5 lg:space-y-3.5">
+                            <div class="flex items-center space-x-1.5">
+                                <span class="icon-check_circle text18 text-primary"></span>
+                                <span class="inline-block text-white/80 text16 font-normal">TV</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="space-y-1.5">
+                    <h5 class="text18 text-white font-medium">General Services</h5>
+                    <div class="flex flex-wrap items-start -mx-1.5 lg:-mx-2.5">
+                        <div class="w-full xs:w-1/2 sm:w-1/3 md:w-1/4 p-1.5 lg:p-2.5 space-y-2.5 lg:space-y-3.5">
+                            <div class="flex items-center space-x-1.5">
+                                <span class="icon-check_circle text18 text-primary"></span>
+                                <span class="inline-block text-white/80 text16 font-normal">Luggage Storage</span>
+                            </div>
+                        </div>
+                        <div class="w-full xs:w-1/2 sm:w-1/3 md:w-1/4 p-1.5 lg:p-2.5 space-y-2.5 lg:space-y-3.5">
+                            <div class="flex items-center space-x-1.5">
+                                <span class="icon-check_circle text18 text-primary"></span>
+                                <span class="inline-block text-white/80 text16 font-normal">Doctor on Call</span>
+                            </div>
+                        </div>
+                        <div class="w-full xs:w-1/2 sm:w-1/3 md:w-1/4 p-1.5 lg:p-2.5 space-y-2.5 lg:space-y-3.5">
+                            <div class="flex items-center space-x-1.5">
+                                <span class="icon-check_circle text18 text-primary"></span>
+                                <span class="inline-block text-white/80 text16 font-normal">Bellboy Service</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="space-y-1.5">
+                    <h5 class="text18 text-white font-medium">Beauty and Spa</h5>
+                    <div class="flex flex-wrap items-start -mx-1.5 lg:-mx-2.5">
+                        <div class="w-full xs:w-1/2 sm:w-1/3 md:w-1/4 p-1.5 lg:p-2.5 space-y-2.5 lg:space-y-3.5">
+                            <div class="flex items-center space-x-1.5">
+                                <span class="icon-check_circle text18 text-primary"></span>
+                                <span class="inline-block text-white/80 text16 font-normal">Massage</span>
+                            </div>
+                        </div>
+                        <div class="w-full xs:w-1/2 sm:w-1/3 md:w-1/4 p-1.5 lg:p-2.5 space-y-2.5 lg:space-y-3.5">
+                            <div class="flex items-center space-x-1.5">
+                                <span class="icon-check_circle text18 text-primary"></span>
+                                <span class="inline-block text-white/80 text16 font-normal">Salon</span>
+                            </div>
+                        </div>
+                        <div class="w-full xs:w-1/2 sm:w-1/3 md:w-1/4 p-1.5 lg:p-2.5 space-y-2.5 lg:space-y-3.5">
+                            <div class="flex items-center space-x-1.5">
+                                <span class="icon-check_circle text18 text-primary"></span>
+                                <span class="inline-block text-white/80 text16 font-normal">Spa</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="space-y-1.5">
+                    <h5 class="text18 text-white font-medium">Common Area</h5>
+                    <div class="flex flex-wrap items-start -mx-1.5 lg:-mx-2.5">
+                        <div class="w-full xs:w-1/2 sm:w-1/3 md:w-1/4 p-1.5 lg:p-2.5 space-y-2.5 lg:space-y-3.5">
+                            <div class="flex items-center space-x-1.5">
+                                <span class="icon-check_circle text18 text-primary"></span>
+                                <span class="inline-block text-white/80 text16 font-normal">Seating Area</span>
+                            </div>
+                        </div>
+                        <div class="w-full xs:w-1/2 sm:w-1/3 md:w-1/4 p-1.5 lg:p-2.5 space-y-2.5 lg:space-y-3.5">
+                            <div class="flex items-center space-x-1.5">
+                                <span class="icon-check_circle text18 text-primary"></span>
+                                <span class="inline-block text-white/80 text16 font-normal">Lounge</span>
+                            </div>
+                        </div>
+                        <div class="w-full xs:w-1/2 sm:w-1/3 md:w-1/4 p-1.5 lg:p-2.5 space-y-2.5 lg:space-y-3.5">
+                            <div class="flex items-center space-x-1.5">
+                                <span class="icon-check_circle text18 text-primary"></span>
+                                <span class="inline-block text-white/80 text16 font-normal">Reception</span>
+                            </div>
+                        </div>
+                        <div class="w-full xs:w-1/2 sm:w-1/3 md:w-1/4 p-1.5 lg:p-2.5 space-y-2.5 lg:space-y-3.5">
+                            <div class="flex items-center space-x-1.5">
+                                <span class="icon-check_circle text18 text-primary"></span>
+                                <span class="inline-block text-white/80 text16 font-normal">Sun Deck</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="space-y-1.5">
+                    <h5 class="text18 text-white font-medium">Other Facilities</h5>
+                    <div class="flex flex-wrap items-start -mx-1.5 lg:-mx-2.5">
+                        <div class="w-full xs:w-1/2 sm:w-1/3 md:w-1/4 p-1.5 lg:p-2.5 space-y-2.5 lg:space-y-3.5">
+                            <div class="flex items-center space-x-1.5">
+                                <span class="icon-check_circle text18 text-primary"></span>
+                                <span class="inline-block text-white/80 text16 font-normal">Broadband</span>
+                            </div>
+                            <div class="flex items-center space-x-1.5">
+                                <span class="icon-check_circle text18 text-primary"></span>
+                                <span class="inline-block text-white/80 text16 font-normal">Smart Door Lock</span>
+                            </div>
+                        </div>
+                        <div class="w-full xs:w-1/2 sm:w-1/3 md:w-1/4 p-1.5 lg:p-2.5 space-y-2.5 lg:space-y-3.5">
+                            <div class="flex items-center space-x-1.5">
+                                <span class="icon-check_circle text18 text-primary"></span>
+                                <span class="inline-block text-white/80 text16 font-normal">Game Room</span>
+                            </div>
+                            <div class="flex items-center space-x-1.5">
+                                <span class="icon-check_circle text18 text-primary"></span>
+                                <span class="inline-block text-white/80 text16 font-normal">Phone Network</span>
+                            </div>
+                        </div>
+                        <div class="w-full xs:w-1/2 sm:w-1/3 md:w-1/4 p-1.5 lg:p-2.5 space-y-2.5 lg:space-y-3.5">
+                            <div class="flex items-center space-x-1.5">
+                                <span class="icon-check_circle text18 text-primary"></span>
+                                <span class="inline-block text-white/80 text16 font-normal">Security Guard</span>
+                            </div>
+                            <div class="flex items-center space-x-1.5">
+                                <span class="icon-check_circle text18 text-primary"></span>
+                                <span class="inline-block text-white/80 text16 font-normal">Picnic area</span>
+                            </div>
+                        </div>
+                        <div class="w-full xs:w-1/2 sm:w-1/3 md:w-1/4 p-1.5 lg:p-2.5 space-y-2.5 lg:space-y-3.5">
+                            <div class="flex items-start space-x-1.5">
+                                <span class="icon-check_circle text18 text-primary"></span>
+                                <span class="inline-block text-white/80 text16 font-normal">Dispensers for
+                                    disinfectants</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Amenities popup end  -->
+    <!-- Property Rules start  -->
+    <div class="fixed w-full h-screen inset-0 bg-black/30 backdrop-blur-sm overflow-hidden overflow-y-auto py-10 px-6 z-50 flex hidden">
+        <div class="w-full max-w-[800px] m-auto py-3.5 lg:py-4 xl:py-6 px-4 lg:px-5 xl:px-7 overflow-y-auto rounded-lg lg:rounded-xl xl:rounded-2xl bg-m5 border border-m4">
+            <div class="flex items-center justify-between mb-2.5 md:mb-3 xl:mb-5">
+                <h4>Property Rules at Kratos lifestyle Club</h4>
+                <span class="icon-close text-white text-18 lg:text-20 xl:text-24"></span>
+            </div>
+            <div class="space-y-2.5 md:space-y-3.5 lg:space-y-5">
+                <div class="space-y-2.5 lg:space-y-3.5">
+                    <p class="text18 text-white font-medium">Must Read Rules</p>
+                    <ul class="text16 text-white font-normal list-disc list-inside pl-2.5">
+                        <li>Unmarried couples are not allowed</li>
+                        <li>Primary guest should be atleast 18 years of age</li>
+                        <li>Passport, Aadhar, Driving License and Govt. ID are accepted as ID proof(s)</li>
+                        <li>Pets are not allowed</li>
+                        <li>Outside food is not allowed</li>
+                        <li>Smoking within the premises is not allowed</li>
+                    </ul>
+                </div>
+                <div class="space-y-2.5 lg:space-y-3.5">
+                    <p class="text18 text-white font-medium">Guest Profile</p>
+                    <ul class="text16 text-white font-normal list-disc list-inside pl-2.5">
+                        <li>Unmarried couples are not allowed</li>
+                        <li>Primary guest should be atleast 18 years of age</li>
+                        <li>Groups with only male guests are not allowed at this property</li>
+                    </ul>
+                </div>
+                <div class="space-y-2.5 lg:space-y-3.5">
+                    <p class="text18 text-white font-medium">ID Proof Related</p>
+                    <ul class="text16 text-white font-normal list-disc list-inside pl-2.5">
+                        <li>Passport, Aadhar, Driving License and Govt. ID are accepted as ID proof(s)</li>
+                        <li>Local ids not allowed</li>
+                    </ul>
+                </div>
+                <div class="space-y-2.5 lg:space-y-3.5">
+                    <p class="text18 text-white font-medium">Food Arrangement</p>
+                    <ul class="text16 text-white font-normal list-disc list-inside pl-2.5">
+                        <li>Non veg food is not allowed</li>
+                        <li>Outside food is not allowed</li>
+                    </ul>
+                </div>
+                <div class="space-y-2.5 lg:space-y-3.5">
+                    <p class="text18 text-white font-medium">Smoking/Alcohol consumption Rules</p>
+                    <ul class="text16 text-white font-normal list-disc list-inside pl-2.5">
+                        <li>Smoking within the premises is not allowed</li>
+                        <li>Alcohol consumption is not allowed within the property premises.</li>
+                    </ul>
+                </div>
+                <div class="space-y-2.5 lg:space-y-3.5">
+                    <p class="text18 text-white font-medium">Pets Related</p>
+                    <ul class="text16 text-white font-normal list-disc list-inside pl-2.5">
+                        <li>Pets are not allowed</li>
+                        <li>There are no pets living on the property</li>
+                    </ul>
+                </div>
+                <div class="space-y-2.5 lg:space-y-3.5">
+                    <p class="text18 text-white font-medium">Property Accessibility</p>
+                    <ul class="text16 text-white font-normal list-disc list-inside pl-2.5">
+                        <li>This property is not accessible to guests who use a wheelchair. Please make arrangements accordingly.</li>
+                    </ul>
+                </div>
+                <div class="space-y-2.5 lg:space-y-3.5">
+                    <p class="text18 text-white font-medium">Other Rules</p>
+                    <ul class="text16 text-white font-normal list-disc list-inside pl-2.5">
+                        <li>Does not allow private parties or events</li>
+                        <li>Guests are requested not to invite outside visitors in the room during their stay.</li>
+                    </ul>
+                </div>
+                <div class="space-y-2.5 lg:space-y-3.5">
+                    <p class="text18 text-white font-medium">Child & Extra Bed Policy</p>
+                    <ul class="text16 text-white font-normal list-disc list-inside pl-2.5">
+                        <li>An extra bed will be provided to accommodate any child included in the booking for a charge mentioned below. (Subject to availability)</li>
+                        <li>INR 1000 will be charged for an extra mattress per child. (To be paid at the property)</li>
+                        <li>An extra bed will be provided to accommodate any additional guest included in the booking for a charge mentioned below. (Subject to availability)</li>
+                        <li>INR 1000 will be charged for an extra mattress per guest. (To be paid at the property)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Property Rules end  -->
+    <!-- After payment done start  -->
+    <div class="fixed w-full h-screen inset-0 bg-black/30 backdrop-blur-sm overflow-hidden overflow-y-auto py-10 px-6 z-50 flex hidden">
+        <div class="w-full max-w-[600px] m-auto py-3.5 lg:py-4 xl:py-6 px-4 lg:px-5 xl:px-7 overflow-y-auto rounded-lg lg:rounded-xl xl:rounded-2xl bg-m5 border border-m4">
+            <div class="flex items-center justify-between mb-3 md:mb-5 xl:mb-7">
+                <h4 class="text-primary max-w-80 text-center mx-auto">Payment Successful!
+                    <span class="text-white">Your Stay is Confirmed! </span></h4>
+                <span class="icon-close text-white text-18 lg:text-20 xl:text-24"></span>
+            </div>
+            <div class="w-full max-w-[380px] mx-auto">
+                <div class="flex items-center -mx-2.5">
+                    <div class="w-1/2 p-2.5">
+                        <span class="block text16 font-normal text-white/80">Booking ID: </span>
+                        <span class="block text16 font-normal text-white/80">Hotel Name:  </span>
+                        <span class="block text16 font-normal text-white/80">Room Type: </span>
+                        <span class="block text16 font-normal text-white/80">Check-in: Check in : </span>
+                        <span class="block text16 font-normal text-white/80">Check-out: </span>
+                    </div>
+                    <div class="w-1/2 p-2.5">
+                        <span class="block text16 font-normal text-white/80">12345ABC </span>
+                        <span class="block text16 font-normal text-white/80">Kratos Lifestyle Club</span>
+                        <span class="block text16 font-normal text-white/80"> Deluxe Suite</span>
+                        <span class="block text16 font-normal text-white/80">February 01, 2025</span>
+                        <span class="block text16 font-normal text-white/80">February 03, 2025</span>
+                    </div>
+                </div>
+                <div class="relative max-w-36 md:max-w-52 lg:max-w-60 xl:max-w-64 group anim mx-auto z-10 mt-2.5 md:mt-5 lg:mt-7 xl:mt-9">
+                    <button class="relative block w-full py-2 sm:py-2.5 md:py-3.5 text-dark group-hover:text-primary capitalize text16 font-bold text-center mx-auto z-10">Download Details</button>
+                    <img src="assets/images/btn_defult.png" class="absolute inset-0 w-full h-full opacity-100 group-hover:opacity-0 anim -z-10" alt="btn_defult"/>
+                    <img src="assets/images/btn_hover.png" class="absolute inset-0 w-full h-full opacity-0 group-hover:opacity-100 anim -z-10" alt="btn_hover"/>
+                </div>
+            </div>
+        </div>
+        <img src="assets/images/payment_effect.png" class="absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 -z-10" alt="payment_effect"/>
+    </div>
+    <!-- After payment done start  -->
+    <div class="fixed w-full h-screen inset-0 bg-black/30 backdrop-blur-sm overflow-hidden overflow-y-auto py-10 px-6 z-50 flex hidden">
+        <div class="w-full max-w-[600px] m-auto py-3.5 lg:py-4 xl:py-6 px-4 lg:px-5 xl:px-7 overflow-y-auto rounded-lg lg:rounded-xl xl:rounded-2xl bg-m5 border border-m4">
+            <div class="flex items-center justify-between mb-3 md:mb-5 xl:mb-7">
+                <h4 class="max-w-80 text-center mx-auto">Are you sure you want to cancel your booking?</h4>
+                <span class="icon-close text-white text-18 lg:text-20 xl:text-24"></span>
+            </div>
+            <div class="w-full max-w-[380px] mx-auto">
+                <div class="flex items-center -mx-2.5">
+                    <div class="w-1/2 p-2.5">
+                        <span class="block text16 font-normal text-white/80">Booking ID: </span>
+                        <span class="block text16 font-normal text-white/80">Hotel Name:  </span>
+                        <span class="block text16 font-normal text-white/80">Room Type: </span>
+                        <span class="block text16 font-normal text-white/80">Check-in: Check in : </span>
+                        <span class="block text16 font-normal text-white/80">Check-out: </span>
+                        <span class="block text16 font-normal text-white/80">Total Amount: </span>
+                    </div>
+                    <div class="w-1/2 p-2.5">
+                        <span class="block text16 font-normal text-white/80">12345ABC </span>
+                        <span class="block text16 font-normal text-white/80">Kratos Lifestyle Club</span>
+                        <span class="block text16 font-normal text-white/80"> Deluxe Suite</span>
+                        <span class="block text16 font-normal text-white/80">February 01, 2025</span>
+                        <span class="block text16 font-normal text-white/80">February 03, 2025</span>
+                        <span class="block text16 font-normal text-white/80">₹3,000</span>
+                    </div>
+                </div>
+            </div>
+            <p class="text-white/80 text16 font-normal text-center mt-2.5 md:mt-3 xl:mt-5">💡 Note: Cancellation may be subject to charges as per our policy. Refund (if applicable) will be processed within 5-7 business days.</p>
+            <div class="flex items-center space-x-3 xl:space-x-5 mt-2.5 md:mt-5 lg:mt-7 xl:mt-9">
+                <div class="w-full">
+                    <div class="relative max-w-36 md:max-w-52 lg:max-w-60 xl:max-w-64 group anim mx-auto z-10">
+                        <button class="relative block w-full py-2 sm:py-2.5 md:py-3.5 text-dark group-hover:text-primary capitalize text16 font-bold text-center mx-auto z-10">Go Back</button>
+                        <img src="assets/images/btn_defult.png" class="absolute inset-0 w-full h-full opacity-100 group-hover:opacity-0 anim -z-10" alt="btn_defult"/>
+                        <img src="assets/images/btn_hover.png" class="absolute inset-0 w-full h-full opacity-0 group-hover:opacity-100 anim -z-10" alt="btn_hover"/>
+                    </div>
+                </div>
+                <div class="w-full">
+                    <div class="relative max-w-36 md:max-w-52 lg:max-w-60 xl:max-w-64 group anim mx-auto z-10">
+                        <button class="relative block w-full py-2 sm:py-2.5 md:py-3.5 text-dark group-hover:text-primary capitalize text16 font-bold text-center mx-auto z-10">Yes, Proceed</button>
+                        <img src="assets/images/btn_defult.png" class="absolute inset-0 w-full h-full opacity-100 group-hover:opacity-0 anim -z-10" alt="btn_defult"/>
+                        <img src="assets/images/btn_hover.png" class="absolute inset-0 w-full h-full opacity-0 group-hover:opacity-100 anim -z-10" alt="btn_hover"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 <script src="https://unpkg.com/swiper@7.0.6/swiper-bundle.min.js"></script>
 <!-- swiper js  -->
@@ -1167,5 +1591,4 @@
 <script src="assets/js/gsap.min.js"></script>
 <!-- main.js  -->
 <script src="assets/js/script.js"></script>
-
 </html>

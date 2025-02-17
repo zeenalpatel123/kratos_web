@@ -5,29 +5,42 @@
 *{@apply font-ubuntu;}
 body{@apply bg-dark capitalize;}
 .warrper{@apply w-full max-w-[1520px] px-5 mx-auto;}
-.h1,h1{@apply text-32  md:text-38 lg:text-48 xl:text-52 2xl:text-64 font-bold text-white font-play_display;}
+.h1,h1{@apply text-28  md:text-38 lg:text-48 xl:text-52 2xl:text-64 font-bold text-white font-play_display;}
 .h2,h2{@apply text-24 lg:text-28 xl:text-36 2xl:text-42 font-bold text-white font-play_display;}
 .h3,h3{@apply text-20 lg:text-24 xl:text-30 2xl:text-36 font-bold text-dark;}
 .h4,h4{@apply text-18 md:text-20 lg:text-24 2xl:text-28 font-medium font-play_display text-white;}
 .text16{@apply text-12 md:text-14 2xl:text-16;}
 .text18{@apply text-14 lg:text-16 2xl:text-18;}
-.btn_primary{@apply gradient hover:opacity-65 hover:scale-105 hover:shadow-xl anim text-14 xl:text-16 font-bold w-full max-w-36 lg:max-w-52 py-2.5 lg:py-3.5 xl:py-4 px-3.5 text-black cursor-pointer inline-block;}
-.btn_secondary{@apply bg-dark hover:opacity-65 hover:scale-105 hover:shadow-xl anim text-14 xl:text-16 font-bold w-full max-w-36 lg:max-w-52 py-2.5 lg:py-3.5 xl:py-4 px-3.5 text-white cursor-pointer inline-block;}
+.btn_primary{@apply gradient hover:opacity-65 hover:scale-105 hover:shadow-xl anim text-14 xl:text-16 font-bold w-full max-w-52  py-2.5 lg:py-3.5 xl:py-4 px-3.5 text-black cursor-pointer inline-block;}
+.btn_secondary{@apply bg-dark hover:opacity-65 hover:scale-105 hover:shadow-xl anim text-14 xl:text-16 font-bold w-full max-w-52  py-2.5 lg:py-3.5 xl:py-4 px-3.5 text-white cursor-pointer inline-block;}
 .anim{@apply transition-all duration-300;}
+/* header up and down onscroll css start  */
 #main_header.navbar_down{@apply -translate-y-full;}
-/* #main_header.navbar_up{@apply  bg-dark;} */
+#main_header.navbar_up header {
+  background: #010C11;
+}
+/* header up and down onscroll css end  */
 
+/* label ane input css start  */
+.label{@apply text-white text18 font-medium block;}
+.input{@apply rounded-lg py-2 2xl:py-2.5 px-5 w-full bg-dark outline-none border-primary mt-1.5 md:mt-2.5 border text16 text-white block;}
+/* label ane input css end  */
+
+/* gradient background css start  */
 .gradient{ 
     background: linear-gradient(to right, #BF7B0B, #CE9823, #EDBE54, #F7D073, #D6A139, #C07F09);
 }
+/* gradient background css end  */
+
+/* gradient text css start  */
 .gra_text{
   background: linear-gradient(to right, #BF7B0B, #CE9823, #EDBE54, #F7D073, #D6A139, #C07F09); 
   -webkit-text-fill-color: transparent; 
   -webkit-background-clip: text; 
 }
-#main_header.navbar_up header {
-  background: #010C11;
-}
+/* gradient text css end  */
+
+/* gradient box border css start  */
 .gra_border {
   width: 32px;
   position: relative;
@@ -46,6 +59,9 @@ body{@apply bg-dark capitalize;}
   align-items:center ;
   justify-content: center;
 }
+/* gradient box border css end  */
+
+/* swiper Home page and annoucment page css start */
 :root {
     --swiper-image-ratio: 33.3%; /* ratio 16:9 = 56.25% */
   
@@ -83,7 +99,7 @@ body{@apply bg-dark capitalize;}
   .mySwiper .swiper-slide.swiper-slide-active {
     transform: scale(1) translateZ(0) !important;
   }
-  
+
   .swiper-image {
     position: relative;
     width: 100%;
@@ -100,8 +116,6 @@ body{@apply bg-dark capitalize;}
     background-color: #929ec9;
   }
 
-
-  
   @media only screen and (max-width: 768px) {
     .swiper {
       height: calc(var(--swiper-mobile-width) * var(--swiper-image-ratio) / 100%);
@@ -113,7 +127,18 @@ body{@apply bg-dark capitalize;}
     }
   }
 
-  /* tab css  */
+  /* announcement page swiper css start  */
+  .mySwiper .swiper-slide.swiper-slide-active .content_swiper {
+    opacity: 1;
+  }
+  .content_swiper{
+    opacity: 0;
+  }
+  /* announcement page swiper css end  */
+
+/* swiper Home page and annoucment page css start */
+
+/* tab css start */
 .tab_main.active {
   display: block;
   transform: scale(1);
@@ -122,15 +147,46 @@ body{@apply bg-dark capitalize;}
     transition: 0.5s all;
     transform:scale(0);
 }
-button{
-    transition: 0.3s width all;
+/* tab hover css start  */
+.tab_hover li a::after {
+  content: "";
+  width: 0;
+  height: 4px;
+  background: #D7B56D;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-radius: 3px 3px 0 0;
+  transition: 0.3s all;
 }
-button.active {
-    color: #2B50ED;
-    border-color: #fff;
+.tab_hover li a.active::after, .tab_hover li a:hover::after{
+  width: 100%;
 }
+.tab_hover li a.active{
+  color: #D7B56D;
+}
+/* tab hover css end  */
+/* tab css end */
 
+/* redio css start */
+.radio{@apply w-4 h-4 lg:w-6 lg:h-6 bg-dark rounded-full border border-transparent flex items-center justify-center;}
+.radio span{@apply w-1.5 h-1.5 bg-primary rounded-full opacity-0 block;}
+input:checked + .radio{@apply bg-m5 border-primary;}
+input:checked + .radio span{@apply opacity-100;}
+/* redio css end */
 
+/* faqs css start  */
+.krotos_title.active{@apply bg-dark px-2.5 lg:px-4 xl:px-6 pt-2.5 lg:pt-4 xl:pt-6 pb-2 xl:pb-3;}
+.krotos_title.active + .kratos_content{@apply bg-dark;}
+.krotos_title{@apply rounded-tl-2xl rounded-tr-2xl;}
+.kratos_content{@apply rounded-bl-2xl rounded-br-2xl;}
+.down_arrow{@apply w-5 h-5 xl:w-6 xl:h-6 flex items-center justify-center rounded-full bg-transparent border border-transparent;}
+.down_arrow span{@apply w-2.5 h-2.5 bg-white rounded-full inline-block relative;}
+.krotos_title.active .down_arrow{@apply border-primary;}
+.krotos_title.active .down_arrow span{@apply w-1.5 h-1.5 bg-primary;}
+/* faqs css end  */
+
+/* gallery and video page css start  */
 .container_grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -177,26 +233,9 @@ button.active {
   }
 }
 
-/* tab menu hover effect  */
-.tab_hover li a::after {
-  content: "";
-  width: 0;
-  height: 4px;
-  background: #D7B56D;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  border-radius: 3px 3px 0 0;
-  transition: 0.3s all;
-}
-.tab_hover li a.active::after, .tab_hover li a:hover::after{
-  width: 100%;
-}
-.tab_hover li a.active{
-  color: #D7B56D;
-}
+/* gallery and video page css end  */
 
-/* scroll bar  */
+/* scroll bar css start */
 *::-webkit-scrollbar {
   scrollbar-width: auto;
   width: 12px;
@@ -213,6 +252,7 @@ button.active {
 *::-webkit-scrollbar-track {
   background: #fff;
 }
+/* scroll bar css end */
 
 /* .box_hover:hover{
   border: 2px solid #D7B56D;
@@ -221,9 +261,23 @@ button.active {
   background: linear-gradient(to right, #BF7B0B, #CE9823, #EDBE54, #F7D073, #D6A139, #C07F09);
 }
 
+/* myswiper3 css start  */
 .mySwiper3 .swiper-slide{
   height: auto !important;
 }
 .mySwiper3 .swiper-slide .v_slider{@apply scale-90 opacity-50 origin-top;}
 .mySwiper3 .swiper-slide.swiper-slide-active .v_slider{@apply scale-100 opacity-100 origin-top;}
+/* myswiper3 css end  */
+
+/* table css start  */
+table tr th{@apply py-2 2xl:py-3.5 px-5 2xl:px-7 text-14 lg:text-16 2xl:text-18 font-medium text-white bg-m5;}
+table tr td{@apply py-2 2xl:py-2.5 px-5 2xl:px-7 text-12 lg:text-14 2xl:text-16 font-normal text-white bg-dark;}
+table.membership tr th {
+  border-top: 0px solid transparent;
+}
+table.membership tr th, table.membership tr td {
+  border: 1px solid #2C3539;
+}
+/* table css end  */
+
 @tailwind utilities;

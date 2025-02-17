@@ -1,3 +1,39 @@
+// faqs script start 
+$(function() {
+  $('.kratos_content').slideUp();
+  $('.krotos_title.active').next().slideDown();
+  $('.krotos_title').click(function(j) {   
+    if ($(this).hasClass('active')) {
+      $(this).removeClass('active');
+      $('.krotos_title').removeClass('active');
+      $(this).next().slideUp();
+    }
+    else {
+      $('.krotos_title').removeClass('active');
+      $('.kratos_content').slideUp();
+      $(this).addClass('active');
+      $(this).next().slideDown();
+    }     
+  });
+});
+
+$(function() {
+  $('.menu_content').slideUp();
+  $('.menu_title.active').next().slideDown();
+  $('.menu_title').click(function(j) {   
+    if ($(this).hasClass('active')) {
+      $(this).removeClass('active');
+      $('.menu_title').removeClass('active');
+      $(this).next().slideUp();
+    }
+    else {
+      $('.menu_title').removeClass('active');
+      $('.menu_content').slideUp();
+      $(this).addClass('active');
+      $(this).next().slideDown();
+    }     
+  });
+});
 // tabs js start 
 $(document).ready(function () {
     $('.tab_title li a').click(function () {
@@ -23,7 +59,7 @@ var swiper = new Swiper('.mySwiper', {
     speed: 1500,
     centeredSlides: true,
     autoplay: {
-        delay: 4000,
+        delay: 3000,
         disableOnInteraction: true
     },
     pagination: {
@@ -33,19 +69,27 @@ var swiper = new Swiper('.mySwiper', {
     breakpoints: {
         640: {
             slidesPerView: 1,
-            spaceBetween: 10,
+            spaceBetween: -10,
         },
         768: {
-            slidesPerView: 2.01,
-            spaceBetween: 15,
+            slidesPerView: 2.01,  
+            spaceBetween: -20,
         },
         1024: {
             slidesPerView: 2.01,
-            spaceBetween: 25,
+            spaceBetween: -30,
         },
-        1280: {
+        1280:{
+          slidesPerView: 2.01,
+            spaceBetween: -35,
+        },
+        1450:{
+          slidesPerView: 2.01,
+            spaceBetween: -40,
+        },
+        1536: {
             slidesPerView: 2.01,
-            spaceBetween: 16,
+            spaceBetween: -50,
         },
     }
     });
@@ -174,6 +218,10 @@ var swiper = new Swiper(".swiper5", {
     }
   });
 // swiper silder js 5 end
+
+
+
+
 // onscroll js start 
 window.onscroll = function () {
     var currentScrollPos = window.pageYOffset;
@@ -208,4 +256,5 @@ let smoother = ScrollSmoother.create({
     smoothTouch: 0.5
 })
 // ScrollTrigger and ScrollSmoother js end 
+
 
