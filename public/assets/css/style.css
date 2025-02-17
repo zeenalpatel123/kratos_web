@@ -558,6 +558,46 @@ video {
   display: none;
 }
 
+.container{
+  width: 100%;
+}
+
+@media (min-width: 450px){
+  .container{
+    max-width: 450px;
+  }
+}
+
+@media (min-width: 640px){
+  .container{
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px){
+  .container{
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px){
+  .container{
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px){
+  .container{
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px){
+  .container{
+    max-width: 1536px;
+  }
+}
+
 *{
   font-family: Ubuntu, serif;
 }
@@ -565,6 +605,7 @@ video {
 body{
   --tw-bg-opacity: 1;
   background-color: rgb(1 12 17 / var(--tw-bg-opacity, 1));
+  text-transform: capitalize;
 }
 
 .warrper{
@@ -578,8 +619,8 @@ body{
 
 .h1,h1{
   font-family: Playfair Display, serif;
-  font-size: 32px;
-  line-height: 40px;
+  font-size: 28px;
+  line-height: 36px;
   font-weight: 700;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
@@ -615,8 +656,8 @@ body{
 
 .h2,h2{
   font-family: Playfair Display, serif;
-  font-size: 28px;
-  line-height: 36px;
+  font-size: 24px;
+  line-height: 30px;
   font-weight: 700;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
@@ -624,22 +665,22 @@ body{
 
 @media (min-width: 1024px){
   .h2,h2{
-    font-size: 34px;
-    line-height: 42px;
+    font-size: 28px;
+    line-height: 36px;
   }
 }
 
 @media (min-width: 1280px){
   .h2,h2{
-    font-size: 40px;
-    line-height: 58px;
+    font-size: 36px;
+    line-height: 44px;
   }
 }
 
 @media (min-width: 1536px){
   .h2,h2{
-    font-size: 48px;
-    line-height: 56px;
+    font-size: 42px;
+    line-height: 50px;
   }
 }
 
@@ -669,6 +710,36 @@ body{
   .h3,h3{
     font-size: 36px;
     line-height: 44px;
+  }
+}
+
+.h4,h4{
+  font-family: Playfair Display, serif;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 500;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+
+@media (min-width: 768px){
+  .h4,h4{
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
+
+@media (min-width: 1024px){
+  .h4,h4{
+    font-size: 24px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: 1536px){
+  .h4,h4{
+    font-size: 28px;
+    line-height: 36px;
   }
 }
 
@@ -710,36 +781,10 @@ body{
   }
 }
 
-.text28{
-  font-size: 18px;
-  line-height: 26px;
-}
-
-@media (min-width: 768px){
-  .text28{
-    font-size: 20px;
-    line-height: 28px;
-  }
-}
-
-@media (min-width: 1024px){
-  .text28{
-    font-size: 24px;
-    line-height: 30px;
-  }
-}
-
-@media (min-width: 1536px){
-  .text28{
-    font-size: 28px;
-    line-height: 36px;
-  }
-}
-
 .btn_primary{
   display: inline-block;
   width: 100%;
-  max-width: 9rem;
+  max-width: 13rem;
   cursor: pointer;
   padding-top: 0.625rem;
   padding-bottom: 0.625rem;
@@ -768,7 +813,6 @@ body{
 
 @media (min-width: 1024px){
   .btn_primary{
-    max-width: 13rem;
     padding-top: 0.875rem;
     padding-bottom: 0.875rem;
   }
@@ -786,7 +830,7 @@ body{
 .btn_secondary{
   display: inline-block;
   width: 100%;
-  max-width: 9rem;
+  max-width: 13rem;
   cursor: pointer;
   --tw-bg-opacity: 1;
   background-color: rgb(1 12 17 / var(--tw-bg-opacity, 1));
@@ -816,7 +860,6 @@ body{
 
 @media (min-width: 1024px){
   .btn_secondary{
-    max-width: 13rem;
     padding-top: 0.875rem;
     padding-bottom: 0.875rem;
   }
@@ -837,16 +880,104 @@ body{
   transition-duration: 300ms;
 }
 
+/* header up and down onscroll css start  */
+
 #main_header.navbar_down{
   --tw-translate-y: -100%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-/* #main_header.navbar_up{@apply  bg-dark;} */
+#main_header.navbar_up header {
+  background: #010C11;
+}
+
+/* header up and down onscroll css end  */
+
+/* label ane input css start  */
+
+.label{
+  display: block;
+  font-weight: 500;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+  font-size: 14px;
+  line-height: 22px;
+}
+
+@media (min-width: 1024px){
+  .label{
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@media (min-width: 1536px){
+  .label{
+    font-size: 18px;
+    line-height: 26px;
+  }
+}
+
+.input{
+  margin-top: 0.375rem;
+  display: block;
+  width: 100%;
+  border-radius: 0.5rem;
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(215 181 109 / var(--tw-border-opacity, 1));
+  --tw-bg-opacity: 1;
+  background-color: rgb(1 12 17 / var(--tw-bg-opacity, 1));
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+@media (min-width: 768px){
+  .input{
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+
+@media (min-width: 1536px){
+  .input{
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@media (min-width: 768px){
+  .input{
+    margin-top: 0.625rem;
+  }
+}
+
+@media (min-width: 1536px){
+  .input{
+    padding-top: 0.625rem;
+    padding-bottom: 0.625rem;
+  }
+}
+
+/* label ane input css end  */
+
+/* gradient background css start  */
 
 .gradient{
   background: linear-gradient(to right, #BF7B0B, #CE9823, #EDBE54, #F7D073, #D6A139, #C07F09);
 }
+
+/* gradient background css end  */
+
+/* gradient text css start  */
 
 .gra_text{
   background: linear-gradient(to right, #BF7B0B, #CE9823, #EDBE54, #F7D073, #D6A139, #C07F09);
@@ -854,9 +985,9 @@ body{
   -webkit-background-clip: text;
 }
 
-#main_header.navbar_up header {
-  background: #010C11;
-}
+/* gradient text css end  */
+
+/* gradient box border css start  */
 
 .gra_border {
   width: 32px;
@@ -877,6 +1008,10 @@ body{
   align-items:center ;
   justify-content: center;
 }
+
+/* gradient box border css end  */
+
+/* swiper Home page and annoucment page css start */
 
 :root {
   --swiper-image-ratio: 33.3%;
@@ -899,21 +1034,10 @@ body{
 .mySwiper .swiper-slide {
   position: relative;
   width: var(--swiper-width);
-  /* opacity: .5; */
   transform: scale(.84);
   transition: all .3s ease-in-out;
   overflow: hidden;
-  border-radius: 0.4285rem;
   transform: scale(.84) translateZ(0);
-}
-
-.swiper-pagination-bullet{
-  border-radius: 0;
-  background-color: #3D3D3D;
-}
-
-.swiper-pagination-bullet-active{
-  background-color: #D7B56D;
 }
 
 .swiper-slide.swiper-slide-active {
@@ -952,26 +1076,190 @@ body{
   }
 }
 
-/* tab css  */
+/* announcement page swiper css start  */
 
-.tab-main.active {
+.mySwiper .swiper-slide.swiper-slide-active .content_swiper {
+  opacity: 1;
+}
+
+.content_swiper{
+  opacity: 0;
+}
+
+/* announcement page swiper css end  */
+
+/* swiper Home page and annoucment page css start */
+
+/* tab css start */
+
+.tab_main.active {
   display: block;
   transform: scale(1);
 }
 
-.tab-main{
+.tab_main{
   transition: 0.5s all;
   transform:scale(0);
 }
 
-button{
-  transition: 0.3s width all;
+/* tab hover css start  */
+
+.tab_hover li a::after {
+  content: "";
+  width: 0;
+  height: 4px;
+  background: #D7B56D;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-radius: 3px 3px 0 0;
+  transition: 0.3s all;
 }
 
-button.active {
-  color: #2B50ED;
-  border-color: #fff;
+.tab_hover li a.active::after, .tab_hover li a:hover::after{
+  width: 100%;
 }
+
+.tab_hover li a.active{
+  color: #D7B56D;
+}
+
+/* tab hover css end  */
+
+/* tab css end */
+
+/* redio css start */
+
+.radio{
+  display: flex;
+  height: 1rem;
+  width: 1rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  border-width: 1px;
+  border-color: transparent;
+  --tw-bg-opacity: 1;
+  background-color: rgb(1 12 17 / var(--tw-bg-opacity, 1));
+}
+
+@media (min-width: 1024px){
+  .radio{
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+}
+
+.radio span{
+  display: block;
+  height: 0.375rem;
+  width: 0.375rem;
+  border-radius: 9999px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(215 181 109 / var(--tw-bg-opacity, 1));
+  opacity: 0;
+}
+
+input:checked + .radio{
+  --tw-border-opacity: 1;
+  border-color: rgb(215 181 109 / var(--tw-border-opacity, 1));
+  --tw-bg-opacity: 1;
+  background-color: rgb(33 37 31 / var(--tw-bg-opacity, 1));
+}
+
+input:checked + .radio span{
+  opacity: 1;
+}
+
+/* redio css end */
+
+/* faqs css start  */
+
+.krotos_title.active{
+  --tw-bg-opacity: 1;
+  background-color: rgb(1 12 17 / var(--tw-bg-opacity, 1));
+  padding-left: 0.625rem;
+  padding-right: 0.625rem;
+  padding-top: 0.625rem;
+  padding-bottom: 0.5rem;
+}
+
+@media (min-width: 1024px){
+  .krotos_title.active{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 1rem;
+  }
+}
+
+@media (min-width: 1280px){
+  .krotos_title.active{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-top: 1.5rem;
+    padding-bottom: 0.75rem;
+  }
+}
+
+.krotos_title.active + .kratos_content{
+  --tw-bg-opacity: 1;
+  background-color: rgb(1 12 17 / var(--tw-bg-opacity, 1));
+}
+
+.krotos_title{
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+.kratos_content{
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+
+.down_arrow{
+  display: flex;
+  height: 1.25rem;
+  width: 1.25rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  border-width: 1px;
+  border-color: transparent;
+  background-color: transparent;
+}
+
+@media (min-width: 1280px){
+  .down_arrow{
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+}
+
+.down_arrow span{
+  position: relative;
+  display: inline-block;
+  height: 0.625rem;
+  width: 0.625rem;
+  border-radius: 9999px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
+}
+
+.krotos_title.active .down_arrow{
+  --tw-border-opacity: 1;
+  border-color: rgb(215 181 109 / var(--tw-border-opacity, 1));
+}
+
+.krotos_title.active .down_arrow span{
+  height: 0.375rem;
+  width: 0.375rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(215 181 109 / var(--tw-bg-opacity, 1));
+}
+
+/* faqs css end  */
+
+/* gallery and video page css start  */
 
 .container_grid {
   display: grid;
@@ -979,6 +1267,7 @@ button.active {
   grid-auto-rows: 290px;
   grid-auto-flow: dense;
   grid-gap: 14px;
+  overflow: hidden;
 }
 
 .container_grid div {
@@ -1021,29 +1310,9 @@ button.active {
   }
 }
 
-/* tab menu hover effect  */
+/* gallery and video page css end  */
 
-.tab_hover li a::after {
-  content: "";
-  width: 0;
-  height: 4px;
-  background: #D7B56D;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  border-radius: 3px 3px 0 0;
-  transition: 0.3s all;
-}
-
-.tab_hover li a.active::after, .tab_hover li a:hover::after{
-  width: 100%;
-}
-
-.tab_hover li a.active{
-  color: #D7B56D;
-}
-
-/* scroll bar  */
+/* scroll bar css start */
 
 *::-webkit-scrollbar {
   scrollbar-width: auto;
@@ -1063,6 +1332,8 @@ button.active {
   background: #fff;
 }
 
+/* scroll bar css end */
+
 /* .box_hover:hover{
   border: 2px solid #D7B56D;
 } */
@@ -1071,8 +1342,115 @@ button.active {
   background: linear-gradient(to right, #BF7B0B, #CE9823, #EDBE54, #F7D073, #D6A139, #C07F09);
 }
 
+<<<<<<< HEAD
+=======
+/* myswiper3 css start  */
+
+.mySwiper3 .swiper-slide{
+  height: auto !important;
+}
+
+.mySwiper3 .swiper-slide .v_slider{
+  transform-origin: top;
+  --tw-scale-x: .9;
+  --tw-scale-y: .9;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  opacity: 0.5;
+}
+
+.mySwiper3 .swiper-slide.swiper-slide-active .v_slider{
+  transform-origin: top;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  opacity: 1;
+}
+
+/* myswiper3 css end  */
+
+/* table css start  */
+
+table tr th{
+  --tw-bg-opacity: 1;
+  background-color: rgb(33 37 31 / var(--tw-bg-opacity, 1));
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 500;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+
+@media (min-width: 1024px){
+  table tr th{
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@media (min-width: 1536px){
+  table tr th{
+    padding-top: 0.875rem;
+    padding-bottom: 0.875rem;
+    padding-left: 1.75rem;
+    padding-right: 1.75rem;
+    font-size: 18px;
+    line-height: 26px;
+  }
+}
+
+table tr td{
+  --tw-bg-opacity: 1;
+  background-color: rgb(1 12 17 / var(--tw-bg-opacity, 1));
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 400;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+
+@media (min-width: 1024px){
+  table tr td{
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+
+@media (min-width: 1536px){
+  table tr td{
+    padding-top: 0.625rem;
+    padding-bottom: 0.625rem;
+    padding-left: 1.75rem;
+    padding-right: 1.75rem;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+table.membership tr th {
+  border-top: 0px solid transparent;
+}
+
+table.membership tr th, table.membership tr td {
+  border: 1px solid #2C3539;
+}
+
+/* table css end  */
+
+>>>>>>> df572b8c9e2b518c0e7338cdde1e20bb3640e171
 .visible{
   visibility: visible;
+}
+
+.invisible{
+  visibility: hidden;
 }
 
 .static{
@@ -1089,6 +1467,10 @@ button.active {
 
 .relative{
   position: relative;
+}
+
+.sticky{
+  position: sticky;
 }
 
 .inset-0{
@@ -1117,8 +1499,8 @@ button.active {
   bottom: 2.5rem;
 }
 
-.bottom-\[1px\]{
-  bottom: 1px;
+.bottom-2\.5{
+  bottom: 0.625rem;
 }
 
 .left-0{
@@ -1129,8 +1511,20 @@ button.active {
   left: 50%;
 }
 
-.right-0{
-  right: 0px;
+.left-3\.5{
+  left: 0.875rem;
+}
+
+.left-4{
+  left: 1rem;
+}
+
+.right-2\.5{
+  right: 0.625rem;
+}
+
+.right-3\.5{
+  right: 0.875rem;
 }
 
 .top-0{
@@ -1143,6 +1537,18 @@ button.active {
 
 .top-11{
   top: 2.75rem;
+}
+
+.top-\[1\%\]{
+  top: 1%;
+}
+
+.top-\[10\%\]{
+  top: 10%;
+}
+
+.top-full{
+  top: 100%;
 }
 
 .-z-10{
@@ -1201,22 +1607,26 @@ button.active {
   margin-bottom: 0.625rem;
 }
 
-.my-3\.5{
-  margin-top: 0.875rem;
-  margin-bottom: 0.875rem;
+.my-3{
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
 }
 
-.my-7{
-  margin-top: 1.75rem;
-  margin-bottom: 1.75rem;
+.my-auto{
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.-mt-20{
+  margin-top: -5rem;
+}
+
+.mb-0\.5{
+  margin-bottom: 0.125rem;
 }
 
 .mb-1\.5{
   margin-bottom: 0.375rem;
-}
-
-.mb-2{
-  margin-bottom: 0.5rem;
 }
 
 .mb-2\.5{
@@ -1227,24 +1637,32 @@ button.active {
   margin-bottom: 0.75rem;
 }
 
-.mb-5{
-  margin-bottom: 1.25rem;
+.mb-4{
+  margin-bottom: 1rem;
 }
 
-.mb-6{
-  margin-bottom: 1.5rem;
+.ml-5{
+  margin-left: 1.25rem;
+}
+
+.mr-auto{
+  margin-right: auto;
 }
 
 .mt-0{
   margin-top: 0px;
 }
 
-.mt-12{
-  margin-top: 3rem;
+.mt-1\.5{
+  margin-top: 0.375rem;
 }
 
 .mt-2{
   margin-top: 0.5rem;
+}
+
+.mt-2\.5{
+  margin-top: 0.625rem;
 }
 
 .mt-3{
@@ -1267,6 +1685,20 @@ button.active {
   margin-top: 2rem;
 }
 
+.line-clamp-1{
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+}
+
+.line-clamp-2{
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
 .block{
   display: block;
 }
@@ -1283,16 +1715,36 @@ button.active {
   display: flex;
 }
 
+.table{
+  display: table;
+}
+
 .grid{
   display: grid;
+}
+
+.contents{
+  display: contents;
 }
 
 .hidden{
   display: none;
 }
 
-.h-11{
-  height: 2.75rem;
+.h-16{
+  height: 4rem;
+}
+
+.h-2\.5{
+  height: 0.625rem;
+}
+
+.h-20{
+  height: 5rem;
+}
+
+.h-3\.5{
+  height: 0.875rem;
 }
 
 .h-52{
@@ -1303,16 +1755,16 @@ button.active {
   height: 1.5rem;
 }
 
+.h-7{
+  height: 1.75rem;
+}
+
 .h-8{
   height: 2rem;
 }
 
-.h-\[1px\]{
-  height: 1px;
-}
-
-.h-\[2px\]{
-  height: 2px;
+.h-\[70px\]{
+  height: 70px;
 }
 
 .h-\[calc\(100\%-90px\)\]{
@@ -1331,12 +1783,25 @@ button.active {
   height: 100vh;
 }
 
+<<<<<<< HEAD
 .w-1\/5{
   width: 20%;
 }
 
 .w-11{
   width: 2.75rem;
+=======
+.h-4{
+  height: 1rem;
+}
+
+.w-1\/2{
+  width: 50%;
+}
+
+.w-1\/3{
+  width: 33.333333%;
+>>>>>>> df572b8c9e2b518c0e7338cdde1e20bb3640e171
 }
 
 .w-12{
@@ -1347,18 +1812,58 @@ button.active {
   width: 4rem;
 }
 
+.w-2\.5{
+  width: 0.625rem;
+}
+
+.w-20{
+  width: 5rem;
+}
+
+.w-3\.5{
+  width: 0.875rem;
+}
+
 .w-6{
   width: 1.5rem;
+}
+
+.w-7{
+  width: 1.75rem;
 }
 
 .w-8{
   width: 2rem;
 }
 
+.w-\[70px\]{
+  width: 70px;
+}
+
 .w-full{
   width: 100%;
 }
 
+<<<<<<< HEAD
+=======
+.w-max{
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.w-4{
+  width: 1rem;
+}
+
+.min-w-\[200px\]{
+  min-width: 200px;
+}
+
+.min-w-\[250px\]{
+  min-width: 250px;
+}
+
+>>>>>>> df572b8c9e2b518c0e7338cdde1e20bb3640e171
 .max-w-2xl{
   max-width: 42rem;
 }
@@ -1371,12 +1876,12 @@ button.active {
   max-width: 9rem;
 }
 
-.max-w-52{
-  max-width: 13rem;
-}
-
 .max-w-56{
   max-width: 14rem;
+}
+
+.max-w-64{
+  max-width: 16rem;
 }
 
 .max-w-80{
@@ -1387,48 +1892,64 @@ button.active {
   max-width: 24rem;
 }
 
+.max-w-\[1035px\]{
+  max-width: 1035px;
+}
+
 .max-w-\[1074px\]{
   max-width: 1074px;
 }
 
-.max-w-\[1240px\]{
-  max-width: 1240px;
+.max-w-\[1196px\]{
+  max-width: 1196px;
 }
 
 .max-w-\[1302px\]{
   max-width: 1302px;
 }
 
-.max-w-\[1497px\]{
-  max-width: 1497px;
+.max-w-\[380px\]{
+  max-width: 380px;
 }
 
-.max-w-\[478px\]{
-  max-width: 478px;
+.max-w-\[536px\]{
+  max-width: 536px;
 }
 
-.max-w-\[487px\]{
-  max-width: 487px;
+.max-w-\[600px\]{
+  max-width: 600px;
 }
 
-.max-w-\[605px\]{
-  max-width: 605px;
+.max-w-\[647px\]{
+  max-width: 647px;
 }
 
-.max-w-\[730px\]{
-  max-width: 730px;
+.max-w-\[710px\]{
+  max-width: 710px;
 }
 
-.max-w-\[745px\]{
-  max-width: 745px;
+.max-w-\[800px\]{
+  max-width: 800px;
+}
+
+.max-w-\[899px\]{
+  max-width: 899px;
+}
+
+.max-w-\[950px\]{
+  max-width: 950px;
+}
+
+.max-w-\[990px\]{
+  max-width: 990px;
 }
 
 .max-w-full{
   max-width: 100%;
 }
 
-.max-w-md{
-  max-width: 28rem;
+.max-w-lg{
+  max-width: 32rem;
 }
 
 .-translate-x-1\/2{
@@ -1454,6 +1975,14 @@ button.active {
   resize: both;
 }
 
+.list-inside{
+  list-style-position: inside;
+}
+
+.list-disc{
+  list-style-type: disc;
+}
+
 .flex-col{
   flex-direction: column;
 }
@@ -1462,8 +1991,16 @@ button.active {
   flex-wrap: wrap;
 }
 
+.items-start{
+  align-items: flex-start;
+}
+
 .items-center{
   align-items: center;
+}
+
+.justify-normal{
+  justify-content: normal;
 }
 
 .justify-center{
@@ -1472,6 +2009,12 @@ button.active {
 
 .justify-between{
   justify-content: space-between;
+}
+
+.space-x-0 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-x-reverse: 0;
+  margin-right: calc(0px * var(--tw-space-x-reverse));
+  margin-left: calc(0px * calc(1 - var(--tw-space-x-reverse)));
 }
 
 .space-x-1\.5 > :not([hidden]) ~ :not([hidden]){
@@ -1486,10 +2029,16 @@ button.active {
   margin-left: calc(2.5rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
-.space-x-20 > :not([hidden]) ~ :not([hidden]){
+.space-x-2 > :not([hidden]) ~ :not([hidden]){
   --tw-space-x-reverse: 0;
-  margin-right: calc(5rem * var(--tw-space-x-reverse));
-  margin-left: calc(5rem * calc(1 - var(--tw-space-x-reverse)));
+  margin-right: calc(0.5rem * var(--tw-space-x-reverse));
+  margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.space-x-2\.5 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-x-reverse: 0;
+  margin-right: calc(0.625rem * var(--tw-space-x-reverse));
+  margin-left: calc(0.625rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
 .space-x-3 > :not([hidden]) ~ :not([hidden]){
@@ -1498,10 +2047,10 @@ button.active {
   margin-left: calc(0.75rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
-.space-x-3\.5 > :not([hidden]) ~ :not([hidden]){
+.space-x-4 > :not([hidden]) ~ :not([hidden]){
   --tw-space-x-reverse: 0;
-  margin-right: calc(0.875rem * var(--tw-space-x-reverse));
-  margin-left: calc(0.875rem * calc(1 - var(--tw-space-x-reverse)));
+  margin-right: calc(1rem * var(--tw-space-x-reverse));
+  margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
 .space-x-5 > :not([hidden]) ~ :not([hidden]){
@@ -1516,10 +2065,22 @@ button.active {
   margin-left: calc(1.5rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
-.space-y-10 > :not([hidden]) ~ :not([hidden]){
+.space-y-0\.5 > :not([hidden]) ~ :not([hidden]){
   --tw-space-y-reverse: 0;
-  margin-top: calc(2.5rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(2.5rem * var(--tw-space-y-reverse));
+  margin-top: calc(0.125rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.125rem * var(--tw-space-y-reverse));
+}
+
+.space-y-1 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.25rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.25rem * var(--tw-space-y-reverse));
+}
+
+.space-y-1\.5 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.375rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.375rem * var(--tw-space-y-reverse));
 }
 
 .space-y-12 > :not([hidden]) ~ :not([hidden]){
@@ -1528,10 +2089,16 @@ button.active {
   margin-bottom: calc(3rem * var(--tw-space-y-reverse));
 }
 
-.space-y-2 > :not([hidden]) ~ :not([hidden]){
+.space-y-2\.5 > :not([hidden]) ~ :not([hidden]){
   --tw-space-y-reverse: 0;
-  margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
+  margin-top: calc(0.625rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.625rem * var(--tw-space-y-reverse));
+}
+
+.space-y-3 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.75rem * var(--tw-space-y-reverse));
 }
 
 .space-y-3\.5 > :not([hidden]) ~ :not([hidden]){
@@ -1540,16 +2107,34 @@ button.active {
   margin-bottom: calc(0.875rem * var(--tw-space-y-reverse));
 }
 
+.space-y-4 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1rem * var(--tw-space-y-reverse));
+}
+
 .space-y-5 > :not([hidden]) ~ :not([hidden]){
   --tw-space-y-reverse: 0;
   margin-top: calc(1.25rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(1.25rem * var(--tw-space-y-reverse));
 }
 
+.space-y-6 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
+}
+
 .space-y-7 > :not([hidden]) ~ :not([hidden]){
   --tw-space-y-reverse: 0;
   margin-top: calc(1.75rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(1.75rem * var(--tw-space-y-reverse));
+}
+
+.space-y-8 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-y-reverse: 0;
+  margin-top: calc(2rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(2rem * var(--tw-space-y-reverse));
 }
 
 .overflow-hidden{
@@ -1568,6 +2153,14 @@ button.active {
   text-wrap: nowrap;
 }
 
+.rounded{
+  border-radius: 0.25rem;
+}
+
+.rounded-2xl{
+  border-radius: 1rem;
+}
+
 .rounded-\[20px\]{
   border-radius: 20px;
 }
@@ -1580,17 +2173,16 @@ button.active {
   border-radius: 0.5rem;
 }
 
+.rounded-md{
+  border-radius: 0.375rem;
+}
+
+.rounded-xl{
+  border-radius: 0.75rem;
+}
+
 .border{
   border-width: 1px;
-}
-
-.border-2{
-  border-width: 2px;
-}
-
-.border-y{
-  border-top-width: 1px;
-  border-bottom-width: 1px;
 }
 
 .border-b{
@@ -1599,6 +2191,10 @@ button.active {
 
 .border-r{
   border-right-width: 1px;
+}
+
+.border-t-2{
+  border-top-width: 2px;
 }
 
 .border-\[\#606060\]{
@@ -1611,22 +2207,32 @@ button.active {
   border-color: rgb(0 0 0 / var(--tw-border-opacity, 1));
 }
 
+.border-m4{
+  --tw-border-opacity: 1;
+  border-color: rgb(52 61 63 / var(--tw-border-opacity, 1));
+}
+
 .border-primary{
   --tw-border-opacity: 1;
   border-color: rgb(215 181 109 / var(--tw-border-opacity, 1));
 }
 
-.bg-\[\#1D1E10\]{
+.border-white\/20{
+  border-color: rgb(255 255 255 / 0.2);
+}
+
+.bg-\[\#21251f\]{
   --tw-bg-opacity: 1;
-  background-color: rgb(29 30 16 / var(--tw-bg-opacity, 1));
+  background-color: rgb(33 37 31 / var(--tw-bg-opacity, 1));
+}
+
+.bg-\[\#262410\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(38 36 16 / var(--tw-bg-opacity, 1));
 }
 
 .bg-black\/30{
   background-color: rgb(0 0 0 / 0.3);
-}
-
-.bg-black\/50{
-  background-color: rgb(0 0 0 / 0.5);
 }
 
 .bg-dark{
@@ -1634,24 +2240,29 @@ button.active {
   background-color: rgb(1 12 17 / var(--tw-bg-opacity, 1));
 }
 
-.bg-gray-500{
-  --tw-bg-opacity: 1;
-  background-color: rgb(107 114 128 / var(--tw-bg-opacity, 1));
-}
-
 .bg-m1{
   --tw-bg-opacity: 1;
   background-color: rgb(29 30 16 / var(--tw-bg-opacity, 1));
 }
 
-.bg-m2{
+.bg-m5{
   --tw-bg-opacity: 1;
-  background-color: rgb(40 40 40 / var(--tw-bg-opacity, 1));
+  background-color: rgb(33 37 31 / var(--tw-bg-opacity, 1));
 }
 
-.bg-m3{
+.bg-m6{
   --tw-bg-opacity: 1;
-  background-color: rgb(36 36 36 / var(--tw-bg-opacity, 1));
+  background-color: rgb(40 30 4 / var(--tw-bg-opacity, 1));
+}
+
+.bg-m7{
+  --tw-bg-opacity: 1;
+  background-color: rgb(38 40 27 / var(--tw-bg-opacity, 1));
+}
+
+.bg-m8{
+  --tw-bg-opacity: 1;
+  background-color: rgb(22 24 23 / var(--tw-bg-opacity, 1));
 }
 
 .bg-primary{
@@ -1659,13 +2270,20 @@ button.active {
   background-color: rgb(215 181 109 / var(--tw-bg-opacity, 1));
 }
 
+<<<<<<< HEAD
 .bg-transparent{
   background-color: transparent;
 }
 
+=======
+>>>>>>> df572b8c9e2b518c0e7338cdde1e20bb3640e171
 .object-cover{
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.p-0\.5{
+  padding: 0.125rem;
 }
 
 .p-1{
@@ -1700,14 +2318,19 @@ button.active {
   padding: 1.5rem;
 }
 
+.px-1\.5{
+  padding-left: 0.375rem;
+  padding-right: 0.375rem;
+}
+
+.px-2\.5{
+  padding-left: 0.625rem;
+  padding-right: 0.625rem;
+}
+
 .px-3{
   padding-left: 0.75rem;
   padding-right: 0.75rem;
-}
-
-.px-3\.5{
-  padding-left: 0.875rem;
-  padding-right: 0.875rem;
 }
 
 .px-4{
@@ -1725,9 +2348,19 @@ button.active {
   padding-right: 1.5rem;
 }
 
-.px-8{
-  padding-left: 2rem;
-  padding-right: 2rem;
+.py-0{
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.py-1{
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
+.py-1\.5{
+  padding-top: 0.375rem;
+  padding-bottom: 0.375rem;
 }
 
 .py-10{
@@ -1745,16 +2378,6 @@ button.active {
   padding-bottom: 0.5rem;
 }
 
-.py-2\.5{
-  padding-top: 0.625rem;
-  padding-bottom: 0.625rem;
-}
-
-.py-3{
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
-}
-
 .py-3\.5{
   padding-top: 0.875rem;
   padding-bottom: 0.875rem;
@@ -1770,12 +2393,26 @@ button.active {
   padding-bottom: 1.25rem;
 }
 
+.py-6{
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.py-8{
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
 .pb-10{
   padding-bottom: 2.5rem;
 }
 
 .pb-12{
   padding-bottom: 3rem;
+}
+
+.pb-16{
+  padding-bottom: 4rem;
 }
 
 .pb-2\.5{
@@ -1790,28 +2427,40 @@ button.active {
   padding-bottom: 1.25rem;
 }
 
-.pb-7{
-  padding-bottom: 1.75rem;
+.pb-6{
+  padding-bottom: 1.5rem;
+}
+
+.pb-8{
+  padding-bottom: 2rem;
+}
+
+.pl-0{
+  padding-left: 0px;
+}
+
+.pl-2{
+  padding-left: 0.5rem;
+}
+
+.pl-2\.5{
+  padding-left: 0.625rem;
 }
 
 .pl-5{
   padding-left: 1.25rem;
 }
 
-.pt-0{
-  padding-top: 0px;
-}
-
-.pt-1\.5{
-  padding-top: 0.375rem;
-}
-
 .pt-10{
   padding-top: 2.5rem;
 }
 
-.pt-12{
-  padding-top: 3rem;
+.pt-2{
+  padding-top: 0.5rem;
+}
+
+.pt-20{
+  padding-top: 5rem;
 }
 
 .pt-24{
@@ -1822,8 +2471,12 @@ button.active {
   padding-top: 8rem;
 }
 
-.pt-7{
-  padding-top: 1.75rem;
+.pt-4{
+  padding-top: 1rem;
+}
+
+.pt-6{
+  padding-top: 1.5rem;
 }
 
 .text-center{
@@ -1832,6 +2485,11 @@ button.active {
 
 .font-play_display{
   font-family: Playfair Display, serif;
+}
+
+.text-12{
+  font-size: 12px;
+  line-height: 20px;
 }
 
 .text-14{
@@ -1864,6 +2522,14 @@ button.active {
   line-height: 30px;
 }
 
+.text-\[12px\]{
+  font-size: 12px;
+}
+
+.font-bold{
+  font-weight: 700;
+}
+
 .font-medium{
   font-weight: 500;
 }
@@ -1884,19 +2550,14 @@ button.active {
   line-height: 1;
 }
 
-.text-\[\#828282\]{
-  --tw-text-opacity: 1;
-  color: rgb(130 130 130 / var(--tw-text-opacity, 1));
-}
-
 .text-dark{
   --tw-text-opacity: 1;
   color: rgb(1 12 17 / var(--tw-text-opacity, 1));
 }
 
-.text-gray-400{
+.text-l1{
   --tw-text-opacity: 1;
-  color: rgb(156 163 175 / var(--tw-text-opacity, 1));
+  color: rgb(204 206 207 / var(--tw-text-opacity, 1));
 }
 
 .text-primary{
@@ -1909,13 +2570,50 @@ button.active {
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
 
+.text-white\/80{
+  color: rgb(255 255 255 / 0.8);
+}
+
+.underline{
+  text-decoration-line: underline;
+}
+
+.opacity-0{
+  opacity: 0;
+}
+
+.opacity-100{
+  opacity: 1;
+}
+
 .opacity-40{
   opacity: 0.4;
+}
+
+.shadow{
+  --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 .outline-none{
   outline: 2px solid transparent;
   outline-offset: 2px;
+}
+
+.blur{
+  --tw-blur: blur(8px);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.grayscale{
+  --tw-grayscale: grayscale(100%);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.invert{
+  --tw-invert: invert(100%);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
 .filter{
@@ -1928,8 +2626,22 @@ button.active {
   backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
 }
 
-.hover\:border-2:hover{
-  border-width: 2px;
+.transition{
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.hover\:bg-dark:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(1 12 17 / var(--tw-bg-opacity, 1));
+}
+
+.hover\:bg-white:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
 }
 
 .hover\:text-primary:hover{
@@ -1937,40 +2649,96 @@ button.active {
   color: rgb(215 181 109 / var(--tw-text-opacity, 1));
 }
 
-.group:hover .group-hover\:text-dark{
+.group:hover .group-hover\:visible{
+  visibility: visible;
+}
+
+.group:hover .group-hover\:text-primary{
   --tw-text-opacity: 1;
-  color: rgb(1 12 17 / var(--tw-text-opacity, 1));
+  color: rgb(215 181 109 / var(--tw-text-opacity, 1));
+}
+
+.group:hover .group-hover\:opacity-0{
+  opacity: 0;
+}
+
+.group:hover .group-hover\:opacity-100{
+  opacity: 1;
 }
 
 @media (min-width: 450px){
+  .xs\:mx-0{
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
   .xs\:mt-0{
     margin-top: 0px;
   }
 
-  .xs\:block{
-    display: block;
+  .xs\:h-24{
+    height: 6rem;
   }
 
   .xs\:w-1\/2{
     width: 50%;
   }
 
+  .xs\:w-24{
+    width: 6rem;
+  }
+
+  .xs\:w-5\/12{
+    width: 41.666667%;
+  }
+
+  .xs\:w-7\/12{
+    width: 58.333333%;
+  }
+
   .xs\:max-w-44{
     max-width: 11rem;
   }
 
-  .xs\:max-w-md{
-    max-width: 28rem;
+  .xs\:max-w-full{
+    max-width: 100%;
+  }
+
+  .xs\:space-x-2\.5 > :not([hidden]) ~ :not([hidden]){
+    --tw-space-x-reverse: 0;
+    margin-right: calc(0.625rem * var(--tw-space-x-reverse));
+    margin-left: calc(0.625rem * calc(1 - var(--tw-space-x-reverse)));
   }
 }
 
 @media (min-width: 640px){
+  .sm\:-mx-3\.5{
+    margin-left: -0.875rem;
+    margin-right: -0.875rem;
+  }
+
+  .sm\:mt-6{
+    margin-top: 1.5rem;
+  }
+
   .sm\:w-1\/2{
     width: 50%;
   }
 
   .sm\:w-1\/3{
     width: 33.333333%;
+  }
+
+  .sm\:w-5\/12{
+    width: 41.666667%;
+  }
+
+  .sm\:w-7\/12{
+    width: 58.333333%;
+  }
+
+  .sm\:w-auto{
+    width: auto;
   }
 
   .sm\:flex-nowrap{
@@ -1981,10 +2749,34 @@ button.active {
     justify-content: space-between;
   }
 
+  .sm\:space-x-10 > :not([hidden]) ~ :not([hidden]){
+    --tw-space-x-reverse: 0;
+    margin-right: calc(2.5rem * var(--tw-space-x-reverse));
+    margin-left: calc(2.5rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+
   .sm\:space-x-2\.5 > :not([hidden]) ~ :not([hidden]){
     --tw-space-x-reverse: 0;
     margin-right: calc(0.625rem * var(--tw-space-x-reverse));
     margin-left: calc(0.625rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+
+  .sm\:space-y-2\.5 > :not([hidden]) ~ :not([hidden]){
+    --tw-space-y-reverse: 0;
+    margin-top: calc(0.625rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(0.625rem * var(--tw-space-y-reverse));
+  }
+
+  .sm\:p-0{
+    padding: 0px;
+  }
+
+  .sm\:p-3\.5{
+    padding: 0.875rem;
+  }
+
+  .sm\:p-3{
+    padding: 0.75rem;
   }
 
   .sm\:px-8{
@@ -1992,14 +2784,14 @@ button.active {
     padding-right: 2rem;
   }
 
-  .sm\:px-9{
-    padding-left: 2.25rem;
-    padding-right: 2.25rem;
+  .sm\:py-10{
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
   }
 
-  .sm\:py-8{
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+  .sm\:py-2\.5{
+    padding-top: 0.625rem;
+    padding-bottom: 0.625rem;
   }
 
   .sm\:text-20{
@@ -2009,30 +2801,25 @@ button.active {
 }
 
 @media (min-width: 768px){
-  .md\:order-1{
-    order: 1;
+  .md\:left-7{
+    left: 1.75rem;
   }
 
-  .md\:order-2{
-    order: 2;
+  .md\:right-7{
+    right: 1.75rem;
   }
 
-  .md\:order-3{
-    order: 3;
+  .md\:top-\[0\%\]{
+    top: 0%;
   }
 
-  .md\:m-0{
-    margin: 0px;
+  .md\:top-\[6\%\]{
+    top: 6%;
   }
 
   .md\:-mx-2\.5{
     margin-left: -0.625rem;
     margin-right: -0.625rem;
-  }
-
-  .md\:-mx-3\.5{
-    margin-left: -0.875rem;
-    margin-right: -0.875rem;
   }
 
   .md\:mb-2\.5{
@@ -2043,8 +2830,20 @@ button.active {
     margin-bottom: 0.75rem;
   }
 
-  .md\:mb-8{
-    margin-bottom: 2rem;
+  .md\:mb-5{
+    margin-bottom: 1.25rem;
+  }
+
+  .md\:mb-6{
+    margin-bottom: 1.5rem;
+  }
+
+  .md\:ml-auto{
+    margin-left: auto;
+  }
+
+  .md\:mt-3{
+    margin-top: 0.75rem;
   }
 
   .md\:mt-4{
@@ -2063,6 +2862,34 @@ button.active {
     margin-top: 2rem;
   }
 
+  .md\:block{
+    display: block;
+  }
+
+  .md\:h-28{
+    height: 7rem;
+  }
+
+  .md\:h-3\.5{
+    height: 0.875rem;
+  }
+
+  .md\:h-36{
+    height: 9rem;
+  }
+
+  .md\:h-40{
+    height: 10rem;
+  }
+
+  .md\:h-5{
+    height: 1.25rem;
+  }
+
+  .md\:w-1\/2{
+    width: 50%;
+  }
+
   .md\:w-1\/3{
     width: 33.333333%;
   }
@@ -2075,28 +2902,78 @@ button.active {
     width: 3.5rem;
   }
 
-  .md\:max-w-44{
-    max-width: 11rem;
+  .md\:w-28{
+    width: 7rem;
   }
 
-  .md\:max-w-64{
-    max-width: 16rem;
+  .md\:w-3\.5{
+    width: 0.875rem;
+  }
+
+  .md\:w-3\/12{
+    width: 25%;
+  }
+
+  .md\:w-36{
+    width: 9rem;
+  }
+
+  .md\:w-5{
+    width: 1.25rem;
+  }
+
+  .md\:w-80{
+    width: 20rem;
+  }
+
+  .md\:w-9\/12{
+    width: 75%;
+  }
+
+  .md\:w-\[calc\(100\%-320px\)\]{
+    width: calc(100% - 320px);
+  }
+
+  .md\:max-w-36{
+    max-width: 9rem;
+  }
+
+  .md\:max-w-52{
+    max-width: 13rem;
+  }
+
+  .md\:max-w-72{
+    max-width: 18rem;
   }
 
   .md\:max-w-full{
     max-width: 100%;
   }
 
-  .md\:space-x-3 > :not([hidden]) ~ :not([hidden]){
-    --tw-space-x-reverse: 0;
-    margin-right: calc(0.75rem * var(--tw-space-x-reverse));
-    margin-left: calc(0.75rem * calc(1 - var(--tw-space-x-reverse)));
+  .md\:justify-end{
+    justify-content: flex-end;
   }
 
-  .md\:space-x-5 > :not([hidden]) ~ :not([hidden]){
+  .md\:justify-center{
+    justify-content: center;
+  }
+
+  .md\:space-x-14 > :not([hidden]) ~ :not([hidden]){
     --tw-space-x-reverse: 0;
-    margin-right: calc(1.25rem * var(--tw-space-x-reverse));
-    margin-left: calc(1.25rem * calc(1 - var(--tw-space-x-reverse)));
+    margin-right: calc(3.5rem * var(--tw-space-x-reverse));
+    margin-left: calc(3.5rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+
+  .md\:space-x-2\.5 > :not([hidden]) ~ :not([hidden]){
+    --tw-space-x-reverse: 0;
+    margin-right: calc(0.625rem * var(--tw-space-x-reverse));
+    margin-left: calc(0.625rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+
+  .md\:space-x-4 > :not([hidden]) ~ :not([hidden]){
+    --tw-space-x-reverse: 0;
+    margin-right: calc(1rem * var(--tw-space-x-reverse));
+    margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
   }
 
   .md\:space-x-8 > :not([hidden]) ~ :not([hidden]){
@@ -2105,10 +2982,28 @@ button.active {
     margin-left: calc(2rem * calc(1 - var(--tw-space-x-reverse)));
   }
 
-  .md\:space-y-16 > :not([hidden]) ~ :not([hidden]){
+  .md\:space-y-2\.5 > :not([hidden]) ~ :not([hidden]){
     --tw-space-y-reverse: 0;
-    margin-top: calc(4rem * calc(1 - var(--tw-space-y-reverse)));
-    margin-bottom: calc(4rem * var(--tw-space-y-reverse));
+    margin-top: calc(0.625rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(0.625rem * var(--tw-space-y-reverse));
+  }
+
+  .md\:space-y-3 > :not([hidden]) ~ :not([hidden]){
+    --tw-space-y-reverse: 0;
+    margin-top: calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(0.75rem * var(--tw-space-y-reverse));
+  }
+
+  .md\:space-y-3\.5 > :not([hidden]) ~ :not([hidden]){
+    --tw-space-y-reverse: 0;
+    margin-top: calc(0.875rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(0.875rem * var(--tw-space-y-reverse));
+  }
+
+  .md\:space-y-5 > :not([hidden]) ~ :not([hidden]){
+    --tw-space-y-reverse: 0;
+    margin-top: calc(1.25rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(1.25rem * var(--tw-space-y-reverse));
   }
 
   .md\:space-y-6 > :not([hidden]) ~ :not([hidden]){
@@ -2127,8 +3022,8 @@ button.active {
     padding: 0.625rem;
   }
 
-  .md\:p-3\.5{
-    padding: 0.875rem;
+  .md\:p-3{
+    padding: 0.75rem;
   }
 
   .md\:px-0{
@@ -2141,19 +3036,29 @@ button.active {
     padding-right: 2.5rem;
   }
 
+  .md\:px-6{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .md\:px-7{
+    padding-left: 1.75rem;
+    padding-right: 1.75rem;
+  }
+
+  .md\:py-10{
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+
   .md\:py-12{
     padding-top: 3rem;
     padding-bottom: 3rem;
   }
 
-  .md\:py-6{
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
-  }
-
-  .md\:py-7{
-    padding-top: 1.75rem;
-    padding-bottom: 1.75rem;
+  .md\:py-3\.5{
+    padding-top: 0.875rem;
+    padding-bottom: 0.875rem;
   }
 
   .md\:py-9{
@@ -2161,37 +3066,40 @@ button.active {
     padding-bottom: 2.25rem;
   }
 
+  .md\:pb-10{
+    padding-bottom: 2.5rem;
+  }
+
+  .md\:pb-12{
+    padding-bottom: 3rem;
+  }
+
   .md\:pb-5{
     padding-bottom: 1.25rem;
+  }
+
+  .md\:pb-8{
+    padding-bottom: 2rem;
   }
 
   .md\:pt-12{
     padding-top: 3rem;
   }
 
-  .md\:pt-2\.5{
-    padding-top: 0.625rem;
+  .md\:pt-24{
+    padding-top: 6rem;
   }
 
   .md\:pt-28{
     padding-top: 7rem;
   }
 
-  .md\:pt-3\.5{
-    padding-top: 0.875rem;
-  }
-
   .md\:pt-36{
     padding-top: 9rem;
   }
 
-  .md\:text-left{
-    text-align: left;
-  }
-
-  .md\:text-16{
-    font-size: 16px;
-    line-height: 24px;
+  .md\:pt-6{
+    padding-top: 1.5rem;
   }
 
   .md\:text-24{
@@ -2205,31 +3113,42 @@ button.active {
     top: -2.5rem;
   }
 
-  .lg\:-mx-3\.5{
-    margin-left: -0.875rem;
-    margin-right: -0.875rem;
+  .lg\:left-1{
+    left: 0.25rem;
   }
 
-  .lg\:my-3{
-    margin-top: 0.75rem;
-    margin-bottom: 0.75rem;
+  .lg\:left-6{
+    left: 1.5rem;
+  }
+
+  .lg\:right-6{
+    right: 1.5rem;
+  }
+
+  .lg\:top-\[10\%\]{
+    top: 10%;
+  }
+
+  .lg\:top-\[4\%\]{
+    top: 4%;
+  }
+
+  .lg\:order-1{
+    order: 1;
+  }
+
+  .lg\:order-2{
+    order: 2;
+  }
+
+  .lg\:-mx-2\.5{
+    margin-left: -0.625rem;
+    margin-right: -0.625rem;
   }
 
   .lg\:my-5{
     margin-top: 1.25rem;
     margin-bottom: 1.25rem;
-  }
-
-  .lg\:-mt-16{
-    margin-top: -4rem;
-  }
-
-  .lg\:mb-0{
-    margin-bottom: 0px;
-  }
-
-  .lg\:mb-10{
-    margin-bottom: 2.5rem;
   }
 
   .lg\:mb-4{
@@ -2240,8 +3159,8 @@ button.active {
     margin-bottom: 1.25rem;
   }
 
-  .lg\:mb-6{
-    margin-bottom: 1.5rem;
+  .lg\:mb-8{
+    margin-bottom: 2rem;
   }
 
   .lg\:mt-0{
@@ -2250,6 +3169,30 @@ button.active {
 
   .lg\:mt-10{
     margin-top: 2.5rem;
+  }
+
+  .lg\:mt-2\.5{
+    margin-top: 0.625rem;
+  }
+
+  .lg\:mt-3{
+    margin-top: 0.75rem;
+  }
+
+  .lg\:mt-4{
+    margin-top: 1rem;
+  }
+
+  .lg\:mt-5{
+    margin-top: 1.25rem;
+  }
+
+  .lg\:mt-6{
+    margin-top: 1.5rem;
+  }
+
+  .lg\:mt-7{
+    margin-top: 1.75rem;
   }
 
   .lg\:mt-8{
@@ -2268,16 +3211,20 @@ button.active {
     display: none;
   }
 
-  .lg\:h-10{
-    height: 2.5rem;
+  .lg\:h-32{
+    height: 8rem;
   }
 
-  .lg\:h-8{
-    height: 2rem;
+  .lg\:h-40{
+    height: 10rem;
   }
 
-  .lg\:h-auto{
-    height: auto;
+  .lg\:h-56{
+    height: 14rem;
+  }
+
+  .lg\:h-60{
+    height: 15rem;
   }
 
   .lg\:w-1\/2{
@@ -2288,44 +3235,52 @@ button.active {
     width: 33.333333%;
   }
 
+  .lg\:w-1\/4{
+    width: 25%;
+  }
+
   .lg\:w-1\/5{
     width: 20%;
   }
 
-  .lg\:w-10{
-    width: 2.5rem;
+  .lg\:w-32{
+    width: 8rem;
   }
 
-  .lg\:w-3\/12{
-    width: 25%;
+  .lg\:w-40{
+    width: 10rem;
   }
 
-  .lg\:w-8{
-    width: 2rem;
+  .lg\:w-\[380px\]{
+    width: 380px;
   }
 
-  .lg\:w-9\/12{
-    width: 75%;
+  .lg\:w-\[calc\(100\%-380px\)\]{
+    width: calc(100% - 380px);
   }
 
   .lg\:w-auto{
     width: auto;
   }
 
-  .lg\:max-w-52{
-    max-width: 13rem;
+  .lg\:min-w-full{
+    min-width: 100%;
   }
 
-  .lg\:max-w-\[200px\]{
-    max-width: 200px;
+  .lg\:max-w-40{
+    max-width: 10rem;
   }
 
-  .lg\:flex-nowrap{
-    flex-wrap: nowrap;
+  .lg\:max-w-60{
+    max-width: 15rem;
   }
 
-  .lg\:justify-between{
-    justify-content: space-between;
+  .lg\:max-w-96{
+    max-width: 24rem;
+  }
+
+  .lg\:items-center{
+    align-items: center;
   }
 
   .lg\:space-x-10 > :not([hidden]) ~ :not([hidden]){
@@ -2334,10 +3289,28 @@ button.active {
     margin-left: calc(2.5rem * calc(1 - var(--tw-space-x-reverse)));
   }
 
-  .lg\:space-x-8 > :not([hidden]) ~ :not([hidden]){
+  .lg\:space-x-14 > :not([hidden]) ~ :not([hidden]){
     --tw-space-x-reverse: 0;
-    margin-right: calc(2rem * var(--tw-space-x-reverse));
-    margin-left: calc(2rem * calc(1 - var(--tw-space-x-reverse)));
+    margin-right: calc(3.5rem * var(--tw-space-x-reverse));
+    margin-left: calc(3.5rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+
+  .lg\:space-x-20 > :not([hidden]) ~ :not([hidden]){
+    --tw-space-x-reverse: 0;
+    margin-right: calc(5rem * var(--tw-space-x-reverse));
+    margin-left: calc(5rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+
+  .lg\:space-x-4 > :not([hidden]) ~ :not([hidden]){
+    --tw-space-x-reverse: 0;
+    margin-right: calc(1rem * var(--tw-space-x-reverse));
+    margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+
+  .lg\:space-x-6 > :not([hidden]) ~ :not([hidden]){
+    --tw-space-x-reverse: 0;
+    margin-right: calc(1.5rem * var(--tw-space-x-reverse));
+    margin-left: calc(1.5rem * calc(1 - var(--tw-space-x-reverse)));
   }
 
   .lg\:space-y-10 > :not([hidden]) ~ :not([hidden]){
@@ -2352,10 +3325,28 @@ button.active {
     margin-bottom: calc(4rem * var(--tw-space-y-reverse));
   }
 
-  .lg\:space-y-20 > :not([hidden]) ~ :not([hidden]){
+  .lg\:space-y-3\.5 > :not([hidden]) ~ :not([hidden]){
     --tw-space-y-reverse: 0;
-    margin-top: calc(5rem * calc(1 - var(--tw-space-y-reverse)));
-    margin-bottom: calc(5rem * var(--tw-space-y-reverse));
+    margin-top: calc(0.875rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(0.875rem * var(--tw-space-y-reverse));
+  }
+
+  .lg\:space-y-4 > :not([hidden]) ~ :not([hidden]){
+    --tw-space-y-reverse: 0;
+    margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(1rem * var(--tw-space-y-reverse));
+  }
+
+  .lg\:space-y-5 > :not([hidden]) ~ :not([hidden]){
+    --tw-space-y-reverse: 0;
+    margin-top: calc(1.25rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(1.25rem * var(--tw-space-y-reverse));
+  }
+
+  .lg\:space-y-6 > :not([hidden]) ~ :not([hidden]){
+    --tw-space-y-reverse: 0;
+    margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
   }
 
   .lg\:space-y-8 > :not([hidden]) ~ :not([hidden]){
@@ -2364,19 +3355,31 @@ button.active {
     margin-bottom: calc(2rem * var(--tw-space-y-reverse));
   }
 
-  .lg\:space-y-9 > :not([hidden]) ~ :not([hidden]){
-    --tw-space-y-reverse: 0;
-    margin-top: calc(2.25rem * calc(1 - var(--tw-space-y-reverse)));
-    margin-bottom: calc(2.25rem * var(--tw-space-y-reverse));
+  .lg\:rounded-xl{
+    border-radius: 0.75rem;
   }
 
-  .lg\:p-3\.5{
-    padding: 0.875rem;
+  .lg\:p-2\.5{
+    padding: 0.625rem;
+  }
+
+  .lg\:p-3{
+    padding: 0.75rem;
+  }
+
+  .lg\:px-10{
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
   }
 
   .lg\:px-12{
     padding-left: 3rem;
     padding-right: 3rem;
+  }
+
+  .lg\:px-2\.5{
+    padding-left: 0.625rem;
+    padding-right: 0.625rem;
   }
 
   .lg\:px-4{
@@ -2394,9 +3397,9 @@ button.active {
     padding-right: 2rem;
   }
 
-  .lg\:py-11{
-    padding-top: 2.75rem;
-    padding-bottom: 2.75rem;
+  .lg\:py-12{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
   }
 
   .lg\:py-14{
@@ -2409,6 +3412,11 @@ button.active {
     padding-bottom: 4rem;
   }
 
+  .lg\:py-2{
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+
   .lg\:py-3{
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;
@@ -2419,19 +3427,12 @@ button.active {
     padding-bottom: 1rem;
   }
 
-  .lg\:py-7{
-    padding-top: 1.75rem;
-    padding-bottom: 1.75rem;
+  .lg\:pb-10{
+    padding-bottom: 2.5rem;
   }
 
-  .lg\:py-8{
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-  }
-
-  .lg\:py-9{
-    padding-top: 2.25rem;
-    padding-bottom: 2.25rem;
+  .lg\:pb-12{
+    padding-bottom: 3rem;
   }
 
   .lg\:pb-14{
@@ -2442,16 +3443,20 @@ button.active {
     padding-bottom: 4rem;
   }
 
+  .lg\:pb-4{
+    padding-bottom: 1rem;
+  }
+
+  .lg\:pl-4{
+    padding-left: 1rem;
+  }
+
   .lg\:pt-14{
     padding-top: 3.5rem;
   }
 
-  .lg\:pt-20{
-    padding-top: 5rem;
-  }
-
-  .lg\:pt-3{
-    padding-top: 0.75rem;
+  .lg\:pt-28{
+    padding-top: 7rem;
   }
 
   .lg\:pt-32{
@@ -2462,9 +3467,8 @@ button.active {
     padding-top: 11rem;
   }
 
-  .lg\:text-16{
-    font-size: 16px;
-    line-height: 24px;
+  .lg\:pt-8{
+    padding-top: 2rem;
   }
 
   .lg\:text-18{
@@ -2477,6 +3481,11 @@ button.active {
     line-height: 28px;
   }
 
+  .lg\:text-26{
+    font-size: 26px;
+    line-height: 34px;
+  }
+
   .lg\:text-32{
     font-size: 32px;
     line-height: 40px;
@@ -2484,22 +3493,55 @@ button.active {
 }
 
 @media (min-width: 1280px){
-  .xl\:my-4{
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+  .xl\:left-0{
+    left: 0px;
   }
 
-  .xl\:my-7{
-    margin-top: 1.75rem;
-    margin-bottom: 1.75rem;
+  .xl\:left-\[51\%\]{
+    left: 51%;
   }
 
-  .xl\:mb-12{
-    margin-bottom: 3rem;
+  .xl\:left-\[61\%\]{
+    left: 61%;
+  }
+
+  .xl\:right-1\.5{
+    right: 0.375rem;
+  }
+
+  .xl\:top-\[17\%\]{
+    top: 17%;
+  }
+
+  .xl\:top-\[28\%\]{
+    top: 28%;
+  }
+
+  .xl\:-mx-2\.5{
+    margin-left: -0.625rem;
+    margin-right: -0.625rem;
+  }
+
+  .xl\:-mx-3\.5{
+    margin-left: -0.875rem;
+    margin-right: -0.875rem;
+  }
+
+  .xl\:my-3\.5{
+    margin-top: 0.875rem;
+    margin-bottom: 0.875rem;
+  }
+
+  .xl\:mb-10{
+    margin-bottom: 2.5rem;
   }
 
   .xl\:mb-3\.5{
     margin-bottom: 0.875rem;
+  }
+
+  .xl\:mb-4{
+    margin-bottom: 1rem;
   }
 
   .xl\:mb-5{
@@ -2518,6 +3560,26 @@ button.active {
     margin-top: 3rem;
   }
 
+  .xl\:mt-2\.5{
+    margin-top: 0.625rem;
+  }
+
+  .xl\:mt-3{
+    margin-top: 0.75rem;
+  }
+
+  .xl\:mt-3\.5{
+    margin-top: 0.875rem;
+  }
+
+  .xl\:mt-4{
+    margin-top: 1rem;
+  }
+
+  .xl\:mt-5{
+    margin-top: 1.25rem;
+  }
+
   .xl\:mt-6{
     margin-top: 1.5rem;
   }
@@ -2526,46 +3588,80 @@ button.active {
     margin-top: 1.75rem;
   }
 
+  .xl\:mt-8{
+    margin-top: 2rem;
+  }
+
+  .xl\:mt-9{
+    margin-top: 2.25rem;
+  }
+
   .xl\:block{
     display: block;
   }
 
-  .xl\:h-12{
-    height: 3rem;
+  .xl\:h-44{
+    height: 11rem;
   }
 
-  .xl\:h-\[60px\]{
-    height: 60px;
+  .xl\:h-5{
+    height: 1.25rem;
   }
 
-  .xl\:w-1\/4{
-    width: 25%;
+  .xl\:h-\[172px\]{
+    height: 172px;
+  }
+
+  .xl\:h-full{
+    height: 100%;
+  }
+
+  .xl\:w-1\/2{
+    width: 50%;
   }
 
   .xl\:w-1\/6{
     width: 16.666667%;
   }
 
-  .xl\:w-12{
-    width: 3rem;
+  .xl\:w-44{
+    width: 11rem;
   }
 
-  .xl\:w-\[60px\]{
-    width: 60px;
+  .xl\:w-5{
+    width: 1.25rem;
   }
 
-  .xl\:max-w-52{
-    max-width: 13rem;
+  .xl\:w-\[38\%\]{
+    width: 38%;
   }
 
-  .xl\:max-w-full{
-    max-width: 100%;
+  .xl\:w-\[460px\]{
+    width: 460px;
   }
 
-  .xl\:space-x-10 > :not([hidden]) ~ :not([hidden]){
-    --tw-space-x-reverse: 0;
-    margin-right: calc(2.5rem * var(--tw-space-x-reverse));
-    margin-left: calc(2.5rem * calc(1 - var(--tw-space-x-reverse)));
+  .xl\:w-\[58\%\]{
+    width: 58%;
+  }
+
+  .xl\:w-\[62\%\]{
+    width: 62%;
+  }
+
+  .xl\:w-\[calc\(100\%-460px\)\]{
+    width: calc(100% - 460px);
+  }
+
+  .xl\:w-full{
+    width: 100%;
+  }
+
+  .xl\:max-w-64{
+    max-width: 16rem;
+  }
+
+  .xl\:max-w-\[180px\]{
+    max-width: 180px;
   }
 
   .xl\:space-x-12 > :not([hidden]) ~ :not([hidden]){
@@ -2574,10 +3670,40 @@ button.active {
     margin-left: calc(3rem * calc(1 - var(--tw-space-x-reverse)));
   }
 
-  .xl\:space-x-7 > :not([hidden]) ~ :not([hidden]){
+  .xl\:space-x-16 > :not([hidden]) ~ :not([hidden]){
     --tw-space-x-reverse: 0;
-    margin-right: calc(1.75rem * var(--tw-space-x-reverse));
-    margin-left: calc(1.75rem * calc(1 - var(--tw-space-x-reverse)));
+    margin-right: calc(4rem * var(--tw-space-x-reverse));
+    margin-left: calc(4rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+
+  .xl\:space-x-24 > :not([hidden]) ~ :not([hidden]){
+    --tw-space-x-reverse: 0;
+    margin-right: calc(6rem * var(--tw-space-x-reverse));
+    margin-left: calc(6rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+
+  .xl\:space-x-4 > :not([hidden]) ~ :not([hidden]){
+    --tw-space-x-reverse: 0;
+    margin-right: calc(1rem * var(--tw-space-x-reverse));
+    margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+
+  .xl\:space-x-5 > :not([hidden]) ~ :not([hidden]){
+    --tw-space-x-reverse: 0;
+    margin-right: calc(1.25rem * var(--tw-space-x-reverse));
+    margin-left: calc(1.25rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+
+  .xl\:space-x-6 > :not([hidden]) ~ :not([hidden]){
+    --tw-space-x-reverse: 0;
+    margin-right: calc(1.5rem * var(--tw-space-x-reverse));
+    margin-left: calc(1.5rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+
+  .xl\:space-x-8 > :not([hidden]) ~ :not([hidden]){
+    --tw-space-x-reverse: 0;
+    margin-right: calc(2rem * var(--tw-space-x-reverse));
+    margin-left: calc(2rem * calc(1 - var(--tw-space-x-reverse)));
   }
 
   .xl\:space-y-10 > :not([hidden]) ~ :not([hidden]){
@@ -2586,28 +3712,10 @@ button.active {
     margin-bottom: calc(2.5rem * var(--tw-space-y-reverse));
   }
 
-  .xl\:space-y-12 > :not([hidden]) ~ :not([hidden]){
-    --tw-space-y-reverse: 0;
-    margin-top: calc(3rem * calc(1 - var(--tw-space-y-reverse)));
-    margin-bottom: calc(3rem * var(--tw-space-y-reverse));
-  }
-
   .xl\:space-y-20 > :not([hidden]) ~ :not([hidden]){
     --tw-space-y-reverse: 0;
     margin-top: calc(5rem * calc(1 - var(--tw-space-y-reverse)));
     margin-bottom: calc(5rem * var(--tw-space-y-reverse));
-  }
-
-  .xl\:space-y-24 > :not([hidden]) ~ :not([hidden]){
-    --tw-space-y-reverse: 0;
-    margin-top: calc(6rem * calc(1 - var(--tw-space-y-reverse)));
-    margin-bottom: calc(6rem * var(--tw-space-y-reverse));
-  }
-
-  .xl\:space-y-3\.5 > :not([hidden]) ~ :not([hidden]){
-    --tw-space-y-reverse: 0;
-    margin-top: calc(0.875rem * calc(1 - var(--tw-space-y-reverse)));
-    margin-bottom: calc(0.875rem * var(--tw-space-y-reverse));
   }
 
   .xl\:space-y-5 > :not([hidden]) ~ :not([hidden]){
@@ -2616,19 +3724,35 @@ button.active {
     margin-bottom: calc(1.25rem * var(--tw-space-y-reverse));
   }
 
-  .xl\:px-10{
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
+  .xl\:space-y-7 > :not([hidden]) ~ :not([hidden]){
+    --tw-space-y-reverse: 0;
+    margin-top: calc(1.75rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(1.75rem * var(--tw-space-y-reverse));
+  }
+
+  .xl\:rounded-2xl{
+    border-radius: 1rem;
+  }
+
+  .xl\:p-2\.5{
+    padding: 0.625rem;
+  }
+
+  .xl\:p-3\.5{
+    padding: 0.875rem;
+  }
+
+  .xl\:p-4{
+    padding: 1rem;
+  }
+
+  .xl\:p-5{
+    padding: 1.25rem;
   }
 
   .xl\:px-14{
     padding-left: 3.5rem;
     padding-right: 3.5rem;
-  }
-
-  .xl\:px-5{
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
   }
 
   .xl\:px-6{
@@ -2646,16 +3770,6 @@ button.active {
     padding-bottom: 2.5rem;
   }
 
-  .xl\:py-11{
-    padding-top: 2.75rem;
-    padding-bottom: 2.75rem;
-  }
-
-  .xl\:py-12{
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-  }
-
   .xl\:py-16{
     padding-top: 4rem;
     padding-bottom: 4rem;
@@ -2666,24 +3780,9 @@ button.active {
     padding-bottom: 5rem;
   }
 
-  .xl\:py-3\.5{
-    padding-top: 0.875rem;
-    padding-bottom: 0.875rem;
-  }
-
-  .xl\:py-4{
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-  }
-
   .xl\:py-6{
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
-  }
-
-  .xl\:py-9{
-    padding-top: 2.25rem;
-    padding-bottom: 2.25rem;
   }
 
   .xl\:pb-12{
@@ -2698,24 +3797,32 @@ button.active {
     padding-bottom: 5rem;
   }
 
+  .xl\:pb-6{
+    padding-bottom: 1.5rem;
+  }
+
   .xl\:pb-7{
     padding-bottom: 1.75rem;
   }
 
-  .xl\:pb-9{
-    padding-bottom: 2.25rem;
+  .xl\:pl-6{
+    padding-left: 1.5rem;
+  }
+
+  .xl\:pt-10{
+    padding-top: 2.5rem;
   }
 
   .xl\:pt-16{
     padding-top: 4rem;
   }
 
-  .xl\:pt-24{
-    padding-top: 6rem;
+  .xl\:pt-3{
+    padding-top: 0.75rem;
   }
 
-  .xl\:pt-3\.5{
-    padding-top: 0.875rem;
+  .xl\:pt-32{
+    padding-top: 8rem;
   }
 
   .xl\:pt-36{
@@ -2726,21 +3833,91 @@ button.active {
     padding-top: 13rem;
   }
 
-  .xl\:text-20{
-    font-size: 20px;
-    line-height: 28px;
+  .xl\:pt-8{
+    padding-top: 2rem;
+  }
+
+  .xl\:pb-14{
+    padding-bottom: 3.5rem;
+  }
+
+  .xl\:text-14{
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .xl\:text-16{
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .xl\:text-24{
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .xl\:text-32{
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  .xl\:text-\[16px\]{
+    font-size: 16px;
   }
 }
 
 @media (min-width: 1536px){
-  .\32xl\:my-5{
-    margin-top: 1.25rem;
+  .\32xl\:top-\[18\%\]{
+    top: 18%;
+  }
+
+  .\32xl\:top-\[25\%\]{
+    top: 25%;
+  }
+
+  .\32xl\:my-7{
+    margin-top: 1.75rem;
+    margin-bottom: 1.75rem;
+  }
+
+  .\32xl\:mb-5{
     margin-bottom: 1.25rem;
   }
 
-  .\32xl\:my-9{
-    margin-top: 2.25rem;
-    margin-bottom: 2.25rem;
+  .\32xl\:mt-12{
+    margin-top: 3rem;
+  }
+
+  .\32xl\:mt-4{
+    margin-top: 1rem;
+  }
+
+  .\32xl\:mt-5{
+    margin-top: 1.25rem;
+  }
+
+  .\32xl\:mt-7{
+    margin-top: 1.75rem;
+  }
+
+  .\32xl\:h-48{
+    height: 12rem;
+  }
+
+  .\32xl\:h-72{
+    height: 18rem;
+  }
+
+  .\32xl\:h-\[150px\]{
+    height: 150px;
+  }
+
+  .\32xl\:w-48{
+    width: 12rem;
+  }
+
+  .\32xl\:w-\[150px\]{
+    width: 150px;
   }
 
   .\32xl\:space-x-14 > :not([hidden]) ~ :not([hidden]){
@@ -2749,9 +3926,80 @@ button.active {
     margin-left: calc(3.5rem * calc(1 - var(--tw-space-x-reverse)));
   }
 
+  .\32xl\:space-x-20 > :not([hidden]) ~ :not([hidden]){
+    --tw-space-x-reverse: 0;
+    margin-right: calc(5rem * var(--tw-space-x-reverse));
+    margin-left: calc(5rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+
+  .\32xl\:space-x-3 > :not([hidden]) ~ :not([hidden]){
+    --tw-space-x-reverse: 0;
+    margin-right: calc(0.75rem * var(--tw-space-x-reverse));
+    margin-left: calc(0.75rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+
+  .\32xl\:space-x-32 > :not([hidden]) ~ :not([hidden]){
+    --tw-space-x-reverse: 0;
+    margin-right: calc(8rem * var(--tw-space-x-reverse));
+    margin-left: calc(8rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+
+  .\32xl\:space-y-12 > :not([hidden]) ~ :not([hidden]){
+    --tw-space-y-reverse: 0;
+    margin-top: calc(3rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(3rem * var(--tw-space-y-reverse));
+  }
+
+  .\32xl\:space-y-14 > :not([hidden]) ~ :not([hidden]){
+    --tw-space-y-reverse: 0;
+    margin-top: calc(3.5rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(3.5rem * var(--tw-space-y-reverse));
+  }
+
+  .\32xl\:space-y-4 > :not([hidden]) ~ :not([hidden]){
+    --tw-space-y-reverse: 0;
+    margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(1rem * var(--tw-space-y-reverse));
+  }
+
+  .\32xl\:space-y-6 > :not([hidden]) ~ :not([hidden]){
+    --tw-space-y-reverse: 0;
+    margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
+  }
+
+  .\32xl\:px-10{
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
+  .\32xl\:px-16{
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  .\32xl\:py-2\.5{
+    padding-top: 0.625rem;
+    padding-bottom: 0.625rem;
+  }
+
   .\32xl\:py-20{
     padding-top: 5rem;
     padding-bottom: 5rem;
+  }
+
+  .\32xl\:py-3{
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+  }
+
+  .\32xl\:py-8{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .\32xl\:pb-12{
+    padding-bottom: 3rem;
   }
 
   .\32xl\:pb-14{
@@ -2762,11 +4010,36 @@ button.active {
     padding-bottom: 5rem;
   }
 
+  .\32xl\:pb-7{
+    padding-bottom: 1.75rem;
+  }
+
+  .\32xl\:pt-12{
+    padding-top: 3rem;
+  }
+
+  .\32xl\:pt-16{
+    padding-top: 4rem;
+  }
+
   .\32xl\:pt-20{
     padding-top: 5rem;
   }
 
+  .\32xl\:pt-36{
+    padding-top: 9rem;
+  }
+
   .\32xl\:pt-56{
     padding-top: 14rem;
+  }
+
+  .\32xl\:pb-16{
+    padding-bottom: 4rem;
+  }
+
+  .\32xl\:text-18{
+    font-size: 18px;
+    line-height: 26px;
   }
 }

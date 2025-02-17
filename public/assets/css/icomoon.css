@@ -26,6 +26,153 @@
     -moz-osx-font-smoothing: grayscale;
   }
   
+  .icon-calender:before {
+    content: "\e91e";
+  }
+  .icon-lawn_tennis:before {
+    content: "\e91b";
+  }
+  .icon-basketball:before {
+    content: "\e91c";
+  }
+  .icon-air_gun:before {
+    content: "\e91d";
+  }
+  .icon-chess_hourse:before {
+    content: "\e91f";
+  }
+  .icon-carrom:before {
+    content: "\e920";
+  }
+  .icon-salon:before {
+    content: "\e921";
+  }
+  .icon-swimming_pool:before {
+    content: "\e922";
+  }
+  .icon-cricket_helmet:before {
+    content: "\e923";
+  }
+  .icon-baby_pool:before {
+    content: "\e924";
+  }
+  .icon-restaurent:before {
+    content: "\e925";
+  }
+  .icon-volleyball:before {
+    content: "\e926";
+  }
+  .icon-skating:before {
+    content: "\e927";
+  }
+  .icon-jogging_track:before {
+    content: "\e928";
+  }
+  .icon-gym:before {
+    content: "\e929";
+  }
+  .icon-table_tennis:before {
+    content: "\e92a";
+  }
+  .icon-badminton:before {
+    content: "\e92b";
+  }
+  .icon-mini_golf:before {
+    content: "\e92c";
+  }
+  .icon-aerobics:before {
+    content: "\e92d";
+  }
+  .icon-dart:before {
+    content: "\e92e";
+  }
+  .icon-jacuzzi:before {
+    content: "\e92f";
+  }
+  .icon-oxygen_bar:before {
+    content: "\e930";
+  }
+  .icon-ball:before {
+    content: "\e931";
+  }
+  .icon-yoga:before {
+    content: "\e932";
+  }
+  .icon-dance:before {
+    content: "\e933";
+  }
+  .icon-outdoor_area:before {
+    content: "\e934";
+  }
+  .icon-cinema:before {
+    content: "\e935";
+  }
+  .icon-library:before {
+    content: "\e936";
+  }
+  .icon-golf:before {
+    content: "\e937";
+  }
+  .icon-zumba:before {
+    content: "\e938";
+  }
+  .icon-ground:before {
+    content: "\e939";
+  }
+  .icon-workout:before {
+    content: "\e93a";
+  }
+  .icon-golf_ball:before {
+    content: "\e93b";
+  }
+  .icon-cycling:before {
+    content: "\e93c";
+  }
+  .icon-presidential_suite:before {
+    content: "\e93d";
+  }
+  .icon-banquet_hall:before {
+    content: "\e93e";
+  }
+  .icon-deluxe_room:before {
+    content: "\e93f";
+  }
+  .icon-ludo_dice:before {
+    content: "\e940";
+  }
+  .icon-poker_game:before {
+    content: "\e941";
+  }
+  .icon-sauna:before {
+    content: "\e942";
+  }
+  .icon-down:before {
+    content: "\e917";
+  }
+  .icon-like:before {
+    content: "\e919";
+  }
+  .icon-add:before {
+    content: "\e912";
+  }
+  .icon-minus:before {
+    content: "\e913";
+  }
+  .icon-left1:before {
+    content: "\e914";
+  }
+  .icon-check_circle:before {
+    content: "\e915";
+  }
+  .icon-circle:before {
+    content: "\e916";
+  }
+  .icon-share:before {
+    content: "\e918";
+  }
+  .icon-location1:before {
+    content: "\e91a";
+  }
   .icon-menu:before {
     content: "\e911";
   }
@@ -40,9 +187,6 @@
   }
   .icon-right:before {
     content: "\e902";
-  }
-  .icon-celender:before {
-    content: "\e900";
   }
   .icon-star:before {
     content: "\e901";
